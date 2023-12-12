@@ -1,0 +1,10 @@
+keys:
+  - &user_simon_age age14mjnxlu4c7fdppuev0y5263f8y2yv0d80480czltqxz3ev8encgqcjc9gk
+  - &user_simon_gpg 7A85A8540E05937E2CCBE1F58C44454A2AF72E70
+creation_rules:
+  - path_regex: home/simon/secrets/[^/]+\.yaml$
+    key_groups:
+      - age:
+        - *user_simon_age
+      - pgp:
+        - *user_simon_gpg
