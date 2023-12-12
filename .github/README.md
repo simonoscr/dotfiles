@@ -4,6 +4,8 @@
 
 [![built with nix](https://img.shields.io/static/v1?logo=nixos&logoColor=white&label=&message=Built%20with%20Nix%20Flakes&color=41439a)](https://builtwithnix.org) [![](https://img.shields.io/badge/NixOS-unstable-informational.svg?style=flat&logo=nixos&logoColor=CAD3F5&colorA=24273A&colorB=8AADF4)](https://github.com/nixos/nixpkgs)
 
+[![Nix Flake Check](https://github.com/simonoscr/dotfiles/actions/workflows/nixflakecheck.yml/badge.svg?branch=main)](https://github.com/simonoscr/dotfiles/actions/workflows/nixflakecheck.yml)
+
 </div>
 
 ---
