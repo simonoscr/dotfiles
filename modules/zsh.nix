@@ -24,27 +24,24 @@ in {
     SHELL = "${pkgs.zsh}/bin/zsh";
   };
 
-  programs = {
-    zsh = {
-      enable = true;
-      enableCompletion = true;
-      enableAutosuggestions = true;
-      autocd = true;
-      syntaxHighlighting.enable = true;
-      dirHashes = {
-        dl = "$HOME/Downloads";
-	      docs = "$HOME/Documents";
-	      pics = "$HOME/Pictures";
-	      vids = "$HOME/Videos";
-      };
-
-      initExtra = ''
-        zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-        zstyle ':completion:*' menu select
-	      zstyle ':completion:*' verbose true
-	      zstyle ':completion:*' completer _complete _ignored _approximate
-      '';
-      shellAliases = aliases;
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    enableAutosuggestions = true;
+    autocd = true;
+    syntaxHighlighting.enable = true;
+    dirHashes = {
+      dl = "$HOME/Downloads";
+	    docs = "$HOME/Documents";
+	    pics = "$HOME/Pictures";
+	    vids = "$HOME/Videos";
     };
+    initExtra = ''
+      zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+      zstyle ':completion:*' menu select
+	    zstyle ':completion:*' verbose true
+	    zstyle ':completion:*' completer _complete _ignored _approximate
+    '';
+    shellAliases = aliases;
   };
 }

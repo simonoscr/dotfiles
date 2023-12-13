@@ -126,6 +126,7 @@
         "SUPER, O, fakefullscreen"
         "SUPER, J, togglesplit"
 	      "SUPER, P, pseudo"
+        "SUPER, B, exec, firefox"
 
         (mvfocus "u" "u")
         (mvfocus "d" "d")

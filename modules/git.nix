@@ -47,16 +47,5 @@ in {
     };
 
     extraConfig.gpg.format = "ssh";
-
-  };
-  home.activationScripts.setGitHubCredentials = {
-    text = ''
-      # Decrypt the PAT
-      PAT=$(sops -d ${config.home.homeDirectory}/github_pat.txt)
-
-      # Configure Git to use this PAT
-      git config --global credential.helper "!f() { echo username=your-username; echo password=$PAT; }; f"
-    '';
-    deps = [ "git" ];
   };
 }
