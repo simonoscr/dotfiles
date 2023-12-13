@@ -30,6 +30,16 @@ jobs:
           skipInvalidTags: false
           noVersionBumpBehavior: "warn"
 
+      - name: Create Release
+        uses: ncipollo/release-action@v1.12.0
+        with:
+          allowUpdates: true
+          draft: false
+          makeLatest: true
+          name: ${{ steps.semver.outputs.next }}
+          body: ${{ steps.changelog.outputs.changes }}
+          token: ${{ github.token }}
+
       - name: Get previous tag
         id: previousTag
         run: |
@@ -45,15 +55,6 @@ jobs:
           fromTag: ${{ github.ref_name }}
           toTag: ${{ env.previousTag }}
 
-      - name: Create Release
-        uses: ncipollo/release-action@v1.12.0
-        with:
-          allowUpdates: true
-          draft: false
-          makeLatest: true
-          name: ${{ steps.semver.outputs.next }}
-          body: ${{ steps.changelog.outputs.changes }}
-          token: ${{ github.token }}
 
       - name: Commit CHANGELOG.md
         uses: stefanzweifel/git-auto-commit-action@v4
