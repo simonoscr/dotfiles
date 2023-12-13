@@ -31,8 +31,22 @@ jobs:
     runs-on: "ubuntu-latest"
 
     steps:
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - uses: actions/checkout@v3
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: false
+          fetch-depth: 0
+      - uses: paulhatch/semantic-version@v5.3.0
+        with:
+          tag_prefix: ""
+          major_pattern: "(MAJOR)"
+          major_regexp_flags: ""          
+          minor_pattern: "feat:"
+          minor_regexp_flags: ""
+          version_format: "${major}.${minor}.${patch}-prerelease${increment}"
+          bump_each_commit: true
+          bump_each_commit_patch_pattern: "fix:"
+          search_commit_body: false
+          user_format_type: "json"
+          enable_prerelease_mode: false
+          debug: false
+          version_from_branch: false
+
