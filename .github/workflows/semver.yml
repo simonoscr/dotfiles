@@ -40,7 +40,11 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.github_token }}
-          skip-commit: "true"
+          skip-commit: "false"
+          git-message: "chore: {version}"
           tag-prefix: ""
           release-count: "10"
+          output-file: "CHANGELOG.md"
           create-summary: "true"
+          version-file: ""
+          skip-version-file: "true"
