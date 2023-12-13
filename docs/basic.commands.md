@@ -1,6 +1,21 @@
 # Documentation NixOS, Nix Flake, Standalone Home-Manager
 
+## Channel
+
+sudo nix-channel --list
+
+Example output:
+
+home-manager https://github.com/nix-community/home-manager/archive/master.tar.gz
+nixos https://nixos.org/channels/nixos-unstable
+
 ## Update
+
+### nix
+
+nix-channel --update
+
+### flake
 
 nix flake update
 
@@ -8,11 +23,15 @@ nix flake update
 
 ### NixOS
 
-nixos-rebuild switch --flake .#host
+sudo nixos-rebuild switch --flake .#host
 
 ### Home-Manager
 
 home-manager switch --flake .#user@host
+
+## Updating and Build NixOS
+
+sudo nixos-rebuild switch --upgrade --flake .#host
 
 ## Programs
 
