@@ -1,18 +1,11 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    vscodium    
-
-    # audio
-    easyeffects
-      
+    vscodium
     # hyprland
     wl-clipboard
-    pavucontrol
-    playerctl
-    pulsemixer
     swww
     pywal
     xdg-desktop-portal-gtk
   ];
-}  
+}

@@ -7,18 +7,16 @@
 
 {
   imports = [
+      ./audio.nix
+      ./fonts.nix
       ./hardware-configuration.nix
       ./hyprland.nix
-      ./audio.nix
       ./locale.nix
+      ./network.nix
+      ./packages.nix
+      ./services.nix
+      ./xserver.nix
     ];
-
-  nixpkgs = {
-    overlays = [];
-    config = {
-      allowUnfree = true;
-    };
-  };
 
   ## systemd-boot
   boot = {
@@ -30,76 +28,40 @@
     };
     kernelPackages = pkgs.linuxPackages_zen;
     initrd.kernelModules = [ "amdgpu" ];
-  };
-
-  ## flakes nix
-  nix = {
-    settings = {
-      experimental-features = "nix-command flakes";
-      auto-optimise-store = true;
+    kernel.sysctl = {
+      "vm.swappiness" = 20;
     };
   };
 
-  ## networking
-  networking = {
-    hostName = "nixos";
-    networkmanager.enable = true;
-    # firewall
-    firewall = {
-      enable = true;
-      # allowedTCPPorts = [ ... ];
-      # allowedUDPPorts = [ ... ];
-    };
+  console = {
+    earlySetup = true;
+    font = "Lat2-Terminus16";
+    keyMap = "de";
   };
 
-  ## services
-  services = {
-    ## xserver
-    xserver = {
-      enable = true;
-      videoDrivers = [ "amdgpu" ];
-      #libinput.enable = true;
-    };
-    ## printing
-    printing = {
-      enable = true;
-    };
-    ## openssh
-    openssh = {
-      enable = true;
-    };
+  zramSwap = {
+    enable = true;
+    memoryPercent = 20;
+    swapDevices = 1;
   };
 
-  ## AMD gpu
-  hardware = {
-    opengl = {
-      driSupport = true;
-      driSupport32Bit = true;
+   ## user
+  users = {
+    groups.simon.gid = 1000;
+    users = {
+      simon = {
+        initialPassword = "123";
+        isNormalUser = true;
+        extraGroups = [
+          "wheel"
+	        "networkmanager"
+	        "audio"
+	        "video"
+        ];
+        shell = pkgs.zsh;
+      };
     };
   };
-
-  ## user
-  users.users = {
-    simon = {
-      initialPassword = "123";
-      isNormalUser = true;
-      extraGroups = [
-        "wheel"
-	      "networkmanager"
-	      "audio"
-	      "video"
-      ];
-      shell = pkgs.zsh;
-    };
-  };
-
-  ## packages installed in system profile
-  environment.systemPackages = with pkgs; [
-    git
-    neovim
-    curl
-    btop
-  ];
 
   ## programs
   programs = {
@@ -112,6 +74,20 @@
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
+    };
+  };
+
+  ## flakes nix
+  nix = {
+    settings = {
+      experimental-features = "nix-command flakes";
+      auto-optimise-store = true;
+    };
+  };
+
+  nixpkgs = {
+    config = {
+      allowUnfree = true;
     };
   };
 

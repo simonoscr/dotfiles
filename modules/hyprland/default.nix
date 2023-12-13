@@ -6,8 +6,6 @@ in {
 
   imports = [
     ./config.nix
-    ./swayidle.nix
-    ./swaylock.nix
   ];
 
   wayland.windowManager.hyprland = {
