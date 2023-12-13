@@ -1,4 +1,4 @@
-name: Release
+name: SemVersioning
 
 on:
   push:
@@ -7,35 +7,20 @@ on:
   pull_request:
     branches:
       - main
-    types: [ merged ]
   workflow_dispatch:
 
 jobs:
-  checks:
-    name: Check expressions
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-      - uses: cachix/install-nix-action@v18
-        with:
-          install_url: https://nixos.org/nix/install
-          extra_nix_config: |
-            auto-optimise-store = true
-            experimental-features = nix-command flakes
-      - run: nix flake check
-
-  release:
-    needs: checks
-    name: "Release"
+  semver:
     runs-on: "ubuntu-latest"
     permissions:
       contents: write
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
+
       - name: Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v3
         with:

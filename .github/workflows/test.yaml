@@ -1,0 +1,31 @@
+name: Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install Nix
+      uses: cachix/install-nix-action@v22
+      with:
+        install_url: https://nixos.org/nix/install
+        nix_path: nixpkgs=channel:nixos-unstable
+        extra_nix_config: |
+          auto-optimise-store = true
+          experimental-features = nix-command flakes
+        github_access_token: ${{ secrets.GITHUB_TOKEN }}
+    - run: nix build --version
+    - run: nix build .
+    - run: nix flake check
+    - run: nix-shell --run "echo OK"
