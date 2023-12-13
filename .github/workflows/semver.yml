@@ -41,9 +41,9 @@ jobs:
         id: changelog
         uses: requarks/changelog-action@v1
         with:
+          token: ${{ github.token }}
           fromTag: ${{ env.fromTag }}
           toTag: ${{ env.toTag }}
-          tag: ${{ github.ref_name }}
 
       - name: Create Release
         uses: ncipollo/release-action@v1.12.0
