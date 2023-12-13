@@ -22,7 +22,6 @@ jobs:
         uses: cachix/install-nix-action@v22
         with:
           install_url: https://nixos.org/nix/install
-          nix_path: nixpkgs=channel:nixos-unstable
           extra_nix_config: |
             auto-optimise-store = true
             experimental-features = nix-command flakes
