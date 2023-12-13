@@ -4,7 +4,7 @@
 
 [![built with nix](https://img.shields.io/static/v1?logo=nixos&logoColor=white&label=&message=Built%20with%20Nix%20Flakes&color=41439a)](https://builtwithnix.org) [![](https://img.shields.io/badge/NixOS-unstable-informational.svg?style=flat&logo=nixos&logoColor=CAD3F5&colorA=24273A&colorB=8AADF4)](https://github.com/nixos/nixpkgs)
 
-[![Release](https://github.com/simonoscr/dotfiles/actions/workflows/semver.yml/badge.svg)](https://github.com/simonoscr/dotfiles/actions/workflows/semver.yml)
+[![Release](https://github.com/simonoscr/dotfiles/actions/workflows/semver.yml/badge.svg)](https://github.com/simonoscr/dotfiles/actions/workflows/semver.yml) [![check nix flake](https://github.com/simonoscr/dotfiles/actions/workflows/test.yaml/badge.svg)](https://github.com/simonoscr/dotfiles/actions/workflows/test.yaml)
 
 </div>
 
