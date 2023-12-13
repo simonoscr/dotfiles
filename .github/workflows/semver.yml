@@ -24,12 +24,25 @@ jobs:
         with:
           token: ${{ github.token }}
           branch: main
-          
+          minorList: feat, feature
+          patchList: fix, bugfix, perf, refactor, ref, test, ci
+          patchAll: false
+          skipInvalidTags: false
+          noVersionBumpBehavior: "warn"
+
+      - name: Determine Tags
+        id: tags
+        run: |
+          echo "fromTag=$(git describe --tags `git rev-list --tags --max-count=1`)" >> $GITHUB_ENV
+          echo "toTag=$(git describe --tags `git rev-list --tags --max-count=1 --skip=1`)" >> $GITHUB_ENV
+
+
       - name: Update CHANGELOG
         id: changelog
         uses: requarks/changelog-action@v1
         with:
-          token: ${{ github.token }}
+          fromTag: ${{ env.fromTag }}
+          toTag: ${{ env.toTag }}
           tag: ${{ github.ref_name }}
 
       - name: Create Release
@@ -38,7 +51,7 @@ jobs:
           allowUpdates: true
           draft: false
           makeLatest: true
-          name: ${{ github.ref_name }}
+          name: ${{ steps.semver.outputs.next }}
           body: ${{ steps.changelog.outputs.changes }}
           token: ${{ github.token }}
 
