@@ -30,6 +30,14 @@ jobs:
           skipInvalidTags: false
           noVersionBumpBehavior: "warn"
 
+      - name: Update CHANGELOG
+        id: changelog
+        uses: requarks/changelog-action@v1
+        with:
+          token: ${{ github.token }}
+          fromTag: ${{ env.current }}
+          toTag: ${{ env.nextStrict }}
+
       - name: Create Release
         uses: ncipollo/release-action@v1.12.0
         with:
@@ -39,21 +47,6 @@ jobs:
           name: ${{ steps.semver.outputs.next }}
           body: ${{ steps.changelog.outputs.changes }}
           token: ${{ github.token }}
-
-      - name: Get previous tag
-        id: previousTag
-        run: |
-          name=$(git --no-pager tag --sort=creatordate --merged ${{ github.ref_name }} | tail -2 | head -1)
-          echo "previousTag: $name"
-          echo "previousTag=$name" >> $GITHUB_ENV
-
-      - name: Update CHANGELOG
-        id: changelog
-        uses: requarks/changelog-action@v1
-        with:
-          token: ${{ github.token }}
-          fromTag: ${{ github.ref_name }}
-          toTag: ${{ env.previousTag }}
 
 
       - name: Commit CHANGELOG.md
