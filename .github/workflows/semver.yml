@@ -1,4 +1,4 @@
-name: SemVersioning
+name: semver
 
 on:
   push:
@@ -11,17 +11,17 @@ on:
 
 jobs:
   semver:
-    runs-on: "ubuntu-latest"
+    runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
-      - name: Checkout repository
+      - name: checkout repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Conventional Changelog Action
+      - name: semver
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.github_token }}

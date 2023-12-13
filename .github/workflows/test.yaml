@@ -1,4 +1,4 @@
-name: Check
+name: check nix flake
 
 on:
   push:
@@ -13,12 +13,12 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: checkout repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Install Nix Flake
+      - name: install nix flake
         uses: cachix/install-nix-action@v22
         with:
           install_url: https://nixos.org/nix/install
