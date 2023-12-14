@@ -3,7 +3,7 @@
   home.pointerCursor = {
     package = pkgs.capitaine-cursors;
     name = "Capitaine Cursors";
-    size = 24;
+    size = 26;
     gtk.enable = true;
     x11.enable = true;
   };
@@ -11,7 +11,7 @@
   gtk = {
     enable = true;
     font = {
-      name = "Roboto";
+      name = "Roboto Regular";
       package = pkgs.roboto;
     };
     theme = {
@@ -19,8 +19,9 @@
       package = pkgs.adw-gtk3;
     };
     cursorTheme = {
-      name = "Capitaine Cursors";
+      name = "capitaine-cursors";
       package = pkgs.capitaine-cursors;
+      size = 26;
     };
 
     gtk2.configLocation = "${config.xdg.configHome}/gtk-2.0/gtkrc";

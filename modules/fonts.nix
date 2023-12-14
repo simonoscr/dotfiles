@@ -10,5 +10,6 @@
     noto-fonts-cjk
     noto-fonts-emoji
     roboto
+    monaspace
   ];
 }
