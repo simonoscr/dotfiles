@@ -43,8 +43,8 @@ Theme({
     "border.opacity": 100,
     "border.width": 2,
 
-    "font.font": "Roboto",
-    "font.mono": "JetBrains Mono Regular",
+    "font.font": "Roboto Regular",
+    "font.mono": "FiraCode Nerd Mono Retina",
     "font.size": 13,
 
     "applauncher.width": 550,
