@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/simonoscr/dotfiles/compare/0.2.1...0.2.2) (2023-12-14)
+
+
+### Bug Fixes
+
+* fonts in hyprland config ([78e2ca9](https://github.com/simonoscr/dotfiles/commit/78e2ca95f70c440e7515be6dc7bc8fe7a809bdc2))
+
+
+
 ## [0.2.1](https://github.com/simonoscr/dotfiles/compare/0.2.0...0.2.1) (2023-12-14)
 
 
