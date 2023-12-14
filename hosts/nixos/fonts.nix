@@ -23,6 +23,7 @@
         ];
       })
       noto-fonts
+      roboto
     ];
   };
 }

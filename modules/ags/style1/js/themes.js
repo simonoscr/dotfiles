@@ -14,7 +14,7 @@ Theme({
     "padding": 6,
     "radii": 10,
     "popover_padding_multiplier": 1.4,
-    
+
     "hypr.wm_gaps": 4,
     "hypr.inactive_border": "rgba(333333ff)",
 
@@ -24,7 +24,7 @@ Theme({
 
     "color.red": "#e55f86",
     "color.green": "#00D787",
-    "color.yellow": "#EBFF71", 
+    "color.yellow": "#EBFF71",
     "color.blue": "#51a4e7",
     "color.magenta": "#9077e7",
     "color.teal": "#51e6e6",
@@ -43,7 +43,7 @@ Theme({
     "border.opacity": 100,
     "border.width": 2,
 
-    "font.font": "FiraCode Nerd Font Regular",
+    "font.font": "Roboto",
     "font.mono": "JetBrains Mono Regular",
     "font.size": 13,
 
@@ -393,5 +393,3 @@ Theme({
   }),
 
 ];
-
-
