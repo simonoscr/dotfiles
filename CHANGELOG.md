@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/simonoscr/dotfiles/compare/0.2.0...0.2.1) (2023-12-14)
+
+
+### Bug Fixes
+
+* cursor theme and font settings ([c612906](https://github.com/simonoscr/dotfiles/commit/c6129061f6bb4c97b24cf9ae2c0842c9748e93ac))
+
+
+
 # [0.2.0](https://github.com/simonoscr/dotfiles/compare/0.1.0...0.2.0) (2023-12-14)
 
 
