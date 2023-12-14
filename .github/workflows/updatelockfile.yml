@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "0 0 * * *"
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   lockfile:
     runs-on: ubuntu-latest
@@ -25,7 +29,6 @@ jobs:
           pr-labels: |
             dependencies
             automated
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: print pr number
         run: echo Pull request number is ${{ steps.update.outputs.pull-request-number }}.
