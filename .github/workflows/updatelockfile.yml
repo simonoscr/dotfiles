@@ -25,10 +25,18 @@ jobs:
         uses: DeterminateSystems/update-flake-lock@main
         with:
           nix-options: --debug --log-format raw
+          pr-assignees: simonoscr
           pr-title: "update flake.lock"
           pr-labels: |
             dependencies
             automated
+          pr-body: |
+            flake.lock successfully updated:
+
+            ```
+            {{ env.GIT_COMMIT_MESSAGE }}
+            ```
+          commit-msg: "chore: flake.lock Update"
 
       - name: print pr number
         run: echo Pull request number is ${{ steps.update.outputs.pull-request-number }}.
