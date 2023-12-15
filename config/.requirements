@@ -1,0 +1,21 @@
+# with pacman/AUR helper
+hyprland \
+aylurs-gtk-shell \
+sassc \
+swww \
+nerdfonts \
+pavucontrol \
+swayidle \
+swaylock \
+joshuto \
+git \
+gnome-bluetooth-3.0 \
+bluez \
+
+
+
+
+
+
+# External
+hyprload
