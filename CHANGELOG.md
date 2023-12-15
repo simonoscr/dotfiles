@@ -1,3 +1,7 @@
+## [0.2.4](https://github.com/simonoscr/dotfiles/compare/0.2.3...0.2.4) (2023-12-15)
+
+
+
 ## [0.2.3](https://github.com/simonoscr/dotfiles/compare/0.2.2...0.2.3) (2023-12-15)
 
 
