@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/simonoscr/dotfiles/compare/0.2.3...0.3.0) (2023-12-15)
+
+
+### Features
+
+* add config and dotfiles ([cbe7edc](https://github.com/simonoscr/dotfiles/commit/cbe7edcf88a3d9ee873d0826ecbae201c6a32746))
+
+
+
 ## [0.2.3](https://github.com/simonoscr/dotfiles/compare/0.2.2...0.2.3) (2023-12-15)
 
 
