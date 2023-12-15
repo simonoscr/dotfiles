@@ -38,6 +38,8 @@ jobs:
 
       - name: cachix
         uses: cachix/cachix-action@v12
-
+        with:
+          name: statix
+          
       - name: lint nix
         uses: jocelynthode/statix-action@master
