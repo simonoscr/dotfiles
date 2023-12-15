@@ -1,3 +1,12 @@
+## [0.2.3](https://github.com/simonoscr/dotfiles/compare/0.2.2...0.2.3) (2023-12-15)
+
+
+### Bug Fixes
+
+* remove double vscodium pkg ([540d444](https://github.com/simonoscr/dotfiles/commit/540d4447b5bee97d45014fc98a35e9a09e31a4f3))
+
+
+
 ## [0.2.2](https://github.com/simonoscr/dotfiles/compare/0.2.1...0.2.2) (2023-12-14)
 
 
