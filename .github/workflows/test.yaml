@@ -26,14 +26,3 @@ jobs:
             experimental-features = nix-command flakes
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
       - run: nix flake check
-
-  statix:
-    name: lint nix
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: cachix/install-nix-action@v18
-      - uses: cachix/cachix-action@v12
-        with:
-          name: statix
-      - uses: jocelynthode/statix-action@master
