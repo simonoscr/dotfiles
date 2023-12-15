@@ -38,4 +38,4 @@ jobs:
           create-summary: "true"
           version-file: ""
           skip-version-file: "true"
-          skip-on-empty: "false"
+          skip-on-empty: "true"
