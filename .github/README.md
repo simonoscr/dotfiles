@@ -21,25 +21,45 @@
 ## :snowflake: Layout
 ```
 .dotfiles/
+├── common
+│   └── default.nix
 ├── flake.lock
 ├── flake.nix
-├── home/
-│   ├── simon/
+├── home
+│   ├── simon
 │   │   ├── home.nix
-│   │   └── secrets/
+│   │   └── secrets
 │   │       └── secrets.yaml
-│   └── work/
+│   └── work
 │       ├── home.nix
-│       └── secrets/
-├── hosts/
-│   └── nixos/
-│       ├── audio.nix
-│       ├── configuration.nix
-│       ├── hardware-configuration.nix
-│       ├── hyprland.nix
-│       └── locale.nix
-├── modules/
-│   ├── ags/
+│       └── secrets
+├── hosts
+│   ├── cosmos
+│   │   ├── audio.nix
+│   │   ├── configuration.nix
+│   │   ├── fonts.nix
+│   │   ├── hardware-configuration.nix
+│   │   ├── hardware.nix
+│   │   ├── hyprland.nix
+│   │   ├── locale.nix
+│   │   ├── network.nix
+│   │   ├── packages.nix
+│   │   ├── services.nix
+│   │   └── xserver.nix
+│   └── voyager
+│       └── configuration.nix
+├── lib
+│   ├── attrs.nix
+│   ├── default.nix
+│   ├── generators.nix
+│   ├── modules.nix
+│   ├── nixos.nix
+│   ├── options.nix
+│   └── paths.nix
+├── modules
+│   ├── ags
+│   │   ├── default.nix
+│   │   └── style1/
 │   ├── alacritty.nix
 │   ├── bash.nix
 │   ├── browser.nix
@@ -62,5 +82,6 @@
 │   ├── vscodium.nix
 │   ├── xdg.nix
 │   ├── zathura.nix
-└   └── zsh.nix
+│   └── zsh.nix
+└── packages
 ```
