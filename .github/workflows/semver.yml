@@ -24,7 +24,7 @@ jobs:
           fetch-depth: 0
 
       - name: semver
-        uses: TriPSs/conventional-changelog-action@v3
+        uses: TriPSs/conventional-changelog-action@v4
         with:
           github-token: ${{ secrets.github_token }}
           skip-commit: "false"
