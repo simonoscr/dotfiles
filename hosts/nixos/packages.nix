@@ -14,6 +14,9 @@
     enable = true;
     package = pkgs.steam.override {
       extraEnv = {};
+      extraPkgs = pkgs: with pkgs; [
+        gamescope
+      ];
       extraLibraries = pkgs: with pkgs; [
         xorg.libXcursor
         xorg.libXi

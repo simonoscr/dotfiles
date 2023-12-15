@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    vscodium
     # hyprland
     wl-clipboard
     swww
