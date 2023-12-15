@@ -1,70 +1,88 @@
 {
-  description = "simon's flake";
+  description = "simonoscr's flake for nixos and home-manager";
 
   inputs = {
 
-    nixpkgs.url = "nixpkgs/nixos-unstable";
+    # nixos unstable
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    hardware.url = "github:nixos/nixos-hardware";
-
+    # home-manager
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # secrets operations nix
     sops-nix = {
       url = "github:Mic92/sops-nix";
     };
 
+    # wayland window manager
     hyprland = {
       url = "github:hyprwm/Hyprland";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # aylur-gtk-shell
     ags = {
       url = "github:Aylur/ags";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # utils for nix flake
     flake-utils = {
       url = "github:numtide/flake-utils";
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, sops-nix, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, sops-nix, hyprland, ... }@inputs:
 
   let
-    inherit (self) outputs;
-    lib = nixpkgs.lib // home-manager.lib;
-
+    system = "x86_64-linux";
+    common = import ./common;
+    commonHome = import ./home/common;
   in {
 
-    # NixOS configuration entrypoint
-    # Available through 'nixos-rebuild --flake .#your-hostname'
+    # nixos configuration entrypoint
+    # available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
-      "nixos" = lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
+      "cosmos" = nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = {inherit inputs;};
         modules = [
-          ./hosts/nixos/configuration.nix
+          ./hosts/cosmos/configuration.nix
+          #common
         ];
       };
+      #"voyager" = nixpkgs.lib.nixosSystem {
+      #  inherit system;
+      #  specialArgs = {inherit inputs;};
+      #  modules = [
+      #    ./hosts/voyager/configuration.nix
+      #    #common
+      #  ];
+      #};
     };
 
-    # Standalone home-manager configuration entrypoint
-    # Available through 'home-manager --flake .#your-username@your-hostname'
+    # standalone home-manager configuration entrypoint
+    # available through 'home-manager --flake .#your-username@your-hostname'
     homeConfigurations = {
-      "simon@nixos" = lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        extraSpecialArgs = {inherit inputs outputs;};
+      # personal user
+      "simon@cosmos" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.${system};
+        extraSpecialArgs = {inherit inputs;};
         modules = [
           ./home/simon/home.nix
+          #commonHome
         ];
       };
-      "simon@work" = lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-	      extraSpecialArgs = {inherit inputs outputs;};
+      # work user
+      "simon@work" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.${system};
+	      extraSpecialArgs = {inherit inputs;};
 	      modules = [
 	        ./home/work/home.nix
+          #commonHome
         ];
       };
     };
