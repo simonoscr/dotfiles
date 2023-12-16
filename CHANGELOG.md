@@ -1,3 +1,12 @@
+## [0.3.1](https://github.com/simonoscr/dotfiles/compare/0.3.0...0.3.1) (2023-12-16)
+
+
+### Bug Fixes
+
+* hardware-configuration; using now the new default (modesetting) in xserver.videoDriver (other drivers unmaintained) ([f9962c9](https://github.com/simonoscr/dotfiles/commit/f9962c97cf939ca268a1c0be135759d7577c52b3))
+
+
+
 # [0.3.0](https://github.com/simonoscr/dotfiles/compare/0.2.3...0.3.0) (2023-12-15)
 
 
