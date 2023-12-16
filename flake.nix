@@ -39,8 +39,7 @@
 
   let
     system = "x86_64-linux";
-    common = import ./common;
-    commonHome = import ./home/common;
+    commonModules = import ./common;
   in {
 
     # nixos configuration entrypoint
@@ -51,7 +50,7 @@
         specialArgs = {inherit inputs;};
         modules = [
           ./hosts/cosmos/configuration.nix
-          #common
+          #commonModules
         ];
       };
       #"voyager" = nixpkgs.lib.nixosSystem {
@@ -59,7 +58,6 @@
       #  specialArgs = {inherit inputs;};
       #  modules = [
       #    ./hosts/voyager/configuration.nix
-      #    #common
       #  ];
       #};
     };
@@ -73,7 +71,6 @@
         extraSpecialArgs = {inherit inputs;};
         modules = [
           ./home/simon/home.nix
-          #commonHome
         ];
       };
       # work user
@@ -82,7 +79,6 @@
 	      extraSpecialArgs = {inherit inputs;};
 	      modules = [
 	        ./home/work/home.nix
-          #commonHome
         ];
       };
     };

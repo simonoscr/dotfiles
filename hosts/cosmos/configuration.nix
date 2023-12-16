@@ -10,6 +10,7 @@
       ./audio.nix
       ./fonts.nix
       ./hardware-configuration.nix
+      ./hardware.nix
       ./hyprland.nix
       ./locale.nix
       ./network.nix
@@ -27,7 +28,6 @@
       efi.canTouchEfiVariables = true;
     };
     kernelPackages = pkgs.linuxPackages_zen;
-    initrd.kernelModules = [ "amdgpu" ];
     kernel.sysctl = {
       "vm.swappiness" = 20;
     };
