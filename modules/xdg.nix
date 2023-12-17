@@ -1,4 +1,4 @@
-{ config, ... }:
+{ inputs, config, pkgs, ... }:
 let
   browser = ["firefox"];
 
@@ -26,6 +26,7 @@ let
     "x-scheme-handler/spotify" = ["spotify"];
   };
 in {
+
   xdg = {
     enable = true;
     cacheHome = config.home.homeDirectory + "/.local/cache";

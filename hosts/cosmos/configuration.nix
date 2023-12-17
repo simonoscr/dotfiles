@@ -15,6 +15,7 @@
       ./locale.nix
       ./network.nix
       ./packages.nix
+      ./security.nix
       ./services.nix
       ./xserver.nix
     ];

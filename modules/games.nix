@@ -3,7 +3,6 @@
 {
   home.packages = with pkgs; [
     gamemode
-    gamescope
     goverlay
     mangohud
     teamspeak_client

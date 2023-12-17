@@ -40,6 +40,10 @@
       url = "github:hyprwm/Hyprland";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
 
     # aylur-gtk-shell
     ags = {
@@ -53,7 +57,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, sops-nix, ags, hyprland, nur, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, sops-nix, ags, hyprland, hyprland-plugins, nur, ... }@inputs:
 
   let
     system = "x86_64-linux";

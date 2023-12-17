@@ -10,14 +10,21 @@
     curl
   ];
 
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+    "steam"
+    "steam-original"
+    "steam-run"
+  ];
+
   programs.steam = {
     enable = true;
-    package = pkgs.steam.override {
-      extraEnv = {};
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  };
+
+  nixpkgs.config.packageOverrides = pkgs: {
+    steam = pkgs.steam.override {
       extraPkgs = pkgs: with pkgs; [
-        gamescope
-      ];
-      extraLibraries = pkgs: with pkgs; [
         xorg.libXcursor
         xorg.libXi
         xorg.libXinerama
@@ -30,5 +37,10 @@
         keyutils
       ];
     };
+  };
+
+  programs.gamescope = {
+    enable = true;
+    capSysNice = true;
   };
 }
