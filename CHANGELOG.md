@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/simonoscr/dotfiles/compare/0.3.2...0.4.0) (2023-12-17)
+
+
+### Features
+
+* add NUR nix user repository and his overlay; firefox settings ([b9d7ca0](https://github.com/simonoscr/dotfiles/commit/b9d7ca0601a9d274de16394ab4ea230a0c1580de))
+
+
+
 ## [0.3.2](https://github.com/simonoscr/dotfiles/compare/0.3.1...0.3.2) (2023-12-17)
 
 
