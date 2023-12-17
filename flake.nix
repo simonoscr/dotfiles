@@ -1,10 +1,11 @@
 {
-  description = "simonoscr's flake for nixos and home-manager";
+  description = "simonoscr's snowball flake for nixos and home-manager";
 
   inputs = {
 
     # nixos unstable
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-23.11";
 
     # pre-commit-hook
     pre-commit-hooks = {
@@ -22,6 +23,16 @@
     nur = {
       url = github:nix-community/NUR;
     };
+
+		# snowfall lib and flake
+		snowfall-lib = {
+			url = "github:snowfallorg/lib";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
+		snowfall-flake = {
+			url = "github:snowfallorg/flake";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 
     # nix neovim
     nixvim = {
@@ -57,53 +68,9 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, sops-nix, ags, hyprland, hyprland-plugins, nur, ... }@inputs:
+  outputs = inputs:
 
-  let
-    system = "x86_64-linux";
-    commonModules = import ./common;
-  in {
-
-    # nixos configuration entrypoint
-    # available through 'nixos-rebuild --flake .#your-hostname'
-    nixosConfigurations = {
-      "cosmos" = nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = {inherit inputs;};
-        modules = [
-          ./hosts/cosmos/configuration.nix
-          #commonModules
-        ];
-      };
-      #"voyager" = nixpkgs.lib.nixosSystem {
-      #  inherit system;
-      #  specialArgs = {inherit inputs;};
-      #  modules = [
-      #    ./hosts/voyager/configuration.nix
-      #  ];
-      #};
+    inputs.snowfall-lib.mkFlake {
+      inherit inputs;
+      src = ./.;
     };
-
-    # standalone home-manager configuration entrypoint
-    # available through 'home-manager --flake .#your-username@your-hostname'
-    homeConfigurations = {
-      # personal user
-      "simon@cosmos" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = {inherit inputs;};
-        modules = [
-          { nixpkgs.overlays = [ nur.overlay ]; }
-          ./home/simon/home.nix
-        ];
-      };
-      # work user
-      "simon@work" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-	      extraSpecialArgs = {inherit inputs;};
-	      modules = [
-	        ./home/work/home.nix
-        ];
-      };
-    };
-  };
-}

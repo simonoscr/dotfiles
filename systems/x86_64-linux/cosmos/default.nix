@@ -1,24 +1,9 @@
-############################################################################################
-## this is the systems configuration file                                                 ##
-## use this to configure the system environment, it replaces /etc/nixos/configuration.nix ##
-############################################################################################
-
-{ config, lib, pkgs, inputs, outputs, ... }:
-
+{ lib, pkgs, inputs, system, target, format, virtual, systems, config, ... }:
 {
+
   imports = [
-      ./audio.nix
-      ./fonts.nix
-      ./hardware-configuration.nix
-      ./hardware.nix
-      ./hyprland.nix
-      ./locale.nix
-      ./network.nix
-      ./packages.nix
-      ./security.nix
-      ./services.nix
-      ./xserver.nix
-    ];
+    ./hardware-configuration.nix
+  ];
 
   ## systemd-boot
   boot = {
