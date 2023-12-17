@@ -1,13 +1,26 @@
-{ pkgs, ... }:
+{ inputs, ... }:
 {
-  home.sessionVariables = {
-    EDITOR = "nvim";
-  };
 
-  programs.neovim = {
+  imports = [inputs.nixvim.homeManagerModules.nixvim];
+
+  programs.nixvim = {
     enable = true;
     viAlias = true;
     vimAlias = true;
     defaultEditor = true;
+
+    options = {
+      title = true;
+
+      ignorecase = true; # ignore case when using lowercase in search
+      smartcase = true; # but dont ignore it when using upper case
+
+      autoindent = true;
+      smartindent = true;
+    };
+
+    clipboard = {
+      providers.wl-copy.enable = true;
+    };
   };
 }

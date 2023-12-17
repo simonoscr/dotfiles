@@ -31,7 +31,7 @@
     kernel.sysctl = {
       "vm.swappiness" = 20;
     };
-    kernelParams = [ "nowatchdog" ];
+    kernelParams = [ ];
   };
 
   console = {

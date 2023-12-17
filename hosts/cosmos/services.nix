@@ -4,6 +4,7 @@
     gnome.gnome-keyring.enable = true;
     printing.enable = true;
     openssh.enable = true;
+    fstrim.enable = true;
 
     udev.extraRules = lib.mkMerge [
       ## rules below set the scheduler to bfq for rotational drives, bfq for SSD/eMMC drives and none for NVMe drives
