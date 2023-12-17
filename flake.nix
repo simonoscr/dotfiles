@@ -18,6 +18,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # nur nix user repository
+    nur = {
+      url = github:nix-community/NUR;
+    };
+
     # nix neovim
     nixvim = {
       url = "github:nix-community/nixvim";
@@ -48,7 +53,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, sops-nix, hyprland, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, sops-nix, ags, hyprland, nur, ... }@inputs:
 
   let
     system = "x86_64-linux";
@@ -83,6 +88,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = {inherit inputs;};
         modules = [
+          { nixpkgs.overlays = [ nur.overlay ]; }
           ./home/simon/home.nix
         ];
       };
