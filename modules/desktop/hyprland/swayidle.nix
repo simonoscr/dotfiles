@@ -22,8 +22,12 @@ in {
     ];
     timeouts = [
       {
-        timeout = 330;
-        command = suspendScript.outPath;
+        timeout = 180;
+        command = "swaymsg 'output * dpms off'";
+      }
+      {
+        timeout = 3600;
+        command = "${pkgs.swaylock-effects}/bin/swaylock && ${suspendScript.outPath}";
       }
     ];
   };
