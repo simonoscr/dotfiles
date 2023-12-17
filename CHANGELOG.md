@@ -1,3 +1,12 @@
+## [0.3.2](https://github.com/simonoscr/dotfiles/compare/0.3.1...0.3.2) (2023-12-17)
+
+
+### Bug Fixes
+
+* enable fstrim, remove kernelParams, add neovim as nixvim module ([d3aaf94](https://github.com/simonoscr/dotfiles/commit/d3aaf94c8c70711dbe90a33097c146cc6134f7d4))
+
+
+
 ## [0.3.1](https://github.com/simonoscr/dotfiles/compare/0.3.0...0.3.1) (2023-12-16)
 
 
