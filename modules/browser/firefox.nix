@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, ... }:
+{ config, inputs, pkgs, home-manager, ... }:
 {
 
   programs.firefox = {
@@ -45,6 +45,7 @@
           ublock-origin
           bitwarden
           startpage-private-search
+          darkreader
         ];
         search = {
           force = true;

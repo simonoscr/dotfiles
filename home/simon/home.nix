@@ -1,22 +1,22 @@
 { pkgs, ... }:
 {
   imports = [
-    ../../modules/ags
-    ../../modules/hyprland
-    ../../modules/browser.nix
-    ../../modules/cli.nix
+    ../../modules/desktop/ags
+    ../../modules/desktop/hyprland
+    ../../modules/browser/firefox.nix
+    ../../modules/shell/cli.nix
     ../../modules/fonts.nix
     ../../modules/games.nix
     ../../modules/git.nix
     ../../modules/gtk.nix
-    ../../modules/kitty.nix
-    ../../modules/neovim.nix
+    ../../modules/terminals/kitty.nix
+    ../../modules/editors/neovim.nix
     ../../modules/packages.nix
-    ../../modules/starship.nix
-    ../../modules/vscodium.nix
+    ../../modules/shell/starship.nix
+    ../../modules/editors/vscodium.nix
     ../../modules/xdg.nix
     ../../modules/zathura.nix
-    ../../modules/zsh.nix
+    ../../modules/shell/zsh.nix
     ../../modules/sops.nix
   ];
 

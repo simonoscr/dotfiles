@@ -1,12 +1,10 @@
-{ pkgs, config, ... }: 
+{ pkgs, config, ... }:
 {
   home.packages = with pkgs; [
     # archives
     zip
     unzip
     unrar
-
-    # utils
 
     # file managers
     ranger
