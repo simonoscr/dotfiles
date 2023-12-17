@@ -1,6 +1,9 @@
-{ pkgs, config, lib, ... }:
 {
-
+  pkgs,
+  config,
+  lib,
+  ...
+}: {
   environment.systemPackages = with pkgs; [
     git
     neovim
@@ -8,13 +11,15 @@
     btop
     bat
     curl
+    alejandra
   ];
 
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "steam"
-    "steam-original"
-    "steam-run"
-  ];
+  nixpkgs.config.allowUnfreePredicate = pkg:
+    builtins.elem (lib.getName pkg) [
+      "steam"
+      "steam-original"
+      "steam-run"
+    ];
 
   programs.steam = {
     enable = true;
@@ -24,18 +29,19 @@
 
   nixpkgs.config.packageOverrides = pkgs: {
     steam = pkgs.steam.override {
-      extraPkgs = pkgs: with pkgs; [
-        xorg.libXcursor
-        xorg.libXi
-        xorg.libXinerama
-        xorg.libXScrnSaver
-        libpng
-        libpulseaudio
-        libvorbis
-        stdenv.cc.cc.lib
-        libkrb5
-        keyutils
-      ];
+      extraPkgs = pkgs:
+        with pkgs; [
+          xorg.libXcursor
+          xorg.libXi
+          xorg.libXinerama
+          xorg.libXScrnSaver
+          libpng
+          libpulseaudio
+          libvorbis
+          stdenv.cc.cc.lib
+          libkrb5
+          keyutils
+        ];
     };
   };
 

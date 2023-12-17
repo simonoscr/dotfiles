@@ -1,5 +1,4 @@
-{ default, ... }:
-{
+{default, ...}: {
   programs.kitty = {
     enable = true;
 
@@ -20,7 +19,6 @@
       foreground = "#eeeeee";
 
       cursor = "#d8caac";
-
     };
   };
 }

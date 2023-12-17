@@ -1,11 +1,13 @@
-{ pkgs, config, ... }:
 {
-
+  pkgs,
+  config,
+  ...
+}: {
   fonts = {
-    fontconfig= {
+    fontconfig = {
       enable = true;
       defaultFonts = {
-        emoji = [ "Noto Color Emoji" ];
+        emoji = ["Noto Color Emoji"];
       };
       antialias = true;
       cache32Bit = true;

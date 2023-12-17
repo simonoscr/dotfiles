@@ -1,5 +1,8 @@
-{ pkgs, home-manager, ... }:
 {
+  pkgs,
+  home-manager,
+  ...
+}: {
   editorconfig = {
     enable = true;
     settings = {
@@ -15,3 +18,4 @@
       };
     };
   };
+}

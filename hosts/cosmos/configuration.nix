@@ -2,23 +2,27 @@
 ## this is the systems configuration file                                                 ##
 ## use this to configure the system environment, it replaces /etc/nixos/configuration.nix ##
 ############################################################################################
-
-{ config, lib, pkgs, inputs, outputs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  inputs,
+  outputs,
+  ...
+}: {
   imports = [
-      ./audio.nix
-      ./fonts.nix
-      ./hardware-configuration.nix
-      ./hardware.nix
-      ./hyprland.nix
-      ./locale.nix
-      ./network.nix
-      ./packages.nix
-      ./security.nix
-      ./services.nix
-      ./xserver.nix
-    ];
+    ./audio.nix
+    ./fonts.nix
+    ./hardware-configuration.nix
+    ./hardware.nix
+    ./hyprland.nix
+    ./locale.nix
+    ./network.nix
+    ./packages.nix
+    ./security.nix
+    ./services.nix
+    ./xserver.nix
+  ];
 
   ## systemd-boot
   boot = {
@@ -32,7 +36,7 @@
     kernel.sysctl = {
       "vm.swappiness" = 20;
     };
-    kernelParams = [ ];
+    kernelParams = [];
   };
 
   console = {
@@ -47,7 +51,7 @@
     swapDevices = 1;
   };
 
-   ## user
+  ## user
   users = {
     groups.simon.gid = 1000;
     users = {
@@ -56,9 +60,9 @@
         isNormalUser = true;
         extraGroups = [
           "wheel"
-	        "networkmanager"
-	        "audio"
-	        "video"
+          "networkmanager"
+          "audio"
+          "video"
         ];
         shell = pkgs.zsh;
       };

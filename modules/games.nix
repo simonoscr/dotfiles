@@ -1,6 +1,8 @@
-{ default, pkgs, ... }:
-
 {
+  default,
+  pkgs,
+  ...
+}: {
   home.packages = with pkgs; [
     gamemode
     goverlay

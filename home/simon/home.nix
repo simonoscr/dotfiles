@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   imports = [
     ../../modules/desktop/ags
     ../../modules/desktop/hyprland
@@ -30,7 +29,7 @@
   nix = {
     package = pkgs.nix;
     settings = {
-      experimental-features = [ "nix-command" "flakes" ];
+      experimental-features = ["nix-command" "flakes"];
     };
   };
 
@@ -46,5 +45,4 @@
   systemd.user.startServices = "sd-switch";
 
   home.stateVersion = "23.11";
-
 }

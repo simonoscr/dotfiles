@@ -1,5 +1,8 @@
-{ pkgs, default, ... }:
 {
+  pkgs,
+  default,
+  ...
+}: {
   programs.alacritty = {
     enable = true;
     settings = {

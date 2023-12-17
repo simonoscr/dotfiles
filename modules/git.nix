@@ -1,5 +1,8 @@
-{ config, pkgs, ... }:
-let
+{
+  config,
+  pkgs,
+  ...
+}: let
   email = "117449098+simonoscr@users.noreply.github.com";
   name = "simonoscr";
 in {

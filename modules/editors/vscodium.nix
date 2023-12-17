@@ -1,5 +1,8 @@
-{ pkgs, home-manager, ... }:
 {
+  pkgs,
+  home-manager,
+  ...
+}: {
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium;
@@ -14,10 +17,10 @@
     userSettings = {
       "files.autoSave" = "afterDelay";
       "files.insertFinalNewline" = true;
-      "files.trimFinalNewlines"= true;
-      "files.trimTrailingWhitespace"= true;
-      "workbench.iconTheme"= "material-icon-theme";
-      "workbench.startupEditor"= "none";
+      "files.trimFinalNewlines" = true;
+      "files.trimTrailingWhitespace" = true;
+      "workbench.iconTheme" = "material-icon-theme";
+      "workbench.startupEditor" = "none";
       "redhat.telemetry.enabled" = false;
       "git.enableSmartCommit" = true;
       "git.confirmSync" = false;
@@ -28,7 +31,7 @@
       "github.gitProtocol" = "ssh";
       "git.alwaysShowStagedChangesResourceGroup" = true;
       "git.branchRandomName.dictionary" = [
-          "colors"
+        "colors"
       ];
       "git.branchSortOrder" = "alphabetically";
       "git.defaultCloneDirectory" = "$HOME/code";
@@ -36,5 +39,4 @@
       "git.rebaseWhenSync" = true;
     };
   };
-
 }

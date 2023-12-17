@@ -1,5 +1,9 @@
-{ inputs, config, pkgs, ... }:
-let
+{
+  inputs,
+  config,
+  pkgs,
+  ...
+}: let
   browser = ["firefox"];
 
   associations = builtins.mapAttrs (_: v: (map (e: "${e}.desktop") v)) {
@@ -26,7 +30,6 @@ let
     "x-scheme-handler/spotify" = ["spotify"];
   };
 in {
-
   xdg = {
     enable = true;
     cacheHome = config.home.homeDirectory + "/.local/cache";

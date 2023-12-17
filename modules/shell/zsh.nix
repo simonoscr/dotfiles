@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-{
-
+{pkgs, ...}: {
   home.sessionVariables = {
     SHELL = "${pkgs.zsh}/bin/zsh";
   };
@@ -14,20 +12,19 @@
     syntaxHighlighting.enable = true;
     dirHashes = {
       dl = "$HOME/Downloads";
-	    docs = "$HOME/Documents";
-	    pics = "$HOME/Pictures";
-	    vids = "$HOME/Videos";
+      docs = "$HOME/Documents";
+      pics = "$HOME/Pictures";
+      vids = "$HOME/Videos";
     };
     initExtra = ''
-      zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-      zstyle ':completion:*' menu select
-	    zstyle ':completion:*' verbose true
-	    zstyle ':completion:*' completer _complete _ignored _approximate
+       zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+       zstyle ':completion:*' menu select
+      zstyle ':completion:*' verbose true
+      zstyle ':completion:*' completer _complete _ignored _approximate
     '';
     history = {
       expireDuplicatesFirst = true;
       extended = true;
-
     };
     shellAliases = {
       "cls" = "clear";

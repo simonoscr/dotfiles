@@ -1,5 +1,8 @@
-{ pkgs, config, ... }:
 {
+  pkgs,
+  config,
+  ...
+}: {
   home.pointerCursor = {
     package = pkgs.capitaine-cursors;
     name = "Capitaine Cursors";

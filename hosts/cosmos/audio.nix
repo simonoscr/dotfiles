@@ -1,5 +1,9 @@
-{ config, lib, pkgs, ... }:
 {
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -16,9 +20,9 @@
     "pipewire/pipewire.conf.d/92-low-latency.conf".text = ''
       context.properties = {
         default.clock.rate = 44100
-	      default.clock.quantum = 512
-	      default.clock.min-quantum = 512
-	      default.clock.max-quantum = 512
+       default.clock.quantum = 512
+       default.clock.min-quantum = 512
+       default.clock.max-quantum = 512
       }
     '';
   };

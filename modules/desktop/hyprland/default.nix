@@ -1,5 +1,9 @@
-{ inputs, lib, pkgs, ... }:
 {
+  inputs,
+  lib,
+  pkgs,
+  ...
+}: {
   imports = [
     ./config.nix
     ./swayidle.nix

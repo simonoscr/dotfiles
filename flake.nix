@@ -2,7 +2,6 @@
   description = "simonoscr's flake for nixos and home-manager";
 
   inputs = {
-
     # nixos unstable
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
@@ -55,15 +54,26 @@
     flake-utils = {
       url = "github:numtide/flake-utils";
     };
+
+    alejandra.url = "github:kamadorueda/alejandra/3.0.0";
+    alejandra.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, sops-nix, ags, hyprland, hyprland-plugins, nur, ... }@inputs:
-
-  let
+  outputs = {
+    self,
+    nixpkgs,
+    home-manager,
+    sops-nix,
+    ags,
+    hyprland,
+    hyprland-plugins,
+    nur,
+    alejandra,
+    ...
+  } @ inputs: let
     system = "x86_64-linux";
     commonModules = import ./common;
   in {
-
     # nixos configuration entrypoint
     # available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
@@ -92,16 +102,16 @@
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = {inherit inputs;};
         modules = [
-          { nixpkgs.overlays = [ nur.overlay ]; }
+          {nixpkgs.overlays = [nur.overlay];}
           ./home/simon/home.nix
         ];
       };
       # work user
       "simon@work" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-	      extraSpecialArgs = {inherit inputs;};
-	      modules = [
-	        ./home/work/home.nix
+        extraSpecialArgs = {inherit inputs;};
+        modules = [
+          ./home/work/home.nix
         ];
       };
     };

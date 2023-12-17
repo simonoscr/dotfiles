@@ -1,5 +1,9 @@
-{ config, default, pkgs, ... }:
 {
+  config,
+  default,
+  pkgs,
+  ...
+}: {
   programs.swaylock = {
     enable = true;
     package = pkgs.swaylock-effects;
