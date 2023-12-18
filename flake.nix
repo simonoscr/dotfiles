@@ -55,6 +55,8 @@
       url = "github:numtide/flake-utils";
     };
 
+    flake-parts.url = "github:hercules-ci/flake-parts";
+
     alejandra.url = "github:kamadorueda/alejandra/3.0.0";
     alejandra.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -69,6 +71,7 @@
     hyprland-plugins,
     nur,
     alejandra,
+    flake-parts,
     ...
   } @ inputs: let
     system = "x86_64-linux";
