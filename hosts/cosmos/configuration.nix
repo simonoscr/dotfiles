@@ -32,12 +32,14 @@
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
-    kernelPackages = pkgs.linuxPackages_zen;
+    kernelPackages = pkgs.linuxPackages_xanmod_latest;
     kernel.sysctl = {
       "vm.swappiness" = 20;
     };
-    kernelParams = [];
+    kernelParams = ["amdgpu.ppfeaturemask=0xfff7ffff"];
   };
+
+  systemd.oomd.enable = false;
 
   console = {
     earlySetup = true;

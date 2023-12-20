@@ -57,6 +57,13 @@
 
     alejandra.url = "github:kamadorueda/alejandra/3.0.0";
     alejandra.inputs.nixpkgs.follows = "nixpkgs";
+
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+
+    nixpkgs-wayland = {
+      url = "github:nix-community/nixpkgs-wayland";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -69,6 +76,7 @@
     hyprland-plugins,
     nur,
     alejandra,
+    nixos-hardware,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -102,7 +110,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = {inherit inputs;};
         modules = [
-          {nixpkgs.overlays = [nur.overlay];}
+          {nixpkgs.overlays = [nur.overlay inputs.nixpkgs-wayland.overlay];}
           ./home/simon/home.nix
         ];
       };

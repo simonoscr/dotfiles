@@ -12,6 +12,8 @@
     bat
     curl
     alejandra
+    radeon-profile
+    corectrl
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
@@ -41,9 +43,9 @@
           ];
       };
     };
-    gamescope = {
-      enable = true;
-      capSysNice = true;
-    };
+    #gamescope = {
+    #  enable = true;
+    #  capSysNice = true;
+    #};
   };
 }

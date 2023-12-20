@@ -5,5 +5,6 @@
     swww
     pywal
     xdg-desktop-portal-gtk
+    gamescope
   ];
 }

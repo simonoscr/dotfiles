@@ -21,10 +21,7 @@
       ];
       kernelModules = ["amdgpu"];
     };
-    kernelModules = [
-      "kvm-intel"
-      "coretemp"
-    ];
+    kernelModules = ["kvm-intel"];
     extraModulePackages = [];
   };
 
@@ -38,7 +35,7 @@
     fsType = "vfat";
   };
 
-  #swapDevices = [];
+  swapDevices = [];
   #[ { device = "/dev/disk/by-uuid/f57011c3-8b6b-4eb1-9762-711fd081ae9a"; }
   #];
 

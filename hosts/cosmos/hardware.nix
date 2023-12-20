@@ -1,14 +1,25 @@
 {
+  inputs,
   config,
   pkgs,
   ...
 }: {
+  imports = [
+    inputs.nixos-hardware.nixosModules.common-pc
+    inputs.nixos-hardware.nixosModules.common-gpu-amd
+    inputs.nixos-hardware.nixosModules.common-cpu-intel-cpu-only
+  ];
+  environment.variables.AMD_VULKAN_ICD = "RADV";
+
   hardware = {
+    #amdgpu.loadInInitrd = false;
+    #amdgpu.amdvlk = true;
     logitech.wireless.enable = true;
 
     cpu.intel.updateMicrocode = true;
 
     opengl = {
+      enable = true;
       driSupport = true;
       driSupport32Bit = true;
       extraPackages = with pkgs; [
