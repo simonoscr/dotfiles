@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/simonoscr/dotfiles/compare/0.4.2...0.5.0) (2023-12-20)
+
+
+### Features
+
+* add inputs; nixos-hardware, nixpkgs-wayland and smoll fixes ([40972d4](https://github.com/simonoscr/dotfiles/commit/40972d4b06223625604585150ff05bdd8852fd31))
+
+
+
 ## [0.4.2](https://github.com/simonoscr/dotfiles/compare/0.4.1...0.4.2) (2023-12-20)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * cursor theme and font settings ([c612906](https://github.com/simonoscr/dotfiles/commit/c6129061f6bb4c97b24cf9ae2c0842c9748e93ac))
-
-
-
-# [0.2.0](https://github.com/simonoscr/dotfiles/compare/0.1.0...0.2.0) (2023-12-14)
-
-
-### Features
-
-* move steam to systemPackages and apply gamescope fix; fix theme related things ([c35322a](https://github.com/simonoscr/dotfiles/commit/c35322abda92f3e933b1e35352f57101ab5ec927))
 
 
 
