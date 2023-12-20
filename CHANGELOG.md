@@ -1,3 +1,12 @@
+## [0.4.2](https://github.com/simonoscr/dotfiles/compare/0.4.1...0.4.2) (2023-12-20)
+
+
+### Bug Fixes
+
+* hyprland, hm-hyprland, steam with extraPkgs and gamescope configuration ([b37a47b](https://github.com/simonoscr/dotfiles/commit/b37a47b277d551c46f02708773b58da8fe235410))
+
+
+
 ## [0.4.1](https://github.com/simonoscr/dotfiles/compare/0.4.0...0.4.1) (2023-12-17)
 
 
@@ -76,16 +85,6 @@
 ### Features
 
 * move steam to systemPackages and apply gamescope fix; fix theme related things ([c35322a](https://github.com/simonoscr/dotfiles/commit/c35322abda92f3e933b1e35352f57101ab5ec927))
-
-
-
-# [0.1.0](https://github.com/simonoscr/dotfiles/compare/e82ced4c65128b4f94382bc27b991ae001613f8e...0.1.0) (2023-12-13)
-
-
-### Features
-
-* test ([718f12c](https://github.com/simonoscr/dotfiles/commit/718f12c18253c49b60f3e4963f48708772c5f57b))
-* update nixos with more modules ([e82ced4](https://github.com/simonoscr/dotfiles/commit/e82ced4c65128b4f94382bc27b991ae001613f8e))
 
 
 
