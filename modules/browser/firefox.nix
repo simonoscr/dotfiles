@@ -7,7 +7,7 @@
 }: {
   programs.firefox = {
     enable = true;
-    package = pkgs.firefox-bin;
+    package = pkgs.firefox-wayland;
     policies = {
       AppAutoUpdate = false;
       DisableFirefoxStudies = true;

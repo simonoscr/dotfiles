@@ -13,7 +13,14 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
     xwayland.enable = true;
+    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+  };
+
+  fonts.fontconfig.enable = true;
+
+  systemd.user.sessionVariables = {
+    "MOZ_ENABLE_WAYLAND" = "1"; # for firefox to run on wayland
+    "MOZ_WEBRENDER" = "1";
   };
 }
