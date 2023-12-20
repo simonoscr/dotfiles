@@ -8,7 +8,7 @@
     goverlay
     mangohud
     teamspeak_client
-    teamspeak5_client
+    #teamspeak5_client
     #lutris
     #bottles
   ];
