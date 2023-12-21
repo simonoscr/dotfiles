@@ -1,3 +1,12 @@
+## [0.5.2](https://github.com/simonoscr/dotfiles/compare/0.5.1...0.5.2) (2023-12-21)
+
+
+### Bug Fixes
+
+* gamescope, manoghud and gaming related fixes ([2c01b55](https://github.com/simonoscr/dotfiles/commit/2c01b557c43e04d668d75e00b4edb69e75cd5634))
+
+
+
 ## [0.5.1](https://github.com/simonoscr/dotfiles/compare/0.5.0...0.5.1) (2023-12-21)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * remove double vscodium pkg ([540d444](https://github.com/simonoscr/dotfiles/commit/540d4447b5bee97d45014fc98a35e9a09e31a4f3))
-
-
-
-## [0.2.2](https://github.com/simonoscr/dotfiles/compare/0.2.1...0.2.2) (2023-12-14)
-
-
-### Bug Fixes
-
-* fonts in hyprland config ([78e2ca9](https://github.com/simonoscr/dotfiles/commit/78e2ca95f70c440e7515be6dc7bc8fe7a809bdc2))
 
 
 
