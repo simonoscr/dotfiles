@@ -1,3 +1,12 @@
+## [0.5.1](https://github.com/simonoscr/dotfiles/compare/0.5.0...0.5.1) (2023-12-21)
+
+
+### Bug Fixes
+
+* activate steam with dependencies ([94ec00d](https://github.com/simonoscr/dotfiles/commit/94ec00d4e0a02fb984751f97f71536f3012e8e3b))
+
+
+
 # [0.5.0](https://github.com/simonoscr/dotfiles/compare/0.4.2...0.5.0) (2023-12-20)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * fonts in hyprland config ([78e2ca9](https://github.com/simonoscr/dotfiles/commit/78e2ca95f70c440e7515be6dc7bc8fe7a809bdc2))
-
-
-
-## [0.2.1](https://github.com/simonoscr/dotfiles/compare/0.2.0...0.2.1) (2023-12-14)
-
-
-### Bug Fixes
-
-* cursor theme and font settings ([c612906](https://github.com/simonoscr/dotfiles/commit/c6129061f6bb4c97b24cf9ae2c0842c9748e93ac))
 
 
 
