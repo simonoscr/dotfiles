@@ -6,10 +6,14 @@
   home.packages = with pkgs; [
     gamemode
     goverlay
-    mangohud
     teamspeak_client
     #teamspeak5_client
     #lutris
     #bottles
   ];
+
+  programs.mangohud = {
+    enable = true;
+    enableSessionWide = false;
+  };
 }

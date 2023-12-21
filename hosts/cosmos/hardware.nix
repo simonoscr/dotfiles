@@ -23,9 +23,12 @@
       driSupport = true;
       driSupport32Bit = true;
       extraPackages = with pkgs; [
+        goverlay
+        mangohud
         vaapiVdpau
         libvdpau-va-gl
       ];
+      extraPackages32 = with pkgs; [mangohud];
     };
   };
 
