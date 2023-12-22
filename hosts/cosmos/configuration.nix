@@ -29,7 +29,10 @@
     tmp.cleanOnBoot = true;
     loader = {
       timeout = 2;
-      systemd-boot.enable = true;
+      systemd-boot = {
+        enable = true;
+        configurationLimit = 10;
+      };
       efi.canTouchEfiVariables = true;
     };
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
@@ -49,8 +52,9 @@
 
   zramSwap = {
     enable = true;
+    algorithm = "zstd";
+    priority = 5;
     memoryPercent = 20;
-    swapDevices = 1;
   };
 
   ## user
@@ -66,9 +70,9 @@
           "audio"
           "video"
         ];
-        shell = pkgs.zsh;
       };
     };
+    defaultUserShell = pkgs.zsh;
   };
 
   ## programs
@@ -93,7 +97,8 @@
     };
     gc = {
       automatic = true;
-      dates = "23:00";
+      dates = "weekly";
+      options = "--delete-older-than 1w";
     };
   };
 

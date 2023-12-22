@@ -14,4 +14,5 @@
     yazi
     joshuto
   ];
+  #home.sessionVariables = systemd.user.sessionVariables;
 }

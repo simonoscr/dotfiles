@@ -2,6 +2,7 @@
   inputs,
   lib,
   pkgs,
+  hyprland,
   ...
 }: {
   imports = [
@@ -15,6 +16,7 @@
     enable = true;
     xwayland.enable = true;
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    systemd.enable = true;
   };
 
   fonts.fontconfig.enable = true;
@@ -22,6 +24,6 @@
   systemd.user.sessionVariables = {
     "NIXOS_OZONE_WL" = "1";
     "MOZ_ENABLE_WAYLAND" = "1";
-    "WLR_NO_HARDWARE_CURSORS" = "1";
+    "MOZ_WEBRENDER" = "1";
   };
 }

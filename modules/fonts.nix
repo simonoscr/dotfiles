@@ -11,4 +11,6 @@
     roboto
     monaspace
   ];
+
+  fonts.fontconfig.enable = true;
 }

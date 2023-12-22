@@ -3,16 +3,27 @@
   pkgs,
   ...
 }: {
-  programs.hyprland = {
-    enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-  };
+  #programs.hyprland = {
+  #  enable = true;
+  #  package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+  #};
 
   xdg.portal = {
     enable = true;
     wlr.enable = true;
-    xdgOpenUsePortal = true;
     config.common.default = "*";
-    extraPortals = [pkgs.xdg-desktop-portal-gtk];
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-wlr
+    ];
   };
+
+  environment.systemPackages = with pkgs; [
+    waybar
+    wlogout
+    wl-clipboard
+    hyprpicker
+    grim
+    slurp
+  ];
 }
