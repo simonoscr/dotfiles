@@ -1,3 +1,12 @@
+## [0.6.1](https://github.com/simonoscr/dotfiles/compare/0.6.0...0.6.1) (2023-12-22)
+
+
+### Bug Fixes
+
+* add thunar; enable greetd ([3560f3d](https://github.com/simonoscr/dotfiles/commit/3560f3de315ff56542a6779a505f57a42a1c2c18))
+
+
+
 # [0.6.0](https://github.com/simonoscr/dotfiles/compare/0.5.5...0.6.0) (2023-12-22)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * swayidle timeouts ([d287829](https://github.com/simonoscr/dotfiles/commit/d287829a6bf78810bb11e1c129c368dff7304720))
-
-
-
-# [0.4.0](https://github.com/simonoscr/dotfiles/compare/0.3.2...0.4.0) (2023-12-17)
-
-
-### Features
-
-* add NUR nix user repository and his overlay; firefox settings ([b9d7ca0](https://github.com/simonoscr/dotfiles/commit/b9d7ca0601a9d274de16394ab4ea230a0c1580de))
 
 
 
