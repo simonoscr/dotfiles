@@ -127,6 +127,7 @@
           "SHIFT,Print,    ${e} -r 'recorder.screenshot(true)'"
           "SUPER, W, exec, firefox"
           "SUPER, T, exec, kitty"
+          "SUPER, E, exec, thunar"
           "ALT, Tab, focuscurrentorlast"
           "SUPER SHIFT, E, exit"
           "SUPER SHIFT, Q, killactive"
