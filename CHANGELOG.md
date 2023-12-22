@@ -1,3 +1,12 @@
+## [0.5.4](https://github.com/simonoscr/dotfiles/compare/0.5.3...0.5.4) (2023-12-22)
+
+
+### Bug Fixes
+
+* codium hyprland shotcut; add sessionVariable NIXOS_OZONE_WL=1 ([d59b129](https://github.com/simonoscr/dotfiles/commit/d59b1297af2e56dd3b6887f5dbea72d31133149b))
+
+
+
 ## [0.5.3](https://github.com/simonoscr/dotfiles/compare/0.5.2...0.5.3) (2023-12-22)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * hardware-configuration; using now the new default (modesetting) in xserver.videoDriver (other drivers unmaintained) ([f9962c9](https://github.com/simonoscr/dotfiles/commit/f9962c97cf939ca268a1c0be135759d7577c52b3))
-
-
-
-# [0.3.0](https://github.com/simonoscr/dotfiles/compare/0.2.3...0.3.0) (2023-12-15)
-
-
-### Features
-
-* add config and dotfiles ([cbe7edc](https://github.com/simonoscr/dotfiles/commit/cbe7edcf88a3d9ee873d0826ecbae201c6a32746))
 
 
 
