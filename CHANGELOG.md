@@ -1,3 +1,12 @@
+## [0.5.3](https://github.com/simonoscr/dotfiles/compare/0.5.2...0.5.3) (2023-12-22)
+
+
+### Bug Fixes
+
+* update hyprland and ags config ([fc17b77](https://github.com/simonoscr/dotfiles/commit/fc17b77c02ac6929f92cfa8bcdf02a278f4df7d3))
+
+
+
 ## [0.5.2](https://github.com/simonoscr/dotfiles/compare/0.5.1...0.5.2) (2023-12-21)
 
 
@@ -76,15 +85,6 @@
 ### Features
 
 * add config and dotfiles ([cbe7edc](https://github.com/simonoscr/dotfiles/commit/cbe7edcf88a3d9ee873d0826ecbae201c6a32746))
-
-
-
-## [0.2.3](https://github.com/simonoscr/dotfiles/compare/0.2.2...0.2.3) (2023-12-15)
-
-
-### Bug Fixes
-
-* remove double vscodium pkg ([540d444](https://github.com/simonoscr/dotfiles/commit/540d4447b5bee97d45014fc98a35e9a09e31a4f3))
 
 
 
