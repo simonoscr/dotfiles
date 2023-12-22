@@ -1,3 +1,12 @@
+## [0.6.4](https://github.com/simonoscr/dotfiles/compare/0.6.3...0.6.4) (2023-12-22)
+
+
+### Bug Fixes
+
+* change vscodium shortcut; add i3 ([debeaea](https://github.com/simonoscr/dotfiles/commit/debeaeaaffe28463c2cbd5f2e3a3bcd13e372424))
+
+
+
 ## [0.6.3](https://github.com/simonoscr/dotfiles/compare/0.6.2...0.6.3) (2023-12-22)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * activate steam with dependencies ([94ec00d](https://github.com/simonoscr/dotfiles/commit/94ec00d4e0a02fb984751f97f71536f3012e8e3b))
-
-
-
-# [0.5.0](https://github.com/simonoscr/dotfiles/compare/0.4.2...0.5.0) (2023-12-20)
-
-
-### Features
-
-* add inputs; nixos-hardware, nixpkgs-wayland and smoll fixes ([40972d4](https://github.com/simonoscr/dotfiles/commit/40972d4b06223625604585150ff05bdd8852fd31))
 
 
 
