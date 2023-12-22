@@ -1,3 +1,12 @@
+## [0.6.3](https://github.com/simonoscr/dotfiles/compare/0.6.2...0.6.3) (2023-12-22)
+
+
+### Bug Fixes
+
+* disable network-wait; fine-tuning tuigreet ([5b60437](https://github.com/simonoscr/dotfiles/commit/5b60437720502b2edddb4ff855a356300ac00112))
+
+
+
 ## [0.6.2](https://github.com/simonoscr/dotfiles/compare/0.6.1...0.6.2) (2023-12-22)
 
 
@@ -76,15 +85,6 @@
 ### Features
 
 * add inputs; nixos-hardware, nixpkgs-wayland and smoll fixes ([40972d4](https://github.com/simonoscr/dotfiles/commit/40972d4b06223625604585150ff05bdd8852fd31))
-
-
-
-## [0.4.2](https://github.com/simonoscr/dotfiles/compare/0.4.1...0.4.2) (2023-12-20)
-
-
-### Bug Fixes
-
-* hyprland, hm-hyprland, steam with extraPkgs and gamescope configuration ([b37a47b](https://github.com/simonoscr/dotfiles/commit/b37a47b277d551c46f02708773b58da8fe235410))
 
 
 
