@@ -135,7 +135,7 @@
           "SUPER, O, fakefullscreen"
           "SUPER, J, togglesplit"
           "SUPER, P, pseudo"
-          "SUPER, B, exec, code"
+          "SUPER, B, exec, codium"
 
           (mvfocus "up" "u")
           (mvfocus "down" "d")
