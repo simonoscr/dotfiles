@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/simonoscr/dotfiles/compare/0.5.5...0.6.0) (2023-12-22)
+
+
+### Features
+
+* removed swap fileSystem and add test fileSystem; hyprland to home-manager, wayland settings, added waybar update flock ([f113064](https://github.com/simonoscr/dotfiles/commit/f113064835fb713ed7cac9bd2314d639c4904389))
+
+
+
 ## [0.5.5](https://github.com/simonoscr/dotfiles/compare/0.5.4...0.5.5) (2023-12-22)
 
 
@@ -76,15 +85,6 @@
 ### Features
 
 * add NUR nix user repository and his overlay; firefox settings ([b9d7ca0](https://github.com/simonoscr/dotfiles/commit/b9d7ca0601a9d274de16394ab4ea230a0c1580de))
-
-
-
-## [0.3.2](https://github.com/simonoscr/dotfiles/compare/0.3.1...0.3.2) (2023-12-17)
-
-
-### Bug Fixes
-
-* enable fstrim, remove kernelParams, add neovim as nixvim module ([d3aaf94](https://github.com/simonoscr/dotfiles/commit/d3aaf94c8c70711dbe90a33097c146cc6134f7d4))
 
 
 
