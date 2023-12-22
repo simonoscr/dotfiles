@@ -12,4 +12,5 @@
       # allowedUDPPorts = [ ... ];
     };
   };
+  systemd.services.NetworkManager-wait-online.enable = false;
 }

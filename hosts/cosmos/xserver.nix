@@ -15,8 +15,8 @@
       settings = {
         default_session = {
           user = "simon";
-          #command = "Hyprland"; # start Hyprland directly without a login manager
-          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland"; # start Hyprland with a TUI login manager
+          #command = "Hyprland";
+          command = "${pkgs.greetd.tuigreet}/bin/tuigreet -g LOGIN -t -r --cmd Hyprland";
         };
       };
     };
