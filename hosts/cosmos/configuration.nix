@@ -15,7 +15,7 @@
     ./fonts.nix
     ./hardware-configuration.nix
     ./hardware.nix
-    ./hyprland.nix
+    ./xdg.nix
     ./locale.nix
     ./network.nix
     ./packages.nix
