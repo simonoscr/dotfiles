@@ -1,3 +1,12 @@
+## [0.5.5](https://github.com/simonoscr/dotfiles/compare/0.5.4...0.5.5) (2023-12-22)
+
+
+### Bug Fixes
+
+* set workspaces for hyprland+ags to 0 for dynamic workspaces ([4665051](https://github.com/simonoscr/dotfiles/commit/46650518f37857934bb10c01ea3431aabdbfa2a4))
+
+
+
 ## [0.5.4](https://github.com/simonoscr/dotfiles/compare/0.5.3...0.5.4) (2023-12-22)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * enable fstrim, remove kernelParams, add neovim as nixvim module ([d3aaf94](https://github.com/simonoscr/dotfiles/commit/d3aaf94c8c70711dbe90a33097c146cc6134f7d4))
-
-
-
-## [0.3.1](https://github.com/simonoscr/dotfiles/compare/0.3.0...0.3.1) (2023-12-16)
-
-
-### Bug Fixes
-
-* hardware-configuration; using now the new default (modesetting) in xserver.videoDriver (other drivers unmaintained) ([f9962c9](https://github.com/simonoscr/dotfiles/commit/f9962c97cf939ca268a1c0be135759d7577c52b3))
 
 
 
