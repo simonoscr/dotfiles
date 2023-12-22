@@ -24,16 +24,18 @@
         "ags -b hypr"
         "easyeffects --gapplication-service"
         "steam -silent"
-        "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+        "hyprctl setcursor capitaine-cursors 26"
       ];
 
       monitor = [
-        "DP-1, 3440x1440@165, 0x0, 1, bitdepth, 10"
+        "DP-1, 3440x1440@165, 0x0, 1"
       ];
 
       misc = {
+        disable_hyprland_logo = true;
         force_default_wallpaper = 0;
         vrr = 0;
+        mouse_move_enables_dpms = true;
       };
 
       input = {
@@ -60,7 +62,7 @@
           size = 3;
           passes = 1;
         };
-        drop_shadow = "yes";
+        drop_shadow = "no";
         shadow_range = 4;
         shadow_render_power = 3;
       };
@@ -100,7 +102,11 @@
         (f "com.github.Aylur.ags")
         (f "bitwarden")
         (f "teamspeak")
-        "immediate, class:^(cs2)$"
+        "immediate, class:(.gamescope-wrapped)"
+        "immediate, title:(Counter-Strike 2)"
+        "nomaximizerequest, class:.*"
+      ];
+      windowrulev2 = [
         "stayfocused, title:^()$, class:^(steam)$"
       ];
 
@@ -129,24 +135,24 @@
           "SUPER, O, fakefullscreen"
           "SUPER, J, togglesplit"
           "SUPER, P, pseudo"
-          "SUPER, B, exec, firefox"
+          "SUPER, B, exec, code"
 
-          (mvfocus "u" "u")
-          (mvfocus "d" "d")
-          (mvfocus "r" "r")
-          (mvfocus "l" "l")
+          (mvfocus "up" "u")
+          (mvfocus "down" "d")
+          (mvfocus "right" "r")
+          (mvfocus "left" "l")
           (ws "left" "e-1")
           (ws "right" "e+1")
           (mvtows "left" "e-1")
           (mvtows "right" "e+1")
-          (resizeactive "k" "0 -20")
-          (resizeactive "j" "0 20")
-          (resizeactive "l" "20 0")
-          (resizeactive "h" "-20 0")
-          (mvactive "k" "0 -20")
-          (mvactive "j" "0 20")
-          (mvactive "l" "20 0")
-          (mvactive "h" "-20 0")
+          (resizeactive "up" "0 -20")
+          (resizeactive "down" "0 20")
+          (resizeactive "right" "20 0")
+          (resizeactive "left" "-20 0")
+          (mvactive "up" "0 -20")
+          (mvactive "down" "0 20")
+          (mvactive "right" "20 0")
+          (mvactive "left" "-20 0")
         ]
         ++ (map (i: ws (toString i) (toString i)) arr)
         ++ (map (i: mvtows (toString i) (toString i)) arr);

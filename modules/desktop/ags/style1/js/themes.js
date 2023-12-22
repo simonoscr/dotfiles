@@ -65,7 +65,7 @@ Theme({
     "workspaces": 0,
 
     "desktop.wallpaper.fg": "#fff",
-    "desktop.drop_shadow": true,
+    "desktop.drop_shadow": false,
     "desktop.shadow": "rgba(0, 0, 0, .6)",
     "dashboard.sys_info_size": 70,
 

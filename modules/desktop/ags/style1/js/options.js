@@ -165,12 +165,12 @@ export default {
     }),
 
     font: {
-        font: Option('Ubuntu Nerd Font', {
+        font: Option('Roboto Regular', {
             'type': 'font',
             'title': 'Font',
             'scss': 'font',
         }),
-        mono: Option('Mononoki Nerd Font', {
+        mono: Option('FiraCode Nerd Mono Retina', {
             'title': 'Monospaced Font',
             'scss': 'mono-font',
         }),

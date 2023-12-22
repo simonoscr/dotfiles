@@ -5,7 +5,7 @@
 }: {
   home.pointerCursor = {
     package = pkgs.capitaine-cursors;
-    name = "Capitaine Cursors";
+    name = "capitaine-cursors";
     size = 26;
     gtk.enable = true;
     x11.enable = true;
