@@ -1,3 +1,12 @@
+## [0.6.2](https://github.com/simonoscr/dotfiles/compare/0.6.1...0.6.2) (2023-12-22)
+
+
+### Bug Fixes
+
+* add thunar shortcut ([c702283](https://github.com/simonoscr/dotfiles/commit/c70228333a593609775697c23ee69d4b7d55d4fc))
+
+
+
 ## [0.6.1](https://github.com/simonoscr/dotfiles/compare/0.6.0...0.6.1) (2023-12-22)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * hyprland, hm-hyprland, steam with extraPkgs and gamescope configuration ([b37a47b](https://github.com/simonoscr/dotfiles/commit/b37a47b277d551c46f02708773b58da8fe235410))
-
-
-
-## [0.4.1](https://github.com/simonoscr/dotfiles/compare/0.4.0...0.4.1) (2023-12-17)
-
-
-### Bug Fixes
-
-* swayidle timeouts ([d287829](https://github.com/simonoscr/dotfiles/commit/d287829a6bf78810bb11e1c129c368dff7304720))
 
 
 
