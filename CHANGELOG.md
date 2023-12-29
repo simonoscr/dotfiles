@@ -1,3 +1,12 @@
+## [0.6.6](https://github.com/simonoscr/dotfiles/compare/0.6.5...0.6.6) (2023-12-29)
+
+
+### Bug Fixes
+
+* add protonup-qt ([70bcbf8](https://github.com/simonoscr/dotfiles/commit/70bcbf8acae4d7ab9d121f5ca9068028a023a558))
+
+
+
 ## [0.6.5](https://github.com/simonoscr/dotfiles/compare/0.6.4...0.6.5) (2023-12-29)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * update hyprland and ags config ([fc17b77](https://github.com/simonoscr/dotfiles/commit/fc17b77c02ac6929f92cfa8bcdf02a278f4df7d3))
-
-
-
-## [0.5.2](https://github.com/simonoscr/dotfiles/compare/0.5.1...0.5.2) (2023-12-21)
-
-
-### Bug Fixes
-
-* gamescope, manoghud and gaming related fixes ([2c01b55](https://github.com/simonoscr/dotfiles/commit/2c01b557c43e04d668d75e00b4edb69e75cd5634))
 
 
 
