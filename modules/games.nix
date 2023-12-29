@@ -7,6 +7,7 @@
     gamemode
     goverlay
     teamspeak_client
+    protonup-qt
     #teamspeak5_client
     #lutris
     #bottles
