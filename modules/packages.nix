@@ -3,5 +3,7 @@
     swww
     pywal
     gamescope
+    webcord-vencord
+    element-desktop
   ];
 }
