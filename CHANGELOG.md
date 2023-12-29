@@ -1,3 +1,12 @@
+## [0.6.5](https://github.com/simonoscr/dotfiles/compare/0.6.4...0.6.5) (2023-12-29)
+
+
+### Bug Fixes
+
+* hyprland steam windowrules ([7498d6c](https://github.com/simonoscr/dotfiles/commit/7498d6c4629229ad651c0f7727fdc7071a1775f2))
+
+
+
 ## [0.6.4](https://github.com/simonoscr/dotfiles/compare/0.6.3...0.6.4) (2023-12-22)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * gamescope, manoghud and gaming related fixes ([2c01b55](https://github.com/simonoscr/dotfiles/commit/2c01b557c43e04d668d75e00b4edb69e75cd5634))
-
-
-
-## [0.5.1](https://github.com/simonoscr/dotfiles/compare/0.5.0...0.5.1) (2023-12-21)
-
-
-### Bug Fixes
-
-* activate steam with dependencies ([94ec00d](https://github.com/simonoscr/dotfiles/commit/94ec00d4e0a02fb984751f97f71536f3012e8e3b))
 
 
 
