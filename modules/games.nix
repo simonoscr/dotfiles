@@ -8,9 +8,12 @@
     goverlay
     teamspeak_client
     protonup-qt
+    lutris
+    wineWowPackages.stable
+    #wineWowPackages.waylandFull
+    winetricks
     #teamspeak5_client
-    #lutris
-    #bottles
+    bottles
   ];
 
   programs.mangohud = {
