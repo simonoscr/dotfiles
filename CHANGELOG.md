@@ -1,3 +1,12 @@
+## [0.6.7](https://github.com/simonoscr/dotfiles/compare/0.6.6...0.6.7) (2023-12-30)
+
+
+### Bug Fixes
+
+* add wine and bottles ([7083d44](https://github.com/simonoscr/dotfiles/commit/7083d4448c789c657d2c36923ae05d16f5e75578))
+
+
+
 ## [0.6.6](https://github.com/simonoscr/dotfiles/compare/0.6.5...0.6.6) (2023-12-29)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * codium hyprland shotcut; add sessionVariable NIXOS_OZONE_WL=1 ([d59b129](https://github.com/simonoscr/dotfiles/commit/d59b1297af2e56dd3b6887f5dbea72d31133149b))
-
-
-
-## [0.5.3](https://github.com/simonoscr/dotfiles/compare/0.5.2...0.5.3) (2023-12-22)
-
-
-### Bug Fixes
-
-* update hyprland and ags config ([fc17b77](https://github.com/simonoscr/dotfiles/commit/fc17b77c02ac6929f92cfa8bcdf02a278f4df7d3))
 
 
 
