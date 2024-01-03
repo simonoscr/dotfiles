@@ -14,6 +14,7 @@
     winetricks
     #teamspeak5_client
     bottles
+    path-of-building
   ];
 
   programs.mangohud = {

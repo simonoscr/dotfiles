@@ -7,7 +7,7 @@
   imports = [
     inputs.nixos-hardware.nixosModules.common-pc
     inputs.nixos-hardware.nixosModules.common-gpu-amd
-    inputs.nixos-hardware.nixosModules.common-cpu-intel-cpu-only
+    inputs.nixos-hardware.nixosModules.common-cpu-amd
   ];
   environment.variables.AMD_VULKAN_ICD = "RADV";
 
