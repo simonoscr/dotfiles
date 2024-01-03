@@ -16,7 +16,7 @@
     #amdgpu.amdvlk = true;
     logitech.wireless.enable = true;
 
-    cpu.intel.updateMicrocode = true;
+    cpu.amd.updateMicrocode = true;
 
     opengl = {
       enable = true;
