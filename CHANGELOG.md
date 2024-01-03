@@ -1,3 +1,17 @@
+# [1.0.0](https://github.com/simonoscr/dotfiles/compare/0.6.7...1.0.0) (2024-01-03)
+
+
+### Features
+
+* change hardware ([cf2bb6f](https://github.com/simonoscr/dotfiles/commit/cf2bb6f34e826f9e4850ba1781d158697ece97ea))
+
+
+### BREAKING CHANGES
+
+* hardware configuration not for old intel set-up. It is for the AMD GPU now
+
+
+
 ## [0.6.7](https://github.com/simonoscr/dotfiles/compare/0.6.6...0.6.7) (2023-12-30)
 
 
@@ -76,15 +90,6 @@
 ### Bug Fixes
 
 * set workspaces for hyprland+ags to 0 for dynamic workspaces ([4665051](https://github.com/simonoscr/dotfiles/commit/46650518f37857934bb10c01ea3431aabdbfa2a4))
-
-
-
-## [0.5.4](https://github.com/simonoscr/dotfiles/compare/0.5.3...0.5.4) (2023-12-22)
-
-
-### Bug Fixes
-
-* codium hyprland shotcut; add sessionVariable NIXOS_OZONE_WL=1 ([d59b129](https://github.com/simonoscr/dotfiles/commit/d59b1297af2e56dd3b6887f5dbea72d31133149b))
 
 
 
