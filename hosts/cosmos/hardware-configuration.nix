@@ -30,14 +30,14 @@
     fsType = "ext4";
   };
 
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/FA25-5762";
-    fsType = "vfat";
-  };
-
   fileSystems."/test" = {
     device = "/dev/disk/by-uuid/00e62437-633a-4d72-9fca-026f95e4e254";
     fsType = "ext4";
+  };
+
+  fileSystems."/boot" = {
+    device = "/dev/disk/by-uuid/FA25-5762";
+    fsType = "vfat";
   };
 
   swapDevices = [];
