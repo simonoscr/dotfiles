@@ -64,6 +64,8 @@
       url = "github:nix-community/nixpkgs-wayland";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    gBar.url = "github:scorpion-26/gBar";
   };
 
   outputs = {
@@ -77,6 +79,7 @@
     nur,
     alejandra,
     nixos-hardware,
+    gBar,
     ...
   } @ inputs: let
     system = "x86_64-linux";
