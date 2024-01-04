@@ -3,25 +3,6 @@
   pkgs,
   ...
 }: {
-  home.packages = with pkgs; [
-    gtkmm3
-    jsoncpp
-    "libsigc++"
-    fmt
-    chrono-date
-    spdlog
-    libgtk-3-dev
-    gobject-introspection
-    "libgirepository1.0-dev"
-    libpulse
-    libnl
-    libappindicator-gtk3
-    libdbusmenu-gtk3
-    libmpdclient
-    libsndio
-    xkbregistry
-  ];
-
   programs.waybar = {
     enable = true;
     systemd.enable = true;
@@ -87,7 +68,6 @@
 
       #clock,
       #pulseaudio,
-      #battery,
       #cpu,
       #tray,
       #memory,
@@ -154,7 +134,7 @@
     settings = [
       {
         layer = "top";
-        position = "bottom";
+        position = "top";
         height = 16;
         spacing = 0;
         exclusive = true;
@@ -182,11 +162,11 @@
         };
 
         memory = {
-          format = "  {used:0.2f}G";
+          format = "  {usage}%";
         };
 
         pulseaudio = {
-          format = "{icon} {volume}%";
+          format = "{volume}% {icon} {format_source}";
           format-muted = "  muted";
           format-icons = {
             headphone = " ";
@@ -195,7 +175,7 @@
             phone = "";
             portable = "";
             car = "";
-            default = [" " " " " "];
+            default = ["" "" " "];
           };
           on-click = "pavucontrol";
         };

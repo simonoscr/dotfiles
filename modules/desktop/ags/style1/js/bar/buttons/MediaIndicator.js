@@ -11,7 +11,7 @@ export const getPlayer = (name = options.mpris.preferred.value) =>
 /**
  * @param {Object} o
  * @param {import('types/service/mpris').MprisPlayer} o.player
- * @param {import('../../misc/HoverRevealer').HoverRevealProps['direction']=} o.direction
+ * @param {import('../../misc/HoverRevealer.js').HoverRevealProps['direction']=} o.direction
  */
 const Indicator = ({ player, direction = 'right' }) => HoverRevealer({
     class_name: `media panel-button ${player.name}`,
@@ -43,7 +43,7 @@ const Indicator = ({ player, direction = 'right' }) => HoverRevealer({
 
 /**
  * @param {Object} o
- * @param {import('../../misc/HoverRevealer').HoverRevealProps['direction']=} o.direction
+ * @param {import('../../misc/HoverRevealer.js').HoverRevealProps['direction']=} o.direction
  */
 export default ({ direction = 'right' } = {}) => {
     let current = null;
