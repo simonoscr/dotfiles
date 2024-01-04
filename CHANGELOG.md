@@ -1,3 +1,13 @@
+## [1.0.1](https://github.com/simonoscr/dotfiles/compare/1.0.0...1.0.1) (2024-01-04)
+
+
+### Bug Fixes
+
+* update ags ([bd2ce8f](https://github.com/simonoscr/dotfiles/commit/bd2ce8fdcd98fd301fac6b6fa0bde18a3cdba9aa))
+* update ags ([6f92c46](https://github.com/simonoscr/dotfiles/commit/6f92c46cb1d9d308cec4429ec949aedc11cb79ab))
+
+
+
 # [1.0.0](https://github.com/simonoscr/dotfiles/compare/0.6.7...1.0.0) (2024-01-03)
 
 
@@ -81,15 +91,6 @@
 ### Features
 
 * removed swap fileSystem and add test fileSystem; hyprland to home-manager, wayland settings, added waybar update flock ([f113064](https://github.com/simonoscr/dotfiles/commit/f113064835fb713ed7cac9bd2314d639c4904389))
-
-
-
-## [0.5.5](https://github.com/simonoscr/dotfiles/compare/0.5.4...0.5.5) (2023-12-22)
-
-
-### Bug Fixes
-
-* set workspaces for hyprland+ags to 0 for dynamic workspaces ([4665051](https://github.com/simonoscr/dotfiles/commit/46650518f37857934bb10c01ea3431aabdbfa2a4))
 
 
 
