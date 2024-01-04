@@ -31,6 +31,4 @@
       extraPackages32 = with pkgs; [mangohud];
     };
   };
-
-  powerManagement.cpuFreqGovernor = "powersave";
 }

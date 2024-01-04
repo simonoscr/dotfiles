@@ -6,6 +6,7 @@
 }: {
   environment.systemPackages = with pkgs; [
     git
+    neofetch
     neovim
     linuxPackages.cpupower
     btop
