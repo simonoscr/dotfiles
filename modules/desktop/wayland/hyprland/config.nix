@@ -46,12 +46,14 @@
       };
 
       general = {
-        gaps_in = 4;
-        gaps_out = 15;
+        gaps_in = 5;
+        gaps_out = 8;
         border_size = 2;
         layout = "dwindle";
         allow_tearing = true;
         resize_on_border = true;
+        "col.active_border" = "rgba(00D787ff)";
+        "col.inactive_border" = "rgba(333333ff)";
       };
 
       decoration = {

@@ -41,7 +41,7 @@ export default [
 
     "border.color": "$green",
     "border.opacity": 100,
-    "border.width": 2,
+    "border.width": 1,
 
     "font.font": "Roboto Regular",
     "font.mono": "FiraCode Nerd Mono Retina",
@@ -67,6 +67,8 @@ export default [
     "desktop.wallpaper.fg": "#fff",
     "desktop.drop_shadow": false,
     "desktop.shadow": "rgba(0, 0, 0, .6)",
+    "desktop.screen_corners": false,
+    "desktop.clock.enable": false,
     "dashboard.sys_info_size": 70,
 
     "notifications.width": 450,
