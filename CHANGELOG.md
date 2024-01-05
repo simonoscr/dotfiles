@@ -1,3 +1,12 @@
+## [1.0.3](https://github.com/simonoscr/dotfiles/compare/1.0.2...1.0.3) (2024-01-05)
+
+
+### Bug Fixes
+
+* update ags fixes ([ca26347](https://github.com/simonoscr/dotfiles/commit/ca263475add4f71b6eaf025e192ec1786c6c7d82))
+
+
+
 ## [1.0.2](https://github.com/simonoscr/dotfiles/compare/1.0.1...1.0.2) (2024-01-05)
 
 
@@ -83,15 +92,6 @@
 ### Bug Fixes
 
 * add thunar shortcut ([c702283](https://github.com/simonoscr/dotfiles/commit/c70228333a593609775697c23ee69d4b7d55d4fc))
-
-
-
-## [0.6.1](https://github.com/simonoscr/dotfiles/compare/0.6.0...0.6.1) (2023-12-22)
-
-
-### Bug Fixes
-
-* add thunar; enable greetd ([3560f3d](https://github.com/simonoscr/dotfiles/commit/3560f3de315ff56542a6779a505f57a42a1c2c18))
 
 
 
