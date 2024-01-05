@@ -289,7 +289,7 @@ export default {
         'note': 'Set it to 0 to make it dynamic',
     }),
 
-    temperature: '/sys/class/thermal/thermal_zone6/temp',
+    temperature: '/sys/class/hwmon/hwmon4/temp1_input',
     systemFetchInterval: 1000,
     brightnessctlKBD: 'asus::kbd_backlight',
     substitutions: {

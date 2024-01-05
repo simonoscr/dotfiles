@@ -10,12 +10,13 @@
     sassc
     gnome.gnome-bluetooth
     gtksourceview
+    brightnessctl
     (python311.withPackages (p: [p.python-pam]))
   ];
 
   programs.ags = {
     enable = true;
-    configDir = ./style4;
+    configDir = ./style1;
     extraPackages = [pkgs.libsoup_3];
   };
 }
