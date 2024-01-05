@@ -32,5 +32,7 @@
     playerctl
     pulsemixer
     easyeffects
+    pamixer
+    pulseaudio
   ];
 }

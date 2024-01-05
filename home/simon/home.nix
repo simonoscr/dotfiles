@@ -2,6 +2,7 @@
   imports = [
     ../../modules/desktop/ags
     ../../modules/desktop/hyprland
+    #../../modules/desktop/hyprland/waybar
     ../../modules/browser/firefox.nix
     ../../modules/shell/cli.nix
     ../../modules/fonts.nix
