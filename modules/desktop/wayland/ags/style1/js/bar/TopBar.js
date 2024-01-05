@@ -6,11 +6,9 @@ import OverviewButton from './buttons/OverviewButton.js';
 import Workspaces from './buttons/Workspaces.js';
 import DateButton from './buttons/DateButton.js';
 import SysTray from './buttons/SysTray.js';
-import ColorPicker from './buttons/ColorPicker.js';
 import SystemIndicators from './buttons/SystemIndicators.js';
 import PowerMenu from './buttons/PowerMenu.js';
 import ScreenRecord from './buttons/ScreenRecord.js';
-import BatteryBar from './buttons/BatteryBar.js';
 import SubMenu from './buttons/SubMenu.js';
 import Recorder from '../services/screenrecord.js';
 import options from '../options.js';
@@ -84,7 +82,6 @@ const End = () => Widget.Box({
             items: submenuItems,
             children: [
                 SysTray(),
-                ColorPicker(),
             ],
         }),
 
@@ -100,8 +97,6 @@ const End = () => Widget.Box({
         SeparatorDot(),
         ScreenRecord(),
         SeparatorDot(Recorder, r => r.recording),
-        BatteryBar(Battery, b => b.available),
-        SeparatorDot(Battery, b => b.available),
         SystemIndicators(),
         SeparatorDot(),
         PowerMenu(),

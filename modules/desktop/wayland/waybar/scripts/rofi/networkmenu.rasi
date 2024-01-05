@@ -1,0 +1,116 @@
+configuration {
+	font:							"CaskaydiaCove Nerd Font SemiLight 10";
+    show-icons:                     true;
+	icon-theme: 					"Papirus";
+    display-dmenu: 					" ";
+    dmenu-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+@import "colors.rasi"
+
+window {
+    transparency:                   "real";
+    background-color:               @al;
+    text-color:                     @fg;
+	border:							2px;
+	border-color:					@mg;
+    border-radius:                  8px;
+	width:							350px;
+    height:                         400px;
+    location:                       center;
+    x-offset:                       380;
+    y-offset:                       -132;
+}
+
+prompt {
+    enabled: 						true;
+	padding: 						0px 0px 0px 10px;
+	background-color: 				@al;
+	text-color: 					@fg;
+}
+
+textbox-prompt-colon {
+	background-color: 				transparent;
+	text-color: 					@bga;
+	expand: false;
+	str: "  ";
+}
+
+entry {
+    background-color:               @al;
+    text-color:                     @fg;
+    placeholder-color:              @fg;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search Wi-Fi...";
+	padding: 						0px 0px 0px 5px;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ textbox-prompt-colon, entry ];
+    background-color:               @al;
+    text-color:                     @fg;
+    expand:                         false;
+	border:							0px 0px 2px 0px;
+    border-radius:                  0px;
+	border-color:					@mg;
+    margin:                         0px;
+    padding:                        10px;
+}
+
+listview {
+    enabled:                        true;
+    background-color:               @al;
+    padding:                        5px;
+    columns:                        1;
+    lines:                          8;
+    spacing:                        5px;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         vertical;
+    hide-scrollbar:                 true;
+}
+
+mainbox {
+    background-color:               @al;
+	border:							0px;
+    border-radius:                  0px;
+	border-color:					@ac;
+    children:                       [ inputbar, listview ];
+    spacing:                       	5px;
+    padding:                        5px;
+}
+
+element {
+    hide-scrollbar:                 true;
+    background-color:               @bg;
+    text-color:                     @fg;
+    border-radius:                  8px;
+}
+
+element-icon {
+    enabled:                        false;
+}
+
+element-text {
+    hide-scrollbar:                 true;
+    background-color:               @al;
+    text-color:               	    @fg;
+    expand:                         true;
+    border:                         1px;
+    border-color:                   #0A0B11;
+    border-radius:                  8px;
+    padding:                        8px 12px;
+}
+
+element-text selected {
+    background-color:               @mg;
+    text-color:                     @bg;
+    border-color:                   @mg;
+    border-radius:                  8px;
+}

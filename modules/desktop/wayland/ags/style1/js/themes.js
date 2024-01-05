@@ -39,7 +39,7 @@ export default [
     "theme.widget.bg": "$fg-color",
     "theme.widget.opacity": 94,
 
-    "border.color": "$fg-color",
+    "border.color": "$green",
     "border.opacity": 100,
     "border.width": 2,
 
@@ -52,7 +52,7 @@ export default [
     "applauncher.icon_size": 35,
 
     "bar.position": "top",
-    "bar.style": "separated",
+    "bar.style": "floating",
     "bar.flat_buttons": true,
     "bar.separators": false,
     "bar.icon": "distro-icon",

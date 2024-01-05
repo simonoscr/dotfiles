@@ -123,7 +123,7 @@ export default {
     },
 
     border: {
-        color: Option('$fg-color', {
+        color: Option('$green', {
             'category': 'Border',
             'title': 'Border Color',
             'scss': '_border-color',
@@ -133,7 +133,7 @@ export default {
             'title': 'Border Opacity',
             'unit': '',
         }),
-        width: Option(0, {
+        width: Option(1, {
             'category': 'Border',
             'title': 'Border Width',
         }),

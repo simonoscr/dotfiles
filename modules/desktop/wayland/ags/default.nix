@@ -8,9 +8,8 @@
 
   home.packages = with pkgs; [
     sassc
-    gnome.gnome-bluetooth
-    gtksourceview
     brightnessctl
+    gnome.gnome-bluetooth_1_0
     (python311.withPackages (p: [p.python-pam]))
   ];
 
