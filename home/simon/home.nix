@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   imports = [
-    ../../modules/desktop/ags
-    ../../modules/desktop/hyprland
-    #../../modules/desktop/hyprland/waybar
+    ../../modules/desktop/wayland/ags
+    ../../modules/desktop/wayland/hyprland
+    ../../modules/desktop/wayland/hyprland/waybar
     ../../modules/browser/firefox.nix
     ../../modules/shell/cli.nix
     ../../modules/fonts.nix
