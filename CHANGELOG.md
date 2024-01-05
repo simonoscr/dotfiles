@@ -1,3 +1,13 @@
+## [1.0.2](https://github.com/simonoscr/dotfiles/compare/1.0.1...1.0.2) (2024-01-05)
+
+
+### Bug Fixes
+
+* update ags files ([df9292f](https://github.com/simonoscr/dotfiles/commit/df9292f0dd08bbcadd81f06916ba8a2e896fcf41))
+* update ags fils ([f19edfb](https://github.com/simonoscr/dotfiles/commit/f19edfb4d116fd31d553cbce243a816bedce355f))
+
+
+
 ## [1.0.1](https://github.com/simonoscr/dotfiles/compare/1.0.0...1.0.1) (2024-01-04)
 
 
@@ -82,15 +92,6 @@
 ### Bug Fixes
 
 * add thunar; enable greetd ([3560f3d](https://github.com/simonoscr/dotfiles/commit/3560f3de315ff56542a6779a505f57a42a1c2c18))
-
-
-
-# [0.6.0](https://github.com/simonoscr/dotfiles/compare/0.5.5...0.6.0) (2023-12-22)
-
-
-### Features
-
-* removed swap fileSystem and add test fileSystem; hyprland to home-manager, wayland settings, added waybar update flock ([f113064](https://github.com/simonoscr/dotfiles/commit/f113064835fb713ed7cac9bd2314d639c4904389))
 
 
 
