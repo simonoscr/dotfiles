@@ -1,4 +1,4 @@
-# Henlo
+#
 
 <div align="center">
 
@@ -18,70 +18,70 @@
 
 ---
 
+## Intro
+
+Hello and welcome to my NixOS setup. Please be aware that I'm still in the early stages of learning all this. The setup here was created with the help of multiple examples and inspiration from other dotfile and nix-config repositories (see [Credits](##Credits)).
+
+Feel free to borrow ideas from my configurations, but keep in mind that they might not always represent the best or most correct approach and make sure you've grasped the basics of NixOS, Nix, Flakes, and Home-Manager.
+
+This repository is a work in progress, and I'm constantly learning more about NixOS, Nix, Flakes, and Home-Manager.
+
+## :snowflake: System Components
+
+| | NixOS - Wayland | NixOS - Xorg |
+|-|-----------------|--------------|
+|DM| - | - |
+|WM| Hyprland | i3 |
+|Compositor| Hyprland | - |
+|Bar| Ags / Waybar | - |
+| Terminal| Kitty | Kitty |
+| Shell | zsh | zsh |
+| Editors | Neovim + VSCodium | Neovim + VSCodium |
+
+## Features
+
+- **Nix Flake**: Manage NixOS and Home-Manager configurations.
+
+- **Home Manager**: Manage your dotfiles, home environment, and user-specific configurations with Home Manager.
+
+- **NUR Integration**: Access the Nix User Repository (NUR) for additional packages and enhancements.
+
+- **Alejandra**: Nix linting
+
+- **NixVim**: Nix Flake Neovim config
+
 ## :snowflake: Layout
-```
-.dotfiles/
-├── common
-│   └── default.nix
-├── flake.lock
-├── flake.nix
-├── home
-│   ├── simon
-│   │   ├── home.nix
-│   │   └── secrets
-│   │       └── secrets.yaml
-│   └── work
-│       ├── home.nix
-│       └── secrets
-├── hosts
-│   ├── cosmos
-│   │   ├── audio.nix
-│   │   ├── configuration.nix
-│   │   ├── fonts.nix
-│   │   ├── hardware-configuration.nix
-│   │   ├── hardware.nix
-│   │   ├── hyprland.nix
-│   │   ├── locale.nix
-│   │   ├── network.nix
-│   │   ├── packages.nix
-│   │   ├── services.nix
-│   │   └── xserver.nix
-│   └── voyager
-│       └── configuration.nix
-├── lib
-│   ├── attrs.nix
-│   ├── default.nix
-│   ├── generators.nix
-│   ├── modules.nix
-│   ├── nixos.nix
-│   ├── options.nix
-│   └── paths.nix
-├── modules
-│   ├── ags
-│   │   ├── default.nix
-│   │   └── style1/
-│   ├── alacritty.nix
-│   ├── bash.nix
-│   ├── browser.nix
-│   ├── cli.nix
-│   ├── fonts.nix
-│   ├── foot.nix
-│   ├── games.nix
-│   ├── git.nix
-│   ├── gtk.nix
-│   ├── hyprland/
-│   │   ├── config.nix
-│   │   ├── default.nix
-│   │   ├── swayidle.nix
-│   │   └── swaylock.nix
-│   ├── kitty.nix
-│   ├── neovim.nix
-│   ├── packages.nix
-│   ├── sops.nix
-│   ├── starship.nix
-│   ├── vscodium.nix
-│   ├── xdg.nix
-│   ├── zathura.nix
-│   └── zsh.nix
-└── packages
-```
+
+- **Configuration Modules**: The modules/ folder allows you to set up NixOS modules tailored for different platforms like nixos, darwin, and home, making system configuration management more modular.
+
+- **Overlays**: Use the overlays/ directory for any custom overlays you may have.
+
+- **System Configurations**: The hosts/ folder helps you organize your system setups by architecture and format, enabling configurations for multiple platforms.
+
+- **Home Environment Configs**: Similarly, the homes/ folder arranges configurations by architecture, which is particularly handy for managing home environments via Nix.
+
+## Search
+
+- [Nix Search](https://search.nixos.org) - Search for Nix packages, NixOS options or Flakes
+- [Home-Manager Options](https://mipmip.github.io/home-manager-option-search/) - Search for Home-Manager options
+- [Noogle](https://noogle.dev/) - Noogle is a Nix API search engine. It lets you search nix functions.
+- [Hound](https://search.nix.gsc.io/) -
+
+
+
+
+## Guides
+
+- [NixOS Installation Guide](https://nixos.wiki/wiki/NixOS_Installation_Guide)
+- [Nix Installation Guide](https://nixos.wiki/wiki/Nix_Installation_Guide)
+- [Nix Flake Installation Guide](https://nixos.wiki/wiki/Flakes)
+- [Snowfall Quickstart Guide](https://snowfall.org/guides/lib/quickstart/)
+
+
+## Credits
+
+My repository is inspired by a diverse range of dotfiles and nix-configurations repositories across GitHub, Codeberg, and GitLab. While I've gathered ideas from numerous places, there are a few key repositories that significantly influenced this repository:
+
+- [Matt Dotfiles](https://gitlab.com/usmcamp0811/dotfiles)
+- [ryan4yin nix-config](https://github.com/ryan4yin/nix-config)
+- [Aylur dotfiles](https://github.com/Aylur/dotfiles)
