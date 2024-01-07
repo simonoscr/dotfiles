@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/simonoscr/dotfiles/compare/1.0.5...1.1.0) (2024-01-07)
+
+
+### Features
+
+* add i3 and hyprland session to tuigreet ([f80743c](https://github.com/simonoscr/dotfiles/commit/f80743cdbfb974f71495daa16729d476b20c69c6))
+
+
+
 ## [1.0.5](https://github.com/simonoscr/dotfiles/compare/1.0.4...1.0.5) (2024-01-07)
 
 
@@ -83,15 +92,6 @@
 ### Bug Fixes
 
 * hyprland steam windowrules ([7498d6c](https://github.com/simonoscr/dotfiles/commit/7498d6c4629229ad651c0f7727fdc7071a1775f2))
-
-
-
-## [0.6.4](https://github.com/simonoscr/dotfiles/compare/0.6.3...0.6.4) (2023-12-22)
-
-
-### Bug Fixes
-
-* change vscodium shortcut; add i3 ([debeaea](https://github.com/simonoscr/dotfiles/commit/debeaeaaffe28463c2cbd5f2e3a3bcd13e372424))
 
 
 
