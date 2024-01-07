@@ -22,7 +22,7 @@ in {
     timeouts = [
       {
         timeout = 180;
-        command = "swaymsg 'output * dpms off'";
+        command = "hyprctl dispatch dpms off";
       }
       {
         timeout = 3600;
