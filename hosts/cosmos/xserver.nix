@@ -17,7 +17,7 @@
         default_session = {
           user = "simon";
           #command = "Hyprland";
-          #command = "${pkgs.greetd.tuigreet}/bin/tuigreet -g LOGIN -t -r --cmd Hyprland";
+          command = "${pkgs.greetd.tuigreet}/bin/tuigreet -g LOGIN -t -r --cmd Hyprland";
         };
       };
     };
