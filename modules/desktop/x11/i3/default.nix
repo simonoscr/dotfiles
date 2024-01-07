@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-    #./config.nix
+    ./config.nix
   ];
   xsession = {
     enable = true;
@@ -13,4 +13,10 @@
     };
   };
   fonts.fontconfig.enable = true;
+  home.file.".config/xsessions/i3.desktop".text = ''
+    [Desktop Entry]
+    Name=i3
+    Exec=startx /home/simon/.xsession
+    Type=XSession
+  '';
 }

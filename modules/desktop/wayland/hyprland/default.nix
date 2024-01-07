@@ -26,4 +26,10 @@
     "MOZ_ENABLE_WAYLAND" = "1";
     "MOZ_WEBRENDER" = "1";
   };
+  home.file.".config/wayland-sessions/hyprland.desktop".text = ''
+    [Desktop Entry]
+    Name=Hyprland
+    Exec=Hyprland
+    Type=Application
+  '';
 }
