@@ -13,7 +13,6 @@
     bat
     curl
     alejandra
-    radeon-profile
     corectrl
     # Hyprland
     waybar

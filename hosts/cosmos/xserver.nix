@@ -10,13 +10,14 @@
       #videoDrivers = [ "amdgpu" ];
       #libinput.enable = true;
     };
+    ## greetd DM with tuigreet
     greetd = {
       enable = true;
       settings = {
         default_session = {
           user = "simon";
           #command = "Hyprland";
-          command = "${pkgs.greetd.tuigreet}/bin/tuigreet -g LOGIN -t -r --cmd Hyprland";
+          #command = "${pkgs.greetd.tuigreet}/bin/tuigreet -g LOGIN -t -r --cmd Hyprland";
         };
       };
     };

@@ -1,13 +1,13 @@
-{pkgs, ...}: {
-let
-  mod = "SUPER";
-
-
+{
+  pkgs,
+  home-manager,
+  ...
+}: let
+  mod = "Mod4";
+in {
   xsession.windowManager.i3 = {
     config = {
       modifier = mod;
-
-      fonts = ["FiraCode Mono Font, Roboto"];
 
       keybindings = {
         # Focus

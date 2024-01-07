@@ -1,8 +1,16 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  home-manager,
+  ...
+}: {
   imports = [
-    ./config.nix
+    #./config.nix
   ];
-  xsession.windowManager.i3 = {
+  xsession = {
     enable = true;
+    windowManager.i3 = {
+      enable = true;
+    };
   };
+  fonts.fontconfig.enable = true;
 }

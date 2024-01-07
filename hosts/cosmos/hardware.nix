@@ -14,6 +14,7 @@
   hardware = {
     #amdgpu.loadInInitrd = false;
     #amdgpu.amdvlk = true;
+    bluetooth.enable = true;
     logitech.wireless.enable = true;
 
     cpu.amd.updateMicrocode = true;
