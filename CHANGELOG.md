@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/simonoscr/dotfiles/compare/1.0.4...1.0.5) (2024-01-07)
+
+
+### Bug Fixes
+
+* tuigreetd ([a0d0f53](https://github.com/simonoscr/dotfiles/commit/a0d0f53ec84b51be95d60b8db40616a2fc784c3c))
+
+
+
 ## [1.0.4](https://github.com/simonoscr/dotfiles/compare/1.0.3...1.0.4) (2024-01-07)
 
 
@@ -83,15 +92,6 @@
 ### Bug Fixes
 
 * change vscodium shortcut; add i3 ([debeaea](https://github.com/simonoscr/dotfiles/commit/debeaeaaffe28463c2cbd5f2e3a3bcd13e372424))
-
-
-
-## [0.6.3](https://github.com/simonoscr/dotfiles/compare/0.6.2...0.6.3) (2023-12-22)
-
-
-### Bug Fixes
-
-* disable network-wait; fine-tuning tuigreet ([5b60437](https://github.com/simonoscr/dotfiles/commit/5b60437720502b2edddb4ff855a356300ac00112))
 
 
 
