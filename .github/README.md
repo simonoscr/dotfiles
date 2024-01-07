@@ -30,13 +30,15 @@ This repository is a work in progress, and I'm constantly learning more about Ni
 
 | | NixOS - Wayland | NixOS - Xorg |
 |-|-----------------|--------------|
-|DM| - | - |
-|WM| Hyprland | i3 |
-|Compositor| Hyprland | - |
-|Bar| Ags / Waybar | - |
+| Display Manager | greetd/tuigreet | greetd/tuigreet |
+| Window Manager | Hyprland | i3 |
+| Bar | Ags / Waybar | - |
 | Terminal| Kitty | Kitty |
-| Shell | zsh | zsh |
-| Editors | Neovim + VSCodium | Neovim + VSCodium |
+| Shell | zsh + Starship | zsh + Starship |
+| Text Editor | Neovim | Neovim |
+| Code Editor | VSCodium | VSCodium |
+| System resource monitor | btop | btop |
+| Fonts | - | - |
 
 ## Features
 
