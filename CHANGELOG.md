@@ -1,3 +1,12 @@
+## [1.0.4](https://github.com/simonoscr/dotfiles/compare/1.0.3...1.0.4) (2024-01-07)
+
+
+### Bug Fixes
+
+* updated i3 configuration ([dc90015](https://github.com/simonoscr/dotfiles/commit/dc900156eabe4f45797cfbb1cd7ec445b674ba58))
+
+
+
 ## [1.0.3](https://github.com/simonoscr/dotfiles/compare/1.0.2...1.0.3) (2024-01-05)
 
 
@@ -83,15 +92,6 @@
 ### Bug Fixes
 
 * disable network-wait; fine-tuning tuigreet ([5b60437](https://github.com/simonoscr/dotfiles/commit/5b60437720502b2edddb4ff855a356300ac00112))
-
-
-
-## [0.6.2](https://github.com/simonoscr/dotfiles/compare/0.6.1...0.6.2) (2023-12-22)
-
-
-### Bug Fixes
-
-* add thunar shortcut ([c702283](https://github.com/simonoscr/dotfiles/commit/c70228333a593609775697c23ee69d4b7d55d4fc))
 
 
 
