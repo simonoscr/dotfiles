@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/simonoscr/dotfiles/compare/1.1.0...1.1.1) (2024-01-07)
+
+
+### Bug Fixes
+
+* make swayidle able to shut off display in hyprland and change look of swaylock ([14efbd3](https://github.com/simonoscr/dotfiles/commit/14efbd31b0ec2cc7ea44c557af817309b94135c3))
+
+
+
 # [1.1.0](https://github.com/simonoscr/dotfiles/compare/1.0.5...1.1.0) (2024-01-07)
 
 
@@ -83,15 +92,6 @@
 ### Bug Fixes
 
 * add protonup-qt ([70bcbf8](https://github.com/simonoscr/dotfiles/commit/70bcbf8acae4d7ab9d121f5ca9068028a023a558))
-
-
-
-## [0.6.5](https://github.com/simonoscr/dotfiles/compare/0.6.4...0.6.5) (2023-12-29)
-
-
-### Bug Fixes
-
-* hyprland steam windowrules ([7498d6c](https://github.com/simonoscr/dotfiles/commit/7498d6c4629229ad651c0f7727fdc7071a1775f2))
 
 
 
