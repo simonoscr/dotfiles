@@ -47,7 +47,6 @@
     # aylur-gtk-shell
     ags = {
       url = "github:Aylur/ags";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # utils for nix flake
