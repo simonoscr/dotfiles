@@ -66,7 +66,8 @@ This repository is a work in progress, and I'm constantly learning more about Ni
 
 - [Nix Search](https://search.nixos.org) - Search for Nix packages, NixOS options or Flakes
 - [Home-Manager Options](https://mipmip.github.io/home-manager-option-search/) - Search for Home-Manager options
-- [Noogle](https://noogle.dev/) - Noogle is a Nix API search engine. It lets you search nix functions.
+- [Nixhub.io](https://www.nixhub.io/) - Search Versions of nix packages
+- [Noogle.dev](https://noogle.dev/) - Noogle is a Nix API search engine. It lets you search nix functions.
 - [Hound](https://search.nix.gsc.io/) -
 
 
