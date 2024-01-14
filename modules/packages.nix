@@ -1,9 +1,14 @@
-{pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   home.packages = with pkgs; [
     swww
     pywal
-    gamescope
+    #gamescope
     webcord-vencord
     element-desktop
+    seatd
   ];
 }

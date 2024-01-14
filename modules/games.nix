@@ -14,7 +14,7 @@
     #wineWowPackages.waylandFull
     winetricks
     #teamspeak5_client
-    bottles
+    #bottles
     path-of-building
   ];
 
