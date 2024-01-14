@@ -1,3 +1,12 @@
+## [1.1.2](https://github.com/simonoscr/dotfiles/compare/1.1.1...1.1.2) (2024-01-14)
+
+
+### Bug Fixes
+
+* wlroots dependency error for gamescope; wlroots version too high for gamescope ([70742a6](https://github.com/simonoscr/dotfiles/commit/70742a6546e6204bb27f4e606025adbd6cc4166b))
+
+
+
 ## [1.1.1](https://github.com/simonoscr/dotfiles/compare/1.1.0...1.1.1) (2024-01-07)
 
 
@@ -83,15 +92,6 @@
 ### Bug Fixes
 
 * add wine and bottles ([7083d44](https://github.com/simonoscr/dotfiles/commit/7083d4448c789c657d2c36923ae05d16f5e75578))
-
-
-
-## [0.6.6](https://github.com/simonoscr/dotfiles/compare/0.6.5...0.6.6) (2023-12-29)
-
-
-### Bug Fixes
-
-* add protonup-qt ([70bcbf8](https://github.com/simonoscr/dotfiles/commit/70bcbf8acae4d7ab9d121f5ca9068028a023a558))
 
 
 
