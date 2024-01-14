@@ -14,7 +14,6 @@
     # home-manager
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # nur nix user repository
@@ -59,10 +58,9 @@
 
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
-    nixpkgs-wayland = {
-      url = "github:nix-community/nixpkgs-wayland";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #nixpkgs-wayland = {
+    #  url = "github:nix-community/nixpkgs-wayland";
+    #};
 
     gBar.url = "github:scorpion-26/gBar";
   };
@@ -112,7 +110,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = {inherit inputs;};
         modules = [
-          {nixpkgs.overlays = [nur.overlay inputs.nixpkgs-wayland.overlay];}
+          {nixpkgs.overlays = [nur.overlay];}
           ./home/simon/home.nix
         ];
       };

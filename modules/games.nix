@@ -5,6 +5,7 @@
   ...
 }: {
   home.packages = with pkgs; [
+    gamescope
     gamemode
     goverlay
     teamspeak_client
