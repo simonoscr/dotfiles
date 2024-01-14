@@ -111,6 +111,7 @@
         extraSpecialArgs = {inherit inputs;};
         modules = [
           {nixpkgs.overlays = [nur.overlay];}
+          # inputs.nixpkgs-wayland.overlay
           ./home/simon/home.nix
         ];
       };
