@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/simonoscr/dotfiles/compare/1.1.2...1.2.0) (2024-01-18)
+
+
+### Features
+
+* add home-server voyager configuration ([7133d63](https://github.com/simonoscr/dotfiles/commit/7133d63efcac6d3260d592cc5d1fc6432a011ac5))
+
+
+
 ## [1.1.2](https://github.com/simonoscr/dotfiles/compare/1.1.1...1.1.2) (2024-01-14)
 
 
@@ -83,15 +92,6 @@
 ### BREAKING CHANGES
 
 * hardware configuration not for old intel set-up. It is for the AMD GPU now
-
-
-
-## [0.6.7](https://github.com/simonoscr/dotfiles/compare/0.6.6...0.6.7) (2023-12-30)
-
-
-### Bug Fixes
-
-* add wine and bottles ([7083d44](https://github.com/simonoscr/dotfiles/commit/7083d4448c789c657d2c36923ae05d16f5e75578))
 
 
 
