@@ -1,3 +1,12 @@
+## [1.2.2](https://github.com/simonoscr/dotfiles/compare/1.2.1...1.2.2) (2024-01-18)
+
+
+### Bug Fixes
+
+* change user name ([5f46064](https://github.com/simonoscr/dotfiles/commit/5f46064159ab576d3ea17662f7f034d819c9f30c))
+
+
+
 ## [1.2.1](https://github.com/simonoscr/dotfiles/compare/1.2.0...1.2.1) (2024-01-18)
 
 
@@ -79,16 +88,6 @@
 
 * update ags files ([df9292f](https://github.com/simonoscr/dotfiles/commit/df9292f0dd08bbcadd81f06916ba8a2e896fcf41))
 * update ags fils ([f19edfb](https://github.com/simonoscr/dotfiles/commit/f19edfb4d116fd31d553cbce243a816bedce355f))
-
-
-
-## [1.0.1](https://github.com/simonoscr/dotfiles/compare/1.0.0...1.0.1) (2024-01-04)
-
-
-### Bug Fixes
-
-* update ags ([bd2ce8f](https://github.com/simonoscr/dotfiles/commit/bd2ce8fdcd98fd301fac6b6fa0bde18a3cdba9aa))
-* update ags ([6f92c46](https://github.com/simonoscr/dotfiles/commit/6f92c46cb1d9d308cec4429ec949aedc11cb79ab))
 
 
 
