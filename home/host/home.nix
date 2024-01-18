@@ -27,8 +27,8 @@
   programs.home-manager.enable = true;
 
   home = {
-    username = "simon";
-    homeDirectory = "/home/simon";
+    username = "host";
+    homeDirectory = "/home/host";
     sessionVariables = {
       SHELL = "${pkgs.zsh}/bin/zsh";
     };
