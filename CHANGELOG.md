@@ -1,3 +1,12 @@
+## [1.2.4](https://github.com/simonoscr/dotfiles/compare/1.2.3...1.2.4) (2024-01-18)
+
+
+### Bug Fixes
+
+* modules path for host ([96530b2](https://github.com/simonoscr/dotfiles/commit/96530b23c9120acfe68871fc4f17256a18b12caa))
+
+
+
 ## [1.2.3](https://github.com/simonoscr/dotfiles/compare/1.2.2...1.2.3) (2024-01-18)
 
 
@@ -78,15 +87,6 @@
 ### Bug Fixes
 
 * updated i3 configuration ([dc90015](https://github.com/simonoscr/dotfiles/commit/dc900156eabe4f45797cfbb1cd7ec445b674ba58))
-
-
-
-## [1.0.3](https://github.com/simonoscr/dotfiles/compare/1.0.2...1.0.3) (2024-01-05)
-
-
-### Bug Fixes
-
-* update ags fixes ([ca26347](https://github.com/simonoscr/dotfiles/commit/ca263475add4f71b6eaf025e192ec1786c6c7d82))
 
 
 
