@@ -11,9 +11,7 @@
   ...
 }: {
   imports = [
-    ./audio.nix
-    ./fonts.nix
-    ./hardware-configuration.nix
+    #./hardware-configuration.nix
     ./locale.nix
     ./network.nix
     ./packages.nix
