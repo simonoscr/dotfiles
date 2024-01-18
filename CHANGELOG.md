@@ -1,3 +1,13 @@
+## [1.2.5](https://github.com/simonoscr/dotfiles/compare/1.2.4...1.2.5) (2024-01-18)
+
+
+### Bug Fixes
+
+* add vscodium extension ([bf0e881](https://github.com/simonoscr/dotfiles/commit/bf0e88182cc77ac61301265c198a07128cdf3b32))
+* ya ([f637ca4](https://github.com/simonoscr/dotfiles/commit/f637ca4aad0c0f6c1e672aaae666db154be727bd))
+
+
+
 ## [1.2.4](https://github.com/simonoscr/dotfiles/compare/1.2.3...1.2.4) (2024-01-18)
 
 
@@ -78,15 +88,6 @@
 ### Bug Fixes
 
 * tuigreetd ([a0d0f53](https://github.com/simonoscr/dotfiles/commit/a0d0f53ec84b51be95d60b8db40616a2fc784c3c))
-
-
-
-## [1.0.4](https://github.com/simonoscr/dotfiles/compare/1.0.3...1.0.4) (2024-01-07)
-
-
-### Bug Fixes
-
-* updated i3 configuration ([dc90015](https://github.com/simonoscr/dotfiles/commit/dc900156eabe4f45797cfbb1cd7ec445b674ba58))
 
 
 
