@@ -1,3 +1,12 @@
+## [1.2.3](https://github.com/simonoscr/dotfiles/compare/1.2.2...1.2.3) (2024-01-18)
+
+
+### Bug Fixes
+
+* home name ([fff59ed](https://github.com/simonoscr/dotfiles/commit/fff59ed72d9b6ef6fecce66d73d814bd9fa22f16))
+
+
+
 ## [1.2.2](https://github.com/simonoscr/dotfiles/compare/1.2.1...1.2.2) (2024-01-18)
 
 
@@ -78,16 +87,6 @@
 ### Bug Fixes
 
 * update ags fixes ([ca26347](https://github.com/simonoscr/dotfiles/commit/ca263475add4f71b6eaf025e192ec1786c6c7d82))
-
-
-
-## [1.0.2](https://github.com/simonoscr/dotfiles/compare/1.0.1...1.0.2) (2024-01-05)
-
-
-### Bug Fixes
-
-* update ags files ([df9292f](https://github.com/simonoscr/dotfiles/commit/df9292f0dd08bbcadd81f06916ba8a2e896fcf41))
-* update ags fils ([f19edfb](https://github.com/simonoscr/dotfiles/commit/f19edfb4d116fd31d553cbce243a816bedce355f))
 
 
 
