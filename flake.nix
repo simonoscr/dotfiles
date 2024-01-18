@@ -90,16 +90,15 @@
         specialArgs = {inherit inputs;};
         modules = [
           ./hosts/cosmos/configuration.nix
-          #commonModules
         ];
       };
-      #"voyager" = nixpkgs.lib.nixosSystem {
-      #  inherit system;
-      #  specialArgs = {inherit inputs;};
-      #  modules = [
-      #    ./hosts/voyager/configuration.nix
-      #  ];
-      #};
+      "voyager" = nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = {inherit inputs;};
+        modules = [
+          ./hosts/voyager/configuration.nix
+        ];
+      };
     };
 
     # standalone home-manager configuration entrypoint
