@@ -11,7 +11,7 @@
   ...
 }: {
   imports = [
-    #./hardware-configuration.nix
+    ./hardware-configuration.nix
     ./locale.nix
     ./network.nix
     ./packages.nix
@@ -27,10 +27,6 @@
       efi.canTouchEfiVariables = true;
     };
     kernelPackages = pkgs.linuxPackages_latest;
-    kernel.sysctl = {
-      "vm.swappiness" = 20;
-    };
-    kernelParams = ["nowatchdog"];
   };
 
   console = {
