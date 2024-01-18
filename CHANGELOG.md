@@ -1,3 +1,12 @@
+## [1.2.6](https://github.com/simonoscr/dotfiles/compare/1.2.5...1.2.6) (2024-01-18)
+
+
+### Bug Fixes
+
+* vsc extensions ([4f83f24](https://github.com/simonoscr/dotfiles/commit/4f83f2436117297449a57cc469e8d81d4c07e807))
+
+
+
 ## [1.2.5](https://github.com/simonoscr/dotfiles/compare/1.2.4...1.2.5) (2024-01-18)
 
 
@@ -79,15 +88,6 @@
 ### Features
 
 * add i3 and hyprland session to tuigreet ([f80743c](https://github.com/simonoscr/dotfiles/commit/f80743cdbfb974f71495daa16729d476b20c69c6))
-
-
-
-## [1.0.5](https://github.com/simonoscr/dotfiles/compare/1.0.4...1.0.5) (2024-01-07)
-
-
-### Bug Fixes
-
-* tuigreetd ([a0d0f53](https://github.com/simonoscr/dotfiles/commit/a0d0f53ec84b51be95d60b8db40616a2fc784c3c))
 
 
 
