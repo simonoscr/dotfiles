@@ -14,12 +14,10 @@
     ./audio.nix
     ./fonts.nix
     ./hardware-configuration.nix
-    ./hyprland.nix
     ./locale.nix
     ./network.nix
     ./packages.nix
     ./services.nix
-    ./xserver.nix
   ];
 
   ## systemd-boot
@@ -30,8 +28,7 @@
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
-    kernelPackages = pkgs.linuxPackages_zen;
-    initrd.kernelModules = ["amdgpu"];
+    kernelPackages = pkgs.linuxPackages_latest;
     kernel.sysctl = {
       "vm.swappiness" = 20;
     };
@@ -60,8 +57,6 @@
         extraGroups = [
           "wheel"
           "networkmanager"
-          "audio"
-          "video"
         ];
         shell = pkgs.zsh;
       };
