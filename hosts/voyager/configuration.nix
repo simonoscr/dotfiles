@@ -45,7 +45,7 @@
   users = {
     groups.simon.gid = 1000;
     users = {
-      simon = {
+      host = {
         initialPassword = "123";
         isNormalUser = true;
         extraGroups = [

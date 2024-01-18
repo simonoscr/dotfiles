@@ -114,6 +114,13 @@
           ./home/simon/home.nix
         ];
       };
+      "host@voyager" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.${system};
+        extraSpecialArgs = {inherit inputs;};
+        modules = [
+          ./home/simon/home.nix
+        ];
+      };
       # work user
       "simon@work" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
