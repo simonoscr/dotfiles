@@ -12,6 +12,7 @@
       jnoortheen.nix-ide
       redhat.vscode-yaml
       ms-azuretools.vscode-docker
+      ms-vscode-remote.remote-ssh
       yzhang.markdown-all-in-one
     ];
     userSettings = {
