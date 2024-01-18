@@ -1,3 +1,14 @@
+## [1.2.1](https://github.com/simonoscr/dotfiles/compare/1.2.0...1.2.1) (2024-01-18)
+
+
+### Bug Fixes
+
+* activate voyager host ([799e566](https://github.com/simonoscr/dotfiles/commit/799e566477ab0669981a82c7578389f0dca7f0ee))
+* add hardware-configuration.nix for voyager ([3cbac0f](https://github.com/simonoscr/dotfiles/commit/3cbac0f1890d1501ecfefa6f40498fb71fb9884a))
+* remove wrong/unused imports for voyager ([717973f](https://github.com/simonoscr/dotfiles/commit/717973f905b86b0cae9ed59674efa7e4537b8bd1))
+
+
+
 # [1.2.0](https://github.com/simonoscr/dotfiles/compare/1.1.2...1.2.0) (2024-01-18)
 
 
@@ -78,20 +89,6 @@
 
 * update ags ([bd2ce8f](https://github.com/simonoscr/dotfiles/commit/bd2ce8fdcd98fd301fac6b6fa0bde18a3cdba9aa))
 * update ags ([6f92c46](https://github.com/simonoscr/dotfiles/commit/6f92c46cb1d9d308cec4429ec949aedc11cb79ab))
-
-
-
-# [1.0.0](https://github.com/simonoscr/dotfiles/compare/0.6.7...1.0.0) (2024-01-03)
-
-
-### Features
-
-* change hardware ([cf2bb6f](https://github.com/simonoscr/dotfiles/commit/cf2bb6f34e826f9e4850ba1781d158697ece97ea))
-
-
-### BREAKING CHANGES
-
-* hardware configuration not for old intel set-up. It is for the AMD GPU now
 
 
 
