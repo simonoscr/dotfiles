@@ -118,7 +118,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = {inherit inputs;};
         modules = [
-          ./home/simon/home.nix
+          ./home/host/home.nix
         ];
       };
       # work user
