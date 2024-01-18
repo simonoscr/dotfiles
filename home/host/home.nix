@@ -6,7 +6,6 @@
     ../../modules/terminals/kitty.nix
     ../../modules/editors/neovim.nix
     ../../modules/shell/starship.nix
-    ../../modules/editors/vscodium.nix
     ../../modules/shell/zsh.nix
   ];
 
