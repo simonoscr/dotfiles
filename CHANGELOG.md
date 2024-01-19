@@ -1,3 +1,12 @@
+## [1.3.3](https://github.com/simonoscr/dotfiles/compare/1.3.2...1.3.3) (2024-01-19)
+
+
+### Bug Fixes
+
+* add k9s ([cde666e](https://github.com/simonoscr/dotfiles/commit/cde666edd522f0d85d05945a39bf57f3e44ffb2e))
+
+
+
 ## [1.3.2](https://github.com/simonoscr/dotfiles/compare/1.3.1...1.3.2) (2024-01-19)
 
 
@@ -77,15 +86,6 @@
 ### Bug Fixes
 
 * home name ([fff59ed](https://github.com/simonoscr/dotfiles/commit/fff59ed72d9b6ef6fecce66d73d814bd9fa22f16))
-
-
-
-## [1.2.2](https://github.com/simonoscr/dotfiles/compare/1.2.1...1.2.2) (2024-01-18)
-
-
-### Bug Fixes
-
-* change user name ([5f46064](https://github.com/simonoscr/dotfiles/commit/5f46064159ab576d3ea17662f7f034d819c9f30c))
 
 
 
