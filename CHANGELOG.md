@@ -1,3 +1,12 @@
+## [1.3.1](https://github.com/simonoscr/dotfiles/compare/1.3.0...1.3.1) (2024-01-19)
+
+
+### Bug Fixes
+
+* import missing k3s.nix ([34d4cd1](https://github.com/simonoscr/dotfiles/commit/34d4cd18b1228be93118833291d3b077afc73485))
+
+
+
 # [1.3.0](https://github.com/simonoscr/dotfiles/compare/1.2.8...1.3.0) (2024-01-19)
 
 
@@ -79,15 +88,6 @@
 * activate voyager host ([799e566](https://github.com/simonoscr/dotfiles/commit/799e566477ab0669981a82c7578389f0dca7f0ee))
 * add hardware-configuration.nix for voyager ([3cbac0f](https://github.com/simonoscr/dotfiles/commit/3cbac0f1890d1501ecfefa6f40498fb71fb9884a))
 * remove wrong/unused imports for voyager ([717973f](https://github.com/simonoscr/dotfiles/commit/717973f905b86b0cae9ed59674efa7e4537b8bd1))
-
-
-
-# [1.2.0](https://github.com/simonoscr/dotfiles/compare/1.1.2...1.2.0) (2024-01-18)
-
-
-### Features
-
-* add home-server voyager configuration ([7133d63](https://github.com/simonoscr/dotfiles/commit/7133d63efcac6d3260d592cc5d1fc6432a011ac5))
 
 
 
