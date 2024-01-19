@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/simonoscr/dotfiles/compare/1.2.8...1.3.0) (2024-01-19)
+
+
+### Features
+
+* add k3s ([8ebfc2d](https://github.com/simonoscr/dotfiles/commit/8ebfc2d4de04ef3524375c411c751e66e43a40df))
+
+
+
 ## [1.2.8](https://github.com/simonoscr/dotfiles/compare/1.2.7...1.2.8) (2024-01-19)
 
 
@@ -79,15 +88,6 @@
 ### Features
 
 * add home-server voyager configuration ([7133d63](https://github.com/simonoscr/dotfiles/commit/7133d63efcac6d3260d592cc5d1fc6432a011ac5))
-
-
-
-## [1.1.2](https://github.com/simonoscr/dotfiles/compare/1.1.1...1.1.2) (2024-01-14)
-
-
-### Bug Fixes
-
-* wlroots dependency error for gamescope; wlroots version too high for gamescope ([70742a6](https://github.com/simonoscr/dotfiles/commit/70742a6546e6204bb27f4e606025adbd6cc4166b))
 
 
 
