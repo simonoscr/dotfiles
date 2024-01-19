@@ -1,3 +1,12 @@
+## [1.2.7](https://github.com/simonoscr/dotfiles/compare/1.2.6...1.2.7) (2024-01-19)
+
+
+### Bug Fixes
+
+* add new hardware configruation with LVM ([78d88fa](https://github.com/simonoscr/dotfiles/commit/78d88fa7a86dea86791a8b1233ea45ce5266ebd3))
+
+
+
 ## [1.2.6](https://github.com/simonoscr/dotfiles/compare/1.2.5...1.2.6) (2024-01-18)
 
 
@@ -79,15 +88,6 @@
 ### Bug Fixes
 
 * make swayidle able to shut off display in hyprland and change look of swaylock ([14efbd3](https://github.com/simonoscr/dotfiles/commit/14efbd31b0ec2cc7ea44c557af817309b94135c3))
-
-
-
-# [1.1.0](https://github.com/simonoscr/dotfiles/compare/1.0.5...1.1.0) (2024-01-07)
-
-
-### Features
-
-* add i3 and hyprland session to tuigreet ([f80743c](https://github.com/simonoscr/dotfiles/commit/f80743cdbfb974f71495daa16729d476b20c69c6))
 
 
 
