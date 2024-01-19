@@ -16,6 +16,7 @@
     ./network.nix
     ./packages.nix
     ./services.nix
+    ./virtualisation.nix
   ];
 
   ## systemd-boot
@@ -51,6 +52,7 @@
         extraGroups = [
           "wheel"
           "networkmanager"
+          "libvirtd"
         ];
         shell = pkgs.zsh;
       };

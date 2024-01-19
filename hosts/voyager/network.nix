@@ -9,7 +9,7 @@
     wireless.enable = true;
     firewall = {
       enable = true;
-      # allowedTCPPorts = [ ... ];
+      allowedTCPPorts = [ 22 ];
       # allowedUDPPorts = [ ... ];
     };
   };

@@ -13,5 +13,7 @@
     bat
     curl
     corectrl
+    # hypervisor
+    qemu
   ];
 }
