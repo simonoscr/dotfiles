@@ -1,3 +1,12 @@
+## [1.2.8](https://github.com/simonoscr/dotfiles/compare/1.2.7...1.2.8) (2024-01-19)
+
+
+### Bug Fixes
+
+* add libvrtd ([20ebd1b](https://github.com/simonoscr/dotfiles/commit/20ebd1b04b9ae1617ddaac87c32b0f55b55e9f0e))
+
+
+
 ## [1.2.7](https://github.com/simonoscr/dotfiles/compare/1.2.6...1.2.7) (2024-01-19)
 
 
@@ -79,15 +88,6 @@
 ### Bug Fixes
 
 * wlroots dependency error for gamescope; wlroots version too high for gamescope ([70742a6](https://github.com/simonoscr/dotfiles/commit/70742a6546e6204bb27f4e606025adbd6cc4166b))
-
-
-
-## [1.1.1](https://github.com/simonoscr/dotfiles/compare/1.1.0...1.1.1) (2024-01-07)
-
-
-### Bug Fixes
-
-* make swayidle able to shut off display in hyprland and change look of swaylock ([14efbd3](https://github.com/simonoscr/dotfiles/commit/14efbd31b0ec2cc7ea44c557af817309b94135c3))
 
 
 
