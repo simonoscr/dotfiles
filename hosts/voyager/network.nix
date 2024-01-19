@@ -5,7 +5,8 @@
 }: {
   networking = {
     hostName = "home-server";
-    networkmanager.enable = true;
+    #networkmanager.enable = true;
+    wireless.enable = true;
     firewall = {
       enable = true;
       # allowedTCPPorts = [ ... ];
