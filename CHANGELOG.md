@@ -1,3 +1,12 @@
+## [1.3.2](https://github.com/simonoscr/dotfiles/compare/1.3.1...1.3.2) (2024-01-19)
+
+
+### Bug Fixes
+
+* add helm to voyager ([e4415fc](https://github.com/simonoscr/dotfiles/commit/e4415fc34b7cba6fe280d0a21a7411435e0be95e))
+
+
+
 ## [1.3.1](https://github.com/simonoscr/dotfiles/compare/1.3.0...1.3.1) (2024-01-19)
 
 
@@ -77,17 +86,6 @@
 ### Bug Fixes
 
 * change user name ([5f46064](https://github.com/simonoscr/dotfiles/commit/5f46064159ab576d3ea17662f7f034d819c9f30c))
-
-
-
-## [1.2.1](https://github.com/simonoscr/dotfiles/compare/1.2.0...1.2.1) (2024-01-18)
-
-
-### Bug Fixes
-
-* activate voyager host ([799e566](https://github.com/simonoscr/dotfiles/commit/799e566477ab0669981a82c7578389f0dca7f0ee))
-* add hardware-configuration.nix for voyager ([3cbac0f](https://github.com/simonoscr/dotfiles/commit/3cbac0f1890d1501ecfefa6f40498fb71fb9884a))
-* remove wrong/unused imports for voyager ([717973f](https://github.com/simonoscr/dotfiles/commit/717973f905b86b0cae9ed59674efa7e4537b8bd1))
 
 
 
