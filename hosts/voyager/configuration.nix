@@ -17,6 +17,7 @@
     ./packages.nix
     ./services.nix
     ./virtualisation.nix
+    ./k3s.nix
   ];
 
   ## systemd-boot
