@@ -56,8 +56,6 @@
           "networkmanager"
           "libvirtd"
         ];
-        shell = pkgs.zsh;
-        #openssh.authorizedKeys.keyFiles = [];
       };
     };
   };
