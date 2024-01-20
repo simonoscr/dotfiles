@@ -1,3 +1,12 @@
+## [1.4.11](https://github.com/simonoscr/dotfiles/compare/1.4.10...1.4.11) (2024-01-20)
+
+
+### Bug Fixes
+
+* add fail2ban ([059956f](https://github.com/simonoscr/dotfiles/commit/059956fd8a7c54b03501af8a237c98f7158caafa))
+
+
+
 ## [1.4.10](https://github.com/simonoscr/dotfiles/compare/1.4.9...1.4.10) (2024-01-20)
 
 
@@ -80,16 +89,6 @@
 * add keyfile path for user ([160e0b1](https://github.com/simonoscr/dotfiles/commit/160e0b140e9ecdf599281dfbc387284f6b8e0eb2))
 * add owner of secrets and symlink for ssh key ([f6c16fd](https://github.com/simonoscr/dotfiles/commit/f6c16fdd0dd7db5abc6cb37ec04c14b27a4b5bd3))
 * missing ; ([a844916](https://github.com/simonoscr/dotfiles/commit/a8449167418877081fe836546e3a08cbcfe61636))
-
-
-
-## [1.4.1](https://github.com/simonoscr/dotfiles/compare/1.4.0...1.4.1) (2024-01-20)
-
-
-### Bug Fixes
-
-* add ssh key file location to openssh ([fc96b7a](https://github.com/simonoscr/dotfiles/commit/fc96b7a00a44e03934eb523c72349651aa8b4e93))
-* missing ; ([d9c15b3](https://github.com/simonoscr/dotfiles/commit/d9c15b37e7f7a293814031eee7b9fec5c8222421))
 
 
 
