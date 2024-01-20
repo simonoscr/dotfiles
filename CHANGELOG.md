@@ -1,3 +1,21 @@
+# [1.5.0](https://github.com/simonoscr/dotfiles/compare/1.4.15...1.5.0) (2024-01-20)
+
+
+### Bug Fixes
+
+* add missing users.nix import ([29006bb](https://github.com/simonoscr/dotfiles/commit/29006bb5ea3d3a2870e01885586e21a9768768ec))
+* define group ([2f0fc8e](https://github.com/simonoscr/dotfiles/commit/2f0fc8e7e3879bb0dbc377637bc768f8a30d90a7))
+* fix naming of host ([cb0dd17](https://github.com/simonoscr/dotfiles/commit/cb0dd1786446209ed971bcacbcc21ff93193440c))
+* fix pathing ([a3928ff](https://github.com/simonoscr/dotfiles/commit/a3928ff435790ebb1b34cf3604139aae046028e7))
+* validateSopsFile set to false ([538cdeb](https://github.com/simonoscr/dotfiles/commit/538cdebbb738414307ef37c8635300f0cee4628f))
+
+
+### Features
+
+* new user.nix to seperate user for services and security ([04a0f0d](https://github.com/simonoscr/dotfiles/commit/04a0f0d130e63ed4d79f50c027575f1a9b166fde))
+
+
+
 ## [1.4.15](https://github.com/simonoscr/dotfiles/compare/1.4.14...1.4.15) (2024-01-20)
 
 
@@ -76,15 +94,6 @@
 ### Bug Fixes
 
 * authorized_key path ([98b2054](https://github.com/simonoscr/dotfiles/commit/98b2054f367bfa1e24f8d165586c0cf1dbca7689))
-
-
-
-## [1.4.6](https://github.com/simonoscr/dotfiles/compare/1.4.5...1.4.6) (2024-01-20)
-
-
-### Bug Fixes
-
-* add mode for permissions ssh pub key ([1191d68](https://github.com/simonoscr/dotfiles/commit/1191d68f7a9ed6d0111f2f4792108cbf15c35cfa))
 
 
 
