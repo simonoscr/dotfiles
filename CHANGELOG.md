@@ -1,3 +1,12 @@
+## [1.4.6](https://github.com/simonoscr/dotfiles/compare/1.4.5...1.4.6) (2024-01-20)
+
+
+### Bug Fixes
+
+* add mode for permissions ssh pub key ([1191d68](https://github.com/simonoscr/dotfiles/commit/1191d68f7a9ed6d0111f2f4792108cbf15c35cfa))
+
+
+
 ## [1.4.5](https://github.com/simonoscr/dotfiles/compare/1.4.4...1.4.5) (2024-01-20)
 
 
@@ -88,15 +97,6 @@
 ### Bug Fixes
 
 * import missing k3s.nix ([34d4cd1](https://github.com/simonoscr/dotfiles/commit/34d4cd18b1228be93118833291d3b077afc73485))
-
-
-
-# [1.3.0](https://github.com/simonoscr/dotfiles/compare/1.2.8...1.3.0) (2024-01-19)
-
-
-### Features
-
-* add k3s ([8ebfc2d](https://github.com/simonoscr/dotfiles/commit/8ebfc2d4de04ef3524375c411c751e66e43a40df))
 
 
 
