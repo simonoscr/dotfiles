@@ -80,10 +80,10 @@
 
   ## flakes nix
   nix = {
-    allowedUsers = ["root" "host"];
     settings = {
       experimental-features = "nix-command flakes";
       auto-optimise-store = true;
+      allowed-users = ["root" "host"];
     };
   };
 
