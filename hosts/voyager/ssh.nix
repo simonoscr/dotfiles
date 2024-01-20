@@ -23,7 +23,7 @@
     secrets.c3NoLXB1Yi1rZXk = {
       mode = "0440";
       owner = "host";
-      path = "$HOME/.ssh/authorized_keys";
+      path = "/home/host/.ssh/authorized_keys";
     };
     secrets.V0lGSQ = {
       path = "/etc/wpa_supplicant.conf";
