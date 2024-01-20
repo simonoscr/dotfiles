@@ -56,6 +56,7 @@
           "networkmanager"
           "libvirtd"
         ];
+        shell = pkgs.zsh;
       };
     };
   };
