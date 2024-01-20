@@ -1,3 +1,12 @@
+## [1.4.13](https://github.com/simonoscr/dotfiles/compare/1.4.12...1.4.13) (2024-01-20)
+
+
+### Bug Fixes
+
+* some ssh hardening ([afebcdb](https://github.com/simonoscr/dotfiles/commit/afebcdbd4e91103509eaea0a7163547d3a9333c3))
+
+
+
 ## [1.4.12](https://github.com/simonoscr/dotfiles/compare/1.4.11...1.4.12) (2024-01-20)
 
 
@@ -76,17 +85,6 @@
 ### Bug Fixes
 
 * typo ([94b54f6](https://github.com/simonoscr/dotfiles/commit/94b54f6f398b7d188171d9baa889a71b43a9f4f8))
-
-
-
-## [1.4.3](https://github.com/simonoscr/dotfiles/compare/1.4.2...1.4.3) (2024-01-20)
-
-
-### Bug Fixes
-
-* add wifi ([304ce21](https://github.com/simonoscr/dotfiles/commit/304ce214c3a7fd1a7d21834d47fc8ee84cea23ac))
-* again miassing ; ([856ca61](https://github.com/simonoscr/dotfiles/commit/856ca6136b542679ca8aacf6479c0791d28a52c9))
-* boolean without quotes for sure ([8a43943](https://github.com/simonoscr/dotfiles/commit/8a43943c76a25a97abb467e1f7fb49c1414d4ca1))
 
 
 
