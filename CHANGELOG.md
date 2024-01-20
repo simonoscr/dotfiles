@@ -1,3 +1,12 @@
+## [1.4.10](https://github.com/simonoscr/dotfiles/compare/1.4.9...1.4.10) (2024-01-20)
+
+
+### Bug Fixes
+
+* added configuration for sops-nix ([27619d2](https://github.com/simonoscr/dotfiles/commit/27619d2c6d4a15e0236f886d7153acc42f29b1fd))
+
+
+
 ## [1.4.9](https://github.com/simonoscr/dotfiles/compare/1.4.8...1.4.9) (2024-01-20)
 
 
@@ -81,22 +90,6 @@
 
 * add ssh key file location to openssh ([fc96b7a](https://github.com/simonoscr/dotfiles/commit/fc96b7a00a44e03934eb523c72349651aa8b4e93))
 * missing ; ([d9c15b3](https://github.com/simonoscr/dotfiles/commit/d9c15b37e7f7a293814031eee7b9fec5c8222421))
-
-
-
-# [1.4.0](https://github.com/simonoscr/dotfiles/compare/1.3.3...1.4.0) (2024-01-20)
-
-
-### Bug Fixes
-
-* import sops-nix module correct ([9dddb82](https://github.com/simonoscr/dotfiles/commit/9dddb8206d74b7a0afb636a6b809d528dff377ad))
-* missing s for inputs in ssh.nix ([b59b84a](https://github.com/simonoscr/dotfiles/commit/b59b84abe472fe1d7b7108a502c1d22e2d8b3f78))
-* switch linux kernel to latest instead of latest_hardened ([cf29ee5](https://github.com/simonoscr/dotfiles/commit/cf29ee5190ea5c43207243390b12a32a018d1d13))
-
-
-### Features
-
-* add ssh encryption for ssh connection - test ([417752a](https://github.com/simonoscr/dotfiles/commit/417752a8ed4312cd6d40a9f983965e26928a7e3c))
 
 
 
