@@ -1,3 +1,12 @@
+## [1.5.2](https://github.com/simonoscr/dotfiles/compare/1.5.1...1.5.2) (2024-01-20)
+
+
+### Bug Fixes
+
+* ja ([da8da9b](https://github.com/simonoscr/dotfiles/commit/da8da9b666aad9a902696a345ec586d383b86f2e))
+
+
+
 ## [1.5.1](https://github.com/simonoscr/dotfiles/compare/1.5.0...1.5.1) (2024-01-20)
 
 
@@ -85,15 +94,6 @@
 ### Bug Fixes
 
 * zsh as default shell for user host ([9bb89b3](https://github.com/simonoscr/dotfiles/commit/9bb89b35a022736233f165cf31852c6b42b91266))
-
-
-
-## [1.4.8](https://github.com/simonoscr/dotfiles/compare/1.4.7...1.4.8) (2024-01-20)
-
-
-### Bug Fixes
-
-* path for pub key symlink ([5e8fc53](https://github.com/simonoscr/dotfiles/commit/5e8fc539bcf260034cc9b33c50e8b1d394919acc))
 
 
 
