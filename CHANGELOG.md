@@ -1,3 +1,14 @@
+## [1.4.3](https://github.com/simonoscr/dotfiles/compare/1.4.2...1.4.3) (2024-01-20)
+
+
+### Bug Fixes
+
+* add wifi ([304ce21](https://github.com/simonoscr/dotfiles/commit/304ce214c3a7fd1a7d21834d47fc8ee84cea23ac))
+* again miassing ; ([856ca61](https://github.com/simonoscr/dotfiles/commit/856ca6136b542679ca8aacf6479c0791d28a52c9))
+* boolean without quotes for sure ([8a43943](https://github.com/simonoscr/dotfiles/commit/8a43943c76a25a97abb467e1f7fb49c1414d4ca1))
+
+
+
 ## [1.4.2](https://github.com/simonoscr/dotfiles/compare/1.4.1...1.4.2) (2024-01-20)
 
 
@@ -86,15 +97,6 @@
 ### Bug Fixes
 
 * add new hardware configruation with LVM ([78d88fa](https://github.com/simonoscr/dotfiles/commit/78d88fa7a86dea86791a8b1233ea45ce5266ebd3))
-
-
-
-## [1.2.6](https://github.com/simonoscr/dotfiles/compare/1.2.5...1.2.6) (2024-01-18)
-
-
-### Bug Fixes
-
-* vsc extensions ([4f83f24](https://github.com/simonoscr/dotfiles/commit/4f83f2436117297449a57cc469e8d81d4c07e807))
 
 
 
