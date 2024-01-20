@@ -1,3 +1,14 @@
+## [1.4.2](https://github.com/simonoscr/dotfiles/compare/1.4.1...1.4.2) (2024-01-20)
+
+
+### Bug Fixes
+
+* add keyfile path for user ([160e0b1](https://github.com/simonoscr/dotfiles/commit/160e0b140e9ecdf599281dfbc387284f6b8e0eb2))
+* add owner of secrets and symlink for ssh key ([f6c16fd](https://github.com/simonoscr/dotfiles/commit/f6c16fdd0dd7db5abc6cb37ec04c14b27a4b5bd3))
+* missing ; ([a844916](https://github.com/simonoscr/dotfiles/commit/a8449167418877081fe836546e3a08cbcfe61636))
+
+
+
 ## [1.4.1](https://github.com/simonoscr/dotfiles/compare/1.4.0...1.4.1) (2024-01-20)
 
 
@@ -84,16 +95,6 @@
 ### Bug Fixes
 
 * vsc extensions ([4f83f24](https://github.com/simonoscr/dotfiles/commit/4f83f2436117297449a57cc469e8d81d4c07e807))
-
-
-
-## [1.2.5](https://github.com/simonoscr/dotfiles/compare/1.2.4...1.2.5) (2024-01-18)
-
-
-### Bug Fixes
-
-* add vscodium extension ([bf0e881](https://github.com/simonoscr/dotfiles/commit/bf0e88182cc77ac61301265c198a07128cdf3b32))
-* ya ([f637ca4](https://github.com/simonoscr/dotfiles/commit/f637ca4aad0c0f6c1e672aaae666db154be727bd))
 
 
 
