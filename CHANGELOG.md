@@ -1,3 +1,12 @@
+## [1.5.4](https://github.com/simonoscr/dotfiles/compare/1.5.3...1.5.4) (2024-01-20)
+
+
+### Bug Fixes
+
+* remove cli.nix from home-manager ([624aefa](https://github.com/simonoscr/dotfiles/commit/624aefa83088d13d67f2b425125f6b515253484a))
+
+
+
 ## [1.5.3](https://github.com/simonoscr/dotfiles/compare/1.5.2...1.5.3) (2024-01-20)
 
 
@@ -85,15 +94,6 @@
 ### Bug Fixes
 
 * add fail2ban ([059956f](https://github.com/simonoscr/dotfiles/commit/059956fd8a7c54b03501af8a237c98f7158caafa))
-
-
-
-## [1.4.10](https://github.com/simonoscr/dotfiles/compare/1.4.9...1.4.10) (2024-01-20)
-
-
-### Bug Fixes
-
-* added configuration for sops-nix ([27619d2](https://github.com/simonoscr/dotfiles/commit/27619d2c6d4a15e0236f886d7153acc42f29b1fd))
 
 
 
