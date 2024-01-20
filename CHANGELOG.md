@@ -1,3 +1,12 @@
+## [1.4.8](https://github.com/simonoscr/dotfiles/compare/1.4.7...1.4.8) (2024-01-20)
+
+
+### Bug Fixes
+
+* path for pub key symlink ([5e8fc53](https://github.com/simonoscr/dotfiles/commit/5e8fc539bcf260034cc9b33c50e8b1d394919acc))
+
+
+
 ## [1.4.7](https://github.com/simonoscr/dotfiles/compare/1.4.6...1.4.7) (2024-01-20)
 
 
@@ -88,15 +97,6 @@
 ### Bug Fixes
 
 * add k9s ([cde666e](https://github.com/simonoscr/dotfiles/commit/cde666edd522f0d85d05945a39bf57f3e44ffb2e))
-
-
-
-## [1.3.2](https://github.com/simonoscr/dotfiles/compare/1.3.1...1.3.2) (2024-01-19)
-
-
-### Bug Fixes
-
-* add helm to voyager ([e4415fc](https://github.com/simonoscr/dotfiles/commit/e4415fc34b7cba6fe280d0a21a7411435e0be95e))
 
 
 
