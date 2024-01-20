@@ -1,3 +1,12 @@
+## [1.4.4](https://github.com/simonoscr/dotfiles/compare/1.4.3...1.4.4) (2024-01-20)
+
+
+### Bug Fixes
+
+* typo ([94b54f6](https://github.com/simonoscr/dotfiles/commit/94b54f6f398b7d188171d9baa889a71b43a9f4f8))
+
+
+
 ## [1.4.3](https://github.com/simonoscr/dotfiles/compare/1.4.2...1.4.3) (2024-01-20)
 
 
@@ -88,15 +97,6 @@
 ### Bug Fixes
 
 * add libvrtd ([20ebd1b](https://github.com/simonoscr/dotfiles/commit/20ebd1b04b9ae1617ddaac87c32b0f55b55e9f0e))
-
-
-
-## [1.2.7](https://github.com/simonoscr/dotfiles/compare/1.2.6...1.2.7) (2024-01-19)
-
-
-### Bug Fixes
-
-* add new hardware configruation with LVM ([78d88fa](https://github.com/simonoscr/dotfiles/commit/78d88fa7a86dea86791a8b1233ea45ce5266ebd3))
 
 
 
