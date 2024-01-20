@@ -5,7 +5,6 @@
   ...
 }: {
   services = {
-    openssh.enable = true;
     fstrim.enable = true;
     thermald.enable = true;
 

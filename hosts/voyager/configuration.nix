@@ -18,6 +18,7 @@
     ./services.nix
     ./virtualisation.nix
     ./k3s.nix
+    ./ssh.nix
   ];
 
   ## systemd-boot
@@ -28,7 +29,7 @@
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
-    kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages_latest_hardened;
   };
 
   console = {
