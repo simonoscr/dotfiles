@@ -4,8 +4,8 @@
   inputs,
   ...
 }: let
-  userhome = config.users.users.host.home;
-  username = config.users.users.host.name;
+  userhome = config.users.users.nixos.home;
+  username = config.users.users.nixos.name;
 in {
   imports = [inputs.sops-nix.nixosModules.sops];
 
