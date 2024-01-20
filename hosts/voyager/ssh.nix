@@ -5,7 +5,7 @@
   input,
   ...
 }: {
-  imports = [ <sops-nix/modules/sops> ];
+  imports = [ inputs.sops-nix.nixosModules.sops ];
 
   services = {
     openssh = {
