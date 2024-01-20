@@ -1,3 +1,13 @@
+## [1.4.1](https://github.com/simonoscr/dotfiles/compare/1.4.0...1.4.1) (2024-01-20)
+
+
+### Bug Fixes
+
+* add ssh key file location to openssh ([fc96b7a](https://github.com/simonoscr/dotfiles/commit/fc96b7a00a44e03934eb523c72349651aa8b4e93))
+* missing ; ([d9c15b3](https://github.com/simonoscr/dotfiles/commit/d9c15b37e7f7a293814031eee7b9fec5c8222421))
+
+
+
 # [1.4.0](https://github.com/simonoscr/dotfiles/compare/1.3.3...1.4.0) (2024-01-20)
 
 
@@ -84,15 +94,6 @@
 
 * add vscodium extension ([bf0e881](https://github.com/simonoscr/dotfiles/commit/bf0e88182cc77ac61301265c198a07128cdf3b32))
 * ya ([f637ca4](https://github.com/simonoscr/dotfiles/commit/f637ca4aad0c0f6c1e672aaae666db154be727bd))
-
-
-
-## [1.2.4](https://github.com/simonoscr/dotfiles/compare/1.2.3...1.2.4) (2024-01-18)
-
-
-### Bug Fixes
-
-* modules path for host ([96530b2](https://github.com/simonoscr/dotfiles/commit/96530b23c9120acfe68871fc4f17256a18b12caa))
 
 
 
