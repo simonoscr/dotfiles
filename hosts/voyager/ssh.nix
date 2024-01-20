@@ -4,8 +4,8 @@
   inputs,
   ...
 }: let
-  userhome = config.users.users.nixos.home;
-  username = config.users.users.nixos.name;
+  userhome = config.users.users.host.home;
+  username = config.users.users.host.name;
 in {
   imports = [inputs.sops-nix.nixosModules.sops];
 
@@ -28,7 +28,7 @@ in {
     };
   };
   sops = {
-    defaultSopsFile = "${userhome}/.dotfiles/home/host/secrets/secrets.yaml";
+    defaultSopsFile = "${userhome}/.dotfiles/home/nixos/secrets/secrets.yaml";
     age.sshKeyPaths = ["/etc/ssh/ssh_host_ed25519_key"];
     secrets = {
       c3NoLXB1Yi1rZXk = {
