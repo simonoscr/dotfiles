@@ -57,7 +57,7 @@
           "libvirtd"
         ];
         shell = pkgs.zsh;
-        openssh.authorizedKeys.keyFiles = [ /run/secrets/c3NoLXB1Yi1rZXk ];
+        #openssh.authorizedKeys.keyFiles = [];
       };
     };
   };
