@@ -29,7 +29,7 @@
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
-    kernelPackages = pkgs.linuxPackages_latest_hardened;
+    kernelPackages = pkgs.linuxPackages_latest;
   };
 
   console = {
