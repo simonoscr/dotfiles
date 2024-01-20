@@ -1,3 +1,12 @@
+## [1.5.1](https://github.com/simonoscr/dotfiles/compare/1.5.0...1.5.1) (2024-01-20)
+
+
+### Bug Fixes
+
+* switch to new user ([ace27eb](https://github.com/simonoscr/dotfiles/commit/ace27eb411a20846ce0581acaf75a91119ea476e))
+
+
+
 # [1.5.0](https://github.com/simonoscr/dotfiles/compare/1.4.15...1.5.0) (2024-01-20)
 
 
@@ -85,15 +94,6 @@
 ### Bug Fixes
 
 * path for pub key symlink ([5e8fc53](https://github.com/simonoscr/dotfiles/commit/5e8fc539bcf260034cc9b33c50e8b1d394919acc))
-
-
-
-## [1.4.7](https://github.com/simonoscr/dotfiles/compare/1.4.6...1.4.7) (2024-01-20)
-
-
-### Bug Fixes
-
-* authorized_key path ([98b2054](https://github.com/simonoscr/dotfiles/commit/98b2054f367bfa1e24f8d165586c0cf1dbca7689))
 
 
 
