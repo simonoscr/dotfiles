@@ -2,7 +2,7 @@
   config,
   lib,
   pkgs,
-  input,
+  inputs,
   ...
 }: {
   imports = [ inputs.sops-nix.nixosModules.sops ];
