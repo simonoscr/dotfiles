@@ -1,3 +1,12 @@
+## [1.4.15](https://github.com/simonoscr/dotfiles/compare/1.4.14...1.4.15) (2024-01-20)
+
+
+### Bug Fixes
+
+* remo allowSFTP ([cb05706](https://github.com/simonoscr/dotfiles/commit/cb05706f69cc93bb99cf7af9f597d45bf0ef9067))
+
+
+
 ## [1.4.14](https://github.com/simonoscr/dotfiles/compare/1.4.13...1.4.14) (2024-01-20)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * add mode for permissions ssh pub key ([1191d68](https://github.com/simonoscr/dotfiles/commit/1191d68f7a9ed6d0111f2f4792108cbf15c35cfa))
-
-
-
-## [1.4.5](https://github.com/simonoscr/dotfiles/compare/1.4.4...1.4.5) (2024-01-20)
-
-
-### Bug Fixes
-
-* permissions ([b06b56b](https://github.com/simonoscr/dotfiles/commit/b06b56b802b117937bb81e1f0d7c8fdfaf67d253))
 
 
 
