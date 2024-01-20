@@ -20,6 +20,7 @@
     ./k3s.nix
     ./ssh.nix
     ./security.nix
+    ./users.nix
   ];
 
   ## systemd-boot
