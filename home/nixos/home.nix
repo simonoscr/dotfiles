@@ -18,8 +18,8 @@
   programs.home-manager.enable = true;
 
   home = {
-    username = "host";
-    homeDirectory = "/home/host";
+    username = "nixos";
+    homeDirectory = "/home/nixos";
     sessionVariables = {
       SHELL = "${pkgs.zsh}/bin/zsh";
     };

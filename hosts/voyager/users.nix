@@ -20,6 +20,15 @@
         ];
         shell = pkgs.zsh;
       };
+      host = {
+        group = "host";
+        hashedPasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
+        isNormalUser = true;
+        extraGroups = [
+          "wheel"
+        ];
+        shell = pkgs.zsh;
+      };
       libvirtd = {
         group = "libvirtd";
         home = "/var/lib/libvirtd";
