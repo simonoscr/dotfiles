@@ -1,3 +1,12 @@
+## [1.4.7](https://github.com/simonoscr/dotfiles/compare/1.4.6...1.4.7) (2024-01-20)
+
+
+### Bug Fixes
+
+* authorized_key path ([98b2054](https://github.com/simonoscr/dotfiles/commit/98b2054f367bfa1e24f8d165586c0cf1dbca7689))
+
+
+
 ## [1.4.6](https://github.com/simonoscr/dotfiles/compare/1.4.5...1.4.6) (2024-01-20)
 
 
@@ -88,15 +97,6 @@
 ### Bug Fixes
 
 * add helm to voyager ([e4415fc](https://github.com/simonoscr/dotfiles/commit/e4415fc34b7cba6fe280d0a21a7411435e0be95e))
-
-
-
-## [1.3.1](https://github.com/simonoscr/dotfiles/compare/1.3.0...1.3.1) (2024-01-19)
-
-
-### Bug Fixes
-
-* import missing k3s.nix ([34d4cd1](https://github.com/simonoscr/dotfiles/commit/34d4cd18b1228be93118833291d3b077afc73485))
 
 
 
