@@ -14,11 +14,10 @@
         KbdInteractiveAuthentication = false;
         challengeResponseAuthentication = false;
         PermitRootLogin = "no";
-        allowSFTP = false;
+        X11Forwarding = false;
       };
       extraConfig = ''
         AllowTcpForwarding yes
-        X11Forwarding no
         AllowAgentForwarding no
         AllowStreamLocalForwarding no
         AuthenticationMethods publickey
