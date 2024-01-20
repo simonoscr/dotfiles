@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   imports = [
-    ../../modules/shell/cli.nix
     ../../modules/git.nix
     ../../modules/terminals/kitty.nix
     ../../modules/editors/neovim.nix
