@@ -21,6 +21,9 @@
     ./ssh.nix
   ];
 
+  security.sudo.execWheelOnly = true;
+  environment.defaultPackages = lib.mkForce [];
+
   ## systemd-boot
   boot = {
     tmp.cleanOnBoot = true;
@@ -77,6 +80,7 @@
 
   ## flakes nix
   nix = {
+    allowedUsers = ["root" "host"];
     settings = {
       experimental-features = "nix-command flakes";
       auto-optimise-store = true;
