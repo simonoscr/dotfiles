@@ -1,6 +1,9 @@
-{ config, pkgs, lib, ... }:
-
 {
+  config,
+  pkgs,
+  lib,
+  ...
+}: {
   # Define VMs
   virtualisation.qemu.vms = {
     vm1 = {
@@ -14,7 +17,15 @@
         type = "user";
       };
     };
-    vm2 = { /* ...similar configuration... */ };
-    vm3 = { /* ...similar configuration... */ };
+    vm2 = {
+      /*
+      ...similar configuration...
+      */
+    };
+    vm3 = {
+      /*
+      ...similar configuration...
+      */
+    };
   };
 }
