@@ -3,7 +3,10 @@
   pkgs,
   inputs,
   ...
-}: {
+}: let
+  userhome = config.users.users.nixos.home;
+  username = config.users.users.nixos.name;
+in {
   imports = [inputs.sops-nix.nixosModules.sops];
 
   services = {
@@ -25,18 +28,18 @@
     };
   };
   sops = {
-    defaultSopsFile = ../../home/host/secrets/secrets.yaml;
+    defaultSopsFile = "${userhome}/.dotfiles/home/host/secrets/secrets.yaml";
     age.sshKeyPaths = ["/etc/ssh/ssh_host_ed25519_key"];
     secrets = {
       c3NoLXB1Yi1rZXk = {
         mode = "0600";
-        owner = config.users.users.host.name;
-        path = "/home/host/.ssh/authorized_keys";
+        owner = "${username}";
+        path = "${userhome}/.ssh/authorized_keys";
       };
       c3NoLXByaXZhdGUta2V5 = {
         mode = "0600";
-        owner = config.users.users.host.name;
-        path = "/home/host/.ssh/id_ed25519";
+        owner = "${username}";
+        path = "${userhome}/.ssh/id_ed25519";
       };
       V0lGSQ = {
         path = "/etc/wpa_supplicant.conf";

@@ -1,18 +1,11 @@
-{
-  pkgs,
-  config,
-  lib,
-  ...
-}: {
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     git
     neofetch
     neovim
-    linuxPackages.cpupower
     btop
     bat
     curl
-    corectrl
     # hypervisor
     qemu
   ];

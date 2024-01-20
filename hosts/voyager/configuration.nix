@@ -19,10 +19,8 @@
     ./virtualisation.nix
     ./k3s.nix
     ./ssh.nix
+    ./security.nix
   ];
-
-  security.sudo.execWheelOnly = true;
-  environment.defaultPackages = lib.mkForce [];
 
   ## systemd-boot
   boot = {
@@ -47,23 +45,6 @@
     swapDevices = 1;
   };
 
-  ## user
-  users = {
-    groups.simon.gid = 1000;
-    users = {
-      host = {
-        hashedPasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
-        isNormalUser = true;
-        extraGroups = [
-          "wheel"
-          "networkmanager"
-          "libvirtd"
-        ];
-        shell = pkgs.zsh;
-      };
-    };
-  };
-
   ## programs
   programs = {
     zsh = {
@@ -84,12 +65,6 @@
       experimental-features = "nix-command flakes";
       auto-optimise-store = true;
       allowed-users = ["root" "host"];
-    };
-  };
-
-  nixpkgs = {
-    config = {
-      allowUnfree = true;
     };
   };
 

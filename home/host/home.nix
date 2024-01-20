@@ -8,13 +8,6 @@
     ../../modules/shell/zsh.nix
   ];
 
-  nixpkgs = {
-    overlays = [];
-    config = {
-      allowUnfree = true;
-    };
-  };
-
   nix = {
     package = pkgs.nix;
     settings = {
