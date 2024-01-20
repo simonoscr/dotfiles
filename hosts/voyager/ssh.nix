@@ -13,7 +13,7 @@
       settings = {
       #  PasswordAuthentication = "false";
       #  KbdInteractiveAuthentication = "false";
-        AuthorizedKeysFile = "/run/secrets/c3NoLXB1Yi1rZXk"
+        AuthorizedKeysFile = "/run/secrets/c3NoLXB1Yi1rZXk";
       };
     };
   };
