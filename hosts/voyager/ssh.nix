@@ -21,6 +21,7 @@
     defaultSopsFile = ../../home/host/secrets/secrets.yaml;
     age.sshKeyPaths = [ "/etc/ssh/ssh_host_ed25519_key" ];
     secrets.c3NoLXB1Yi1rZXk = {
+      mode = "0440";
       owner = "host";
       path = "$HOME/.ssh/id_ed25519.pub";
     };
