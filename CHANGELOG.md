@@ -1,3 +1,12 @@
+## [1.4.5](https://github.com/simonoscr/dotfiles/compare/1.4.4...1.4.5) (2024-01-20)
+
+
+### Bug Fixes
+
+* permissions ([b06b56b](https://github.com/simonoscr/dotfiles/commit/b06b56b802b117937bb81e1f0d7c8fdfaf67d253))
+
+
+
 ## [1.4.4](https://github.com/simonoscr/dotfiles/compare/1.4.3...1.4.4) (2024-01-20)
 
 
@@ -88,15 +97,6 @@
 ### Features
 
 * add k3s ([8ebfc2d](https://github.com/simonoscr/dotfiles/commit/8ebfc2d4de04ef3524375c411c751e66e43a40df))
-
-
-
-## [1.2.8](https://github.com/simonoscr/dotfiles/compare/1.2.7...1.2.8) (2024-01-19)
-
-
-### Bug Fixes
-
-* add libvrtd ([20ebd1b](https://github.com/simonoscr/dotfiles/commit/20ebd1b04b9ae1617ddaac87c32b0f55b55e9f0e))
 
 
 
