@@ -1,3 +1,12 @@
+## [1.5.3](https://github.com/simonoscr/dotfiles/compare/1.5.2...1.5.3) (2024-01-20)
+
+
+### Bug Fixes
+
+* update flake for new nixos user ([c33d2ef](https://github.com/simonoscr/dotfiles/commit/c33d2ef13c7d2e5c383290ac36a59bdf0dab357b))
+
+
+
 ## [1.5.2](https://github.com/simonoscr/dotfiles/compare/1.5.1...1.5.2) (2024-01-20)
 
 
@@ -85,15 +94,6 @@
 ### Bug Fixes
 
 * added configuration for sops-nix ([27619d2](https://github.com/simonoscr/dotfiles/commit/27619d2c6d4a15e0236f886d7153acc42f29b1fd))
-
-
-
-## [1.4.9](https://github.com/simonoscr/dotfiles/compare/1.4.8...1.4.9) (2024-01-20)
-
-
-### Bug Fixes
-
-* zsh as default shell for user host ([9bb89b3](https://github.com/simonoscr/dotfiles/commit/9bb89b35a022736233f165cf31852c6b42b91266))
 
 
 
