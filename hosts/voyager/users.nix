@@ -39,6 +39,7 @@
     groups = {
       nixos = {};
       libvirtd = {};
+      host = {};
     };
   };
 }
