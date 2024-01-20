@@ -1,3 +1,12 @@
+## [1.4.14](https://github.com/simonoscr/dotfiles/compare/1.4.13...1.4.14) (2024-01-20)
+
+
+### Bug Fixes
+
+* allowed-user update settings ([24a11fa](https://github.com/simonoscr/dotfiles/commit/24a11faea91973d1c9cb2d68fd1bb00b34d85dcb))
+
+
+
 ## [1.4.13](https://github.com/simonoscr/dotfiles/compare/1.4.12...1.4.13) (2024-01-20)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * permissions ([b06b56b](https://github.com/simonoscr/dotfiles/commit/b06b56b802b117937bb81e1f0d7c8fdfaf67d253))
-
-
-
-## [1.4.4](https://github.com/simonoscr/dotfiles/compare/1.4.3...1.4.4) (2024-01-20)
-
-
-### Bug Fixes
-
-* typo ([94b54f6](https://github.com/simonoscr/dotfiles/commit/94b54f6f398b7d188171d9baa889a71b43a9f4f8))
 
 
 
