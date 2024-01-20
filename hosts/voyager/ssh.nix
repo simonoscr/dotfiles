@@ -10,11 +10,11 @@
   services = {
     openssh = {
       enable = true;
-      #settings = {
+      settings = {
       #  PasswordAuthentication = "false";
       #  KbdInteractiveAuthentication = "false";
-      #  AuthorizedKeysFile = "/run/secrets/ssh-pub-key"
-      #};
+        AuthorizedKeysFile = "/run/secrets/c3NoLXB1Yi1rZXk"
+      };
     };
   };
   sops = {
