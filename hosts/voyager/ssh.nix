@@ -26,7 +26,7 @@
       path = "$HOME/.ssh/id_ed25519";
     };
     secrets.V0lGSQ = {
-      path = "/etc/wpa_supplicant.conf"
+      path = "/etc/wpa_supplicant.conf";
     };
   };
 }
