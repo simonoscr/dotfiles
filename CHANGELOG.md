@@ -1,3 +1,12 @@
+## [1.4.9](https://github.com/simonoscr/dotfiles/compare/1.4.8...1.4.9) (2024-01-20)
+
+
+### Bug Fixes
+
+* zsh as default shell for user host ([9bb89b3](https://github.com/simonoscr/dotfiles/commit/9bb89b35a022736233f165cf31852c6b42b91266))
+
+
+
 ## [1.4.8](https://github.com/simonoscr/dotfiles/compare/1.4.7...1.4.8) (2024-01-20)
 
 
@@ -88,15 +97,6 @@
 ### Features
 
 * add ssh encryption for ssh connection - test ([417752a](https://github.com/simonoscr/dotfiles/commit/417752a8ed4312cd6d40a9f983965e26928a7e3c))
-
-
-
-## [1.3.3](https://github.com/simonoscr/dotfiles/compare/1.3.2...1.3.3) (2024-01-19)
-
-
-### Bug Fixes
-
-* add k9s ([cde666e](https://github.com/simonoscr/dotfiles/commit/cde666edd522f0d85d05945a39bf57f3e44ffb2e))
 
 
 
