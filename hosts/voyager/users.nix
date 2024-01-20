@@ -22,7 +22,8 @@
       };
       host = {
         group = "host";
-        hashedPasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
+        initialPassword = "123";
+        #hashedPasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
         isNormalUser = true;
         extraGroups = [
           "wheel"
