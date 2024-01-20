@@ -49,7 +49,7 @@
     groups.simon.gid = 1000;
     users = {
       host = {
-        initialPassword = "123";
+        hashedPasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
         isNormalUser = true;
         extraGroups = [
           "wheel"
