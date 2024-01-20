@@ -1,3 +1,12 @@
+## [1.4.12](https://github.com/simonoscr/dotfiles/compare/1.4.11...1.4.12) (2024-01-20)
+
+
+### Bug Fixes
+
+* update mode for secrets ([9e563ea](https://github.com/simonoscr/dotfiles/commit/9e563ea74bf847d68562708c5d9c27e19474a9a8))
+
+
+
 ## [1.4.11](https://github.com/simonoscr/dotfiles/compare/1.4.10...1.4.11) (2024-01-20)
 
 
@@ -78,17 +87,6 @@
 * add wifi ([304ce21](https://github.com/simonoscr/dotfiles/commit/304ce214c3a7fd1a7d21834d47fc8ee84cea23ac))
 * again miassing ; ([856ca61](https://github.com/simonoscr/dotfiles/commit/856ca6136b542679ca8aacf6479c0791d28a52c9))
 * boolean without quotes for sure ([8a43943](https://github.com/simonoscr/dotfiles/commit/8a43943c76a25a97abb467e1f7fb49c1414d4ca1))
-
-
-
-## [1.4.2](https://github.com/simonoscr/dotfiles/compare/1.4.1...1.4.2) (2024-01-20)
-
-
-### Bug Fixes
-
-* add keyfile path for user ([160e0b1](https://github.com/simonoscr/dotfiles/commit/160e0b140e9ecdf599281dfbc387284f6b8e0eb2))
-* add owner of secrets and symlink for ssh key ([f6c16fd](https://github.com/simonoscr/dotfiles/commit/f6c16fdd0dd7db5abc6cb37ec04c14b27a4b5bd3))
-* missing ; ([a844916](https://github.com/simonoscr/dotfiles/commit/a8449167418877081fe836546e3a08cbcfe61636))
 
 
 
