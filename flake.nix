@@ -114,11 +114,11 @@
           ./home/simon/home.nix
         ];
       };
-      "nixos@voyager" = home-manager.lib.homeManagerConfiguration {
+      "oscar@voyager" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = {inherit inputs;};
         modules = [
-          ./home/nixos/home.nix
+          ./home/oscar/home.nix
         ];
       };
       # work user
