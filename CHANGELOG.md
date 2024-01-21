@@ -1,3 +1,12 @@
+## [1.5.7](https://github.com/simonoscr/dotfiles/compare/1.5.6...1.5.7) (2024-01-21)
+
+
+### Bug Fixes
+
+* update sops-nix and secrets files ([ac70a4f](https://github.com/simonoscr/dotfiles/commit/ac70a4ff34f2715a96d42cec134b7cc96a22739b))
+
+
+
 ## [1.5.6](https://github.com/simonoscr/dotfiles/compare/1.5.5...1.5.6) (2024-01-21)
 
 
@@ -85,15 +94,6 @@
 ### Bug Fixes
 
 * allowed-user update settings ([24a11fa](https://github.com/simonoscr/dotfiles/commit/24a11faea91973d1c9cb2d68fd1bb00b34d85dcb))
-
-
-
-## [1.4.13](https://github.com/simonoscr/dotfiles/compare/1.4.12...1.4.13) (2024-01-20)
-
-
-### Bug Fixes
-
-* some ssh hardening ([afebcdb](https://github.com/simonoscr/dotfiles/commit/afebcdbd4e91103509eaea0a7163547d3a9333c3))
 
 
 
