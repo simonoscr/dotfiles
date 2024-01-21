@@ -1,3 +1,13 @@
+## [1.5.11](https://github.com/simonoscr/dotfiles/compare/1.5.10...1.5.11) (2024-01-21)
+
+
+### Bug Fixes
+
+* neededFor User sops ([c2b664d](https://github.com/simonoscr/dotfiles/commit/c2b664d4086c4e82625bb2cce245501de5ac64bd))
+* test user password with sops ([75d569b](https://github.com/simonoscr/dotfiles/commit/75d569b1c7ff68d5f468567a9026c9ef10db57be))
+
+
+
 ## [1.5.10](https://github.com/simonoscr/dotfiles/compare/1.5.9...1.5.10) (2024-01-21)
 
 
@@ -76,15 +86,6 @@
 ### Bug Fixes
 
 * ja ([da8da9b](https://github.com/simonoscr/dotfiles/commit/da8da9b666aad9a902696a345ec586d383b86f2e))
-
-
-
-## [1.5.1](https://github.com/simonoscr/dotfiles/compare/1.5.0...1.5.1) (2024-01-20)
-
-
-### Bug Fixes
-
-* switch to new user ([ace27eb](https://github.com/simonoscr/dotfiles/commit/ace27eb411a20846ce0581acaf75a91119ea476e))
 
 
 
