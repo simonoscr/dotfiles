@@ -1,3 +1,12 @@
+## [1.5.6](https://github.com/simonoscr/dotfiles/compare/1.5.5...1.5.6) (2024-01-21)
+
+
+### Bug Fixes
+
+* update hardware-configuration.nix for server ([fee56d1](https://github.com/simonoscr/dotfiles/commit/fee56d1fb0ff333c67739ab04d5f38001fb041bc))
+
+
+
 ## [1.5.5](https://github.com/simonoscr/dotfiles/compare/1.5.4...1.5.5) (2024-01-21)
 
 
@@ -85,15 +94,6 @@
 ### Bug Fixes
 
 * some ssh hardening ([afebcdb](https://github.com/simonoscr/dotfiles/commit/afebcdbd4e91103509eaea0a7163547d3a9333c3))
-
-
-
-## [1.4.12](https://github.com/simonoscr/dotfiles/compare/1.4.11...1.4.12) (2024-01-20)
-
-
-### Bug Fixes
-
-* update mode for secrets ([9e563ea](https://github.com/simonoscr/dotfiles/commit/9e563ea74bf847d68562708c5d9c27e19474a9a8))
 
 
 
