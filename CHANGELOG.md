@@ -1,3 +1,12 @@
+## [1.5.15](https://github.com/simonoscr/dotfiles/compare/1.5.14...1.5.15) (2024-01-21)
+
+
+### Bug Fixes
+
+* revert openssh settings ([77e4a55](https://github.com/simonoscr/dotfiles/commit/77e4a55e7781ccf136136a105d6d469b62328df1))
+
+
+
 ## [1.5.14](https://github.com/simonoscr/dotfiles/compare/1.5.13...1.5.14) (2024-01-21)
 
 
@@ -78,15 +87,6 @@
 ### Bug Fixes
 
 * update hardware-configuration.nix for server ([fee56d1](https://github.com/simonoscr/dotfiles/commit/fee56d1fb0ff333c67739ab04d5f38001fb041bc))
-
-
-
-## [1.5.5](https://github.com/simonoscr/dotfiles/compare/1.5.4...1.5.5) (2024-01-21)
-
-
-### Bug Fixes
-
-* users and root settings ([ec371e0](https://github.com/simonoscr/dotfiles/commit/ec371e0cb7e430bc1ec01cd92b1641d4c5bd2339))
 
 
 
