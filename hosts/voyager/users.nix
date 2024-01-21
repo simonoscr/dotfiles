@@ -23,7 +23,7 @@
       };
       test = {
         group = "test";
-        PasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
+        passwordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
         isNormalUser = true;
         extraGroups = [
           "wheel"
