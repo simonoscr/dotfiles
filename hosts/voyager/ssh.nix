@@ -12,19 +12,19 @@ in {
   services = {
     openssh = {
       enable = true;
-      #settings = {
-      #  PasswordAuthentication = false;
-      #  KbdInteractiveAuthentication = false;
-      #  challengeResponseAuthentication = false;
-      #  PermitRootLogin = "no";
-      #  X11Forwarding = false;
-      #};
-      #extraConfig = ''
-      #  AllowTcpForwarding yes
-      #  AllowAgentForwarding no
-      #  AllowStreamLocalForwarding no
-      #  AuthenticationMethods publickey
-      #'';
+      settings = {
+        PasswordAuthentication = false;
+        KbdInteractiveAuthentication = false;
+        challengeResponseAuthentication = false;
+        PermitRootLogin = "no";
+        X11Forwarding = false;
+      };
+      extraConfig = ''
+        AllowTcpForwarding yes
+        AllowAgentForwarding no
+        AllowStreamLocalForwarding no
+        AuthenticationMethods publickey
+      '';
     };
   };
   sops = {
