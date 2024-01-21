@@ -1,3 +1,12 @@
+## [1.5.13](https://github.com/simonoscr/dotfiles/compare/1.5.12...1.5.13) (2024-01-21)
+
+
+### Bug Fixes
+
+* hashedPasswordFile for user password ([1cb14ad](https://github.com/simonoscr/dotfiles/commit/1cb14ad7b15f78962f07594a856fc563260b7bbb))
+
+
+
 ## [1.5.12](https://github.com/simonoscr/dotfiles/compare/1.5.11...1.5.12) (2024-01-21)
 
 
@@ -78,15 +87,6 @@
 ### Bug Fixes
 
 * remove cli.nix from home-manager ([624aefa](https://github.com/simonoscr/dotfiles/commit/624aefa83088d13d67f2b425125f6b515253484a))
-
-
-
-## [1.5.3](https://github.com/simonoscr/dotfiles/compare/1.5.2...1.5.3) (2024-01-20)
-
-
-### Bug Fixes
-
-* update flake for new nixos user ([c33d2ef](https://github.com/simonoscr/dotfiles/commit/c33d2ef13c7d2e5c383290ac36a59bdf0dab357b))
 
 
 
