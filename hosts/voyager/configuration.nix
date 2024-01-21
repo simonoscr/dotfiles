@@ -18,7 +18,7 @@
     ./services.nix
     ./virtualisation.nix
     #./k3s.nix
-    #./ssh.nix
+    ./ssh.nix
     ./security.nix
     ./users.nix
   ];

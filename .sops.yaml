@@ -1,13 +1,19 @@
 keys:
   - &user_simon_age age14mjnxlu4c7fdppuev0y5263f8y2yv0d80480czltqxz3ev8encgqcjc9gk
-  - &server_host_age age12e956d0p6n8nagqrkje0fflgqxrf085zg4k79d2xk0d5422ns52q3yhve0
+  - &server_oscar_age age1zrt4sy022jd28art4qs9nrhts6348emw2a6zez9murlu7shv9yvs88yz9a
+  - &user_work_age
 creation_rules:
   - path_regex: home/simon/secrets/[^/]+\.yaml$
     key_groups:
       - age:
         - *user_simon_age
-  - path_regex: home/nixos/secrets/[^/]+\.yaml$
+  - path_regex: home/oscar/secrets/[^/]+\.yaml$
     key_groups:
       - age:
-        - *server_host_age
+        - *server_oscar_age
+        - *user_simon_age
+  - path_regex: home/work/secrets/[^/]+\.yaml$
+    key_groups:
+      - age:
+        - *user_work_age
         - *user_simon_age

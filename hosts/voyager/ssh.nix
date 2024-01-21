@@ -12,24 +12,24 @@ in {
   services = {
     openssh = {
       enable = true;
-      settings = {
-        PasswordAuthentication = false;
-        KbdInteractiveAuthentication = false;
-        challengeResponseAuthentication = false;
-        PermitRootLogin = "no";
-        X11Forwarding = false;
-      };
-      extraConfig = ''
-        AllowTcpForwarding yes
-        AllowAgentForwarding no
-        AllowStreamLocalForwarding no
-        AuthenticationMethods publickey
-      '';
+      #settings = {
+      #  PasswordAuthentication = false;
+      #  KbdInteractiveAuthentication = false;
+      #  challengeResponseAuthentication = false;
+      #  PermitRootLogin = "no";
+      #  X11Forwarding = false;
+      #};
+      #extraConfig = ''
+      #  AllowTcpForwarding yes
+      #  AllowAgentForwarding no
+      #  AllowStreamLocalForwarding no
+      #  AuthenticationMethods publickey
+      #'';
     };
   };
   sops = {
     validateSopsFiles = false;
-    defaultSopsFile = "${userhome}/.dotfiles/home/nixos/secrets/secrets.yaml";
+    defaultSopsFile = "${userhome}/.dotfiles/home/oscar/secrets/secrets.yaml";
     age.sshKeyPaths = ["/etc/ssh/ssh_host_ed25519_key"];
     secrets = {
       c3NoLXB1Yi1rZXk = {
