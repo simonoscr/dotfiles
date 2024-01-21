@@ -1,3 +1,12 @@
+## [1.5.14](https://github.com/simonoscr/dotfiles/compare/1.5.13...1.5.14) (2024-01-21)
+
+
+### Bug Fixes
+
+* update user passwords ([e318444](https://github.com/simonoscr/dotfiles/commit/e318444e043277793f00e635c9e584ddc07e1620))
+
+
+
 ## [1.5.13](https://github.com/simonoscr/dotfiles/compare/1.5.12...1.5.13) (2024-01-21)
 
 
@@ -78,15 +87,6 @@
 ### Bug Fixes
 
 * users and root settings ([ec371e0](https://github.com/simonoscr/dotfiles/commit/ec371e0cb7e430bc1ec01cd92b1641d4c5bd2339))
-
-
-
-## [1.5.4](https://github.com/simonoscr/dotfiles/compare/1.5.3...1.5.4) (2024-01-20)
-
-
-### Bug Fixes
-
-* remove cli.nix from home-manager ([624aefa](https://github.com/simonoscr/dotfiles/commit/624aefa83088d13d67f2b425125f6b515253484a))
 
 
 
