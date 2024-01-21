@@ -1,3 +1,12 @@
+## [1.5.5](https://github.com/simonoscr/dotfiles/compare/1.5.4...1.5.5) (2024-01-21)
+
+
+### Bug Fixes
+
+* users and root settings ([ec371e0](https://github.com/simonoscr/dotfiles/commit/ec371e0cb7e430bc1ec01cd92b1641d4c5bd2339))
+
+
+
 ## [1.5.4](https://github.com/simonoscr/dotfiles/compare/1.5.3...1.5.4) (2024-01-20)
 
 
@@ -85,15 +94,6 @@
 ### Bug Fixes
 
 * update mode for secrets ([9e563ea](https://github.com/simonoscr/dotfiles/commit/9e563ea74bf847d68562708c5d9c27e19474a9a8))
-
-
-
-## [1.4.11](https://github.com/simonoscr/dotfiles/compare/1.4.10...1.4.11) (2024-01-20)
-
-
-### Bug Fixes
-
-* add fail2ban ([059956f](https://github.com/simonoscr/dotfiles/commit/059956fd8a7c54b03501af8a237c98f7158caafa))
 
 
 
