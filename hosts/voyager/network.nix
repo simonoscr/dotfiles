@@ -4,7 +4,7 @@
   ...
 }: {
   networking = {
-    hostName = "home-server";
+    hostName = "nixos-server";
     #networkmanager.enable = true;
     wireless.enable = true;
     firewall = {

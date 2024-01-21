@@ -5,24 +5,14 @@
   ...
 }: {
   users = {
-    mutableUsers = false; # disable useradd + passwd
+    #mutableUsers = false; # disable useradd + passwd
 
     users = {
-      root = {
-        hashedPassword = "*"; # set a invalid hashed password "disables" root
-      };
-      nixos = {
+      #root = {
+      #  hashedPassword = "*"; # set a invalid hashed password "disables" root
+      #};
+      oscar = {
         group = "nixos";
-        hashedPasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
-        isNormalUser = true;
-        extraGroups = [
-          "wheel"
-        ];
-        shell = pkgs.zsh;
-      };
-      host = {
-        group = "host";
-        initialPassword = "123";
         #hashedPasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
         isNormalUser = true;
         extraGroups = [
@@ -40,7 +30,6 @@
     groups = {
       nixos = {};
       libvirtd = {};
-      host = {};
     };
   };
 }

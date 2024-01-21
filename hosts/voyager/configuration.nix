@@ -17,8 +17,8 @@
     ./packages.nix
     ./services.nix
     ./virtualisation.nix
-    ./k3s.nix
-    ./ssh.nix
+    #./k3s.nix
+    #./ssh.nix
     ./security.nix
     ./users.nix
   ];
@@ -65,7 +65,7 @@
     settings = {
       experimental-features = "nix-command flakes";
       auto-optimise-store = true;
-      allowed-users = ["root" "host"];
+      allowed-users = ["root" "oscar"];
     };
   };
 
