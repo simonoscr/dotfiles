@@ -18,7 +18,7 @@ in {
         challengeResponseAuthentication = false;
         PermitRootLogin = "no";
         X11Forwarding = false;
-        KexAlgorithmus = [
+        KexAlgorithms = [
           "curve25519-sha256"
           "curve25519-sha256@libssh.org"
           "diffie-hellman-group16-sha512"
