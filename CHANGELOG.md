@@ -1,3 +1,12 @@
+## [1.5.9](https://github.com/simonoscr/dotfiles/compare/1.5.8...1.5.9) (2024-01-21)
+
+
+### Bug Fixes
+
+* update home.nix for oscar ([2b5d683](https://github.com/simonoscr/dotfiles/commit/2b5d683b898816bb8737cef17926385b1051ea77))
+
+
+
 ## [1.5.8](https://github.com/simonoscr/dotfiles/compare/1.5.7...1.5.8) (2024-01-21)
 
 
@@ -85,15 +94,6 @@
 ### Features
 
 * new user.nix to seperate user for services and security ([04a0f0d](https://github.com/simonoscr/dotfiles/commit/04a0f0d130e63ed4d79f50c027575f1a9b166fde))
-
-
-
-## [1.4.15](https://github.com/simonoscr/dotfiles/compare/1.4.14...1.4.15) (2024-01-20)
-
-
-### Bug Fixes
-
-* remo allowSFTP ([cb05706](https://github.com/simonoscr/dotfiles/commit/cb05706f69cc93bb99cf7af9f597d45bf0ef9067))
 
 
 
