@@ -1,3 +1,13 @@
+## [1.5.12](https://github.com/simonoscr/dotfiles/compare/1.5.11...1.5.12) (2024-01-21)
+
+
+### Bug Fixes
+
+* typo ([f81eea4](https://github.com/simonoscr/dotfiles/commit/f81eea45b7ca15ab2d10e256ecf2f02fe4b43315))
+* update passwordfile ([9956a40](https://github.com/simonoscr/dotfiles/commit/9956a407b153dd033fc4fb9d44321a57d21002bf))
+
+
+
 ## [1.5.11](https://github.com/simonoscr/dotfiles/compare/1.5.10...1.5.11) (2024-01-21)
 
 
@@ -77,15 +87,6 @@
 ### Bug Fixes
 
 * update flake for new nixos user ([c33d2ef](https://github.com/simonoscr/dotfiles/commit/c33d2ef13c7d2e5c383290ac36a59bdf0dab357b))
-
-
-
-## [1.5.2](https://github.com/simonoscr/dotfiles/compare/1.5.1...1.5.2) (2024-01-20)
-
-
-### Bug Fixes
-
-* ja ([da8da9b](https://github.com/simonoscr/dotfiles/commit/da8da9b666aad9a902696a345ec586d383b86f2e))
 
 
 
