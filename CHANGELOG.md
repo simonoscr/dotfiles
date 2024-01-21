@@ -1,3 +1,12 @@
+## [1.5.8](https://github.com/simonoscr/dotfiles/compare/1.5.7...1.5.8) (2024-01-21)
+
+
+### Bug Fixes
+
+* update home-manager user ([97ed1f3](https://github.com/simonoscr/dotfiles/commit/97ed1f3a79d0951e2836cc971d93db5f36ad94cf))
+
+
+
 ## [1.5.7](https://github.com/simonoscr/dotfiles/compare/1.5.6...1.5.7) (2024-01-21)
 
 
@@ -85,15 +94,6 @@
 ### Bug Fixes
 
 * remo allowSFTP ([cb05706](https://github.com/simonoscr/dotfiles/commit/cb05706f69cc93bb99cf7af9f597d45bf0ef9067))
-
-
-
-## [1.4.14](https://github.com/simonoscr/dotfiles/compare/1.4.13...1.4.14) (2024-01-20)
-
-
-### Bug Fixes
-
-* allowed-user update settings ([24a11fa](https://github.com/simonoscr/dotfiles/commit/24a11faea91973d1c9cb2d68fd1bb00b34d85dcb))
 
 
 
