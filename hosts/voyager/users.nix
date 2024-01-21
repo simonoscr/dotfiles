@@ -6,7 +6,7 @@
 }: {
   sops.secrets.dXNlcl9wYXNzd29yZA.neededForUsers = true;
   users = {
-    #mutableUsers = false; # disable useradd + passwd
+    mutableUsers = false; # disable useradd + passwd
 
     users = {
       #root = {
