@@ -4,6 +4,7 @@
   inputs,
   ...
 }: {
+  sops.secrets.my-password.neededForUsers = true;
   users = {
     #mutableUsers = false; # disable useradd + passwd
 

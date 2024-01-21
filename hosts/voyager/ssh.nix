@@ -45,7 +45,6 @@ in {
       V0lGSQ = {
         path = "/etc/wpa_supplicant.conf";
       };
-      dXNlcl9wYXNzd29yZA.neededForUsers = true;
     };
   };
 }
