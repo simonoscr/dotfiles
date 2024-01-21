@@ -1,3 +1,13 @@
+## [1.5.16](https://github.com/simonoscr/dotfiles/compare/1.5.15...1.5.16) (2024-01-21)
+
+
+### Bug Fixes
+
+* typo ([4d9b473](https://github.com/simonoscr/dotfiles/commit/4d9b473cce7347fbeda366d8f2f30eaa785eecc1))
+* update security, network and user files ([5fa4eb1](https://github.com/simonoscr/dotfiles/commit/5fa4eb153dbdca0fc42518a109041703471c6b9e))
+
+
+
 ## [1.5.15](https://github.com/simonoscr/dotfiles/compare/1.5.14...1.5.15) (2024-01-21)
 
 
@@ -78,15 +88,6 @@
 ### Bug Fixes
 
 * update sops-nix and secrets files ([ac70a4f](https://github.com/simonoscr/dotfiles/commit/ac70a4ff34f2715a96d42cec134b7cc96a22739b))
-
-
-
-## [1.5.6](https://github.com/simonoscr/dotfiles/compare/1.5.5...1.5.6) (2024-01-21)
-
-
-### Bug Fixes
-
-* update hardware-configuration.nix for server ([fee56d1](https://github.com/simonoscr/dotfiles/commit/fee56d1fb0ff333c67739ab04d5f38001fb041bc))
 
 
 
