@@ -1,3 +1,12 @@
+## [1.5.10](https://github.com/simonoscr/dotfiles/compare/1.5.9...1.5.10) (2024-01-21)
+
+
+### Bug Fixes
+
+* update secrets files with new age key ([edfef64](https://github.com/simonoscr/dotfiles/commit/edfef64e32154b2105de227883ccdd9934b414af))
+
+
+
 ## [1.5.9](https://github.com/simonoscr/dotfiles/compare/1.5.8...1.5.9) (2024-01-21)
 
 
@@ -76,24 +85,6 @@
 ### Bug Fixes
 
 * switch to new user ([ace27eb](https://github.com/simonoscr/dotfiles/commit/ace27eb411a20846ce0581acaf75a91119ea476e))
-
-
-
-# [1.5.0](https://github.com/simonoscr/dotfiles/compare/1.4.15...1.5.0) (2024-01-20)
-
-
-### Bug Fixes
-
-* add missing users.nix import ([29006bb](https://github.com/simonoscr/dotfiles/commit/29006bb5ea3d3a2870e01885586e21a9768768ec))
-* define group ([2f0fc8e](https://github.com/simonoscr/dotfiles/commit/2f0fc8e7e3879bb0dbc377637bc768f8a30d90a7))
-* fix naming of host ([cb0dd17](https://github.com/simonoscr/dotfiles/commit/cb0dd1786446209ed971bcacbcc21ff93193440c))
-* fix pathing ([a3928ff](https://github.com/simonoscr/dotfiles/commit/a3928ff435790ebb1b34cf3604139aae046028e7))
-* validateSopsFile set to false ([538cdeb](https://github.com/simonoscr/dotfiles/commit/538cdebbb738414307ef37c8635300f0cee4628f))
-
-
-### Features
-
-* new user.nix to seperate user for services and security ([04a0f0d](https://github.com/simonoscr/dotfiles/commit/04a0f0d130e63ed4d79f50c027575f1a9b166fde))
 
 
 
