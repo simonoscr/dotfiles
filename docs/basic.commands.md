@@ -1,37 +1,48 @@
 # Documentation NixOS, Nix Flake, Standalone Home-Manager
 
-## Channel
-
-sudo nix-channel --list
-
-Example output:
-
-home-manager https://github.com/nix-community/home-manager/archive/master.tar.gz
-nixos https://nixos.org/channels/nixos-unstable
-
 ## Update
 
-### nix
+### Flake Update
 
-nix-channel --update
+Command to update flake input:
 
-### flake
-
+```shell
 nix flake update
+```
 
-## Build
+## Build with Flake
 
 ### NixOS
 
+Build Nixos and use new build directly:
+
+```shell
 sudo nixos-rebuild switch --flake .#host
+```
+
+Build Nixos and use new build after boot:
+
+```shell
+sudo nixos-rebuild boot --flake .#host
+```
 
 ### Home-Manager
 
+```shell
 home-manager switch --flake .#user@host
+```
 
 ## Updating and Build NixOS
 
+```shell
 sudo nixos-rebuild switch --upgrade --flake .#host
+```
+
+### Remote Build NixOS
+
+```shell
+nixos-rebuild switch --target-host user@host --use-remote-sudo --flake .#host
+```
 
 ## Programs
 
@@ -41,11 +52,15 @@ When you add a package, you're simply making the software available in the user 
 
 #### NixOS
 
-- environment.systemPackages = with pkgs; [ vim git ];
+```nix
+environment.systemPackages = with pkgs; [ vim git ];
+```
 
 #### Home-Manager
 
-- home.packages = with pkgs; [ vim git ];
+```nix
+home.packages = with pkgs; [ vim git ];
+```
 
 ### Modules
 
@@ -53,8 +68,12 @@ When you use a module, you're not just installing the software; you're also conf
 
 #### NixOS
 
-- services.nginx.enable = true;
+```nix
+services.nginx.enable = true;
+```
 
 #### Home-Manager
 
-- programs.git.enable = true;
+```nix
+programs.git.enable = true;
+```
