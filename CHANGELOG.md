@@ -1,3 +1,12 @@
+## [1.5.17](https://github.com/simonoscr/dotfiles/compare/1.5.16...1.5.17) (2024-01-22)
+
+
+### Bug Fixes
+
+* hashedpassword for user ([a26fa82](https://github.com/simonoscr/dotfiles/commit/a26fa825f787c077ffc020c005fafc96a9f3ce5b))
+
+
+
 ## [1.5.16](https://github.com/simonoscr/dotfiles/compare/1.5.15...1.5.16) (2024-01-21)
 
 
@@ -79,15 +88,6 @@
 ### Bug Fixes
 
 * update home-manager user ([97ed1f3](https://github.com/simonoscr/dotfiles/commit/97ed1f3a79d0951e2836cc971d93db5f36ad94cf))
-
-
-
-## [1.5.7](https://github.com/simonoscr/dotfiles/compare/1.5.6...1.5.7) (2024-01-21)
-
-
-### Bug Fixes
-
-* update sops-nix and secrets files ([ac70a4f](https://github.com/simonoscr/dotfiles/commit/ac70a4ff34f2715a96d42cec134b7cc96a22739b))
 
 
 
