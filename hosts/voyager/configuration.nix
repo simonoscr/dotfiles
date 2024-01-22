@@ -85,6 +85,7 @@
       experimental-features = "nix-command flakes";
       auto-optimise-store = true;
       allowed-users = ["root" "oscar" "@wheel"];
+      trusted-users = ["root" "oscar" "@wheel"];
     };
   };
 
