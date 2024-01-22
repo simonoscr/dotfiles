@@ -14,7 +14,7 @@
       #};
       oscar = {
         group = "nixos";
-        #hashedPasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
+        hashedPasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
         isNormalUser = true;
         extraGroups = [
           "wheel"
@@ -23,7 +23,7 @@
       };
       test = {
         group = "test";
-        hashedPasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
+        #hashedPasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
         isNormalUser = true;
         extraGroups = [
           "wheel"
