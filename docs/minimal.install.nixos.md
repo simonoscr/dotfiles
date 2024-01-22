@@ -1,4 +1,4 @@
-# Compact installation Guide
+# Minimal installation Guide for NixOS
 
 ## Manual Installation
 
