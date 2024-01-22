@@ -32,13 +32,25 @@ This repository is a work in progress, and I'm constantly learning more about Ni
 |-|-----------------|--------------|
 | Display Manager | greetd/tuigreet | greetd/tuigreet |
 | Window Manager | Hyprland | i3 |
-| Bar | Ags / Waybar | - |
+| Bar | Ags | - |
 | Terminal| Kitty | Kitty |
 | Shell | zsh + Starship | zsh + Starship |
 | Text Editor | Neovim | Neovim |
 | Code Editor | VSCodium | VSCodium |
 | System resource monitor | btop | btop |
 | Fonts | - | - |
+
+## Systems
+
+| | MainPC - NixOS | Server - NixOS |
+|-|-----------------|--------------|
+| Name | Cosmos | Voyager |
+| CPU | AMD Ryzen 7 7800X3D | Intel® Processor Alder Lake-N100 |
+| GPU | AMD Radeon RX 7800 XT | Intel UHD Graphics |
+| RAM | 32GB DDR5-6000 | 16GB DDR4-3200 |
+| Mainboard | MSI MAG B650 Tomahawk | bad |
+| SSD | 2TB NVMe | 500GB NVMe |
+| MISC | - | - |
 
 ## Features
 
