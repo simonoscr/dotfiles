@@ -11,7 +11,7 @@
       enable = true;
       allowPing = true;
       logRefusedConnections = false;
-      allowedTCPPorts = [22 6443];
+      allowedTCPPorts = [22 6443 8222];
       # allowedUDPPorts = [ ... ];
     };
   };

@@ -21,6 +21,7 @@
     ./ssh.nix
     ./security.nix
     ./users.nix
+    ./vaultwarden.nix
   ];
 
   ## systemd-boot
