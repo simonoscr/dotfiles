@@ -11,9 +11,11 @@
       enable = true;
       allowPing = true;
       logRefusedConnections = false;
-      allowedTCPPorts = [22 6443 8222];
+      allowedTCPPorts = [22];
       # allowedUDPPorts = [ ... ];
     };
+    #extraHosts = ''
+    #'';
   };
 
   systemd = {

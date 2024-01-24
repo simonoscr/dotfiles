@@ -11,6 +11,8 @@
       # allowedTCPPorts = [ ... ];
       # allowedUDPPorts = [ ... ];
     };
+    #extraHosts = ''
+    #'';
   };
   systemd.services.NetworkManager-wait-online.enable = false;
 }

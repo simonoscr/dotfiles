@@ -22,6 +22,7 @@
     ./security.nix
     ./users.nix
     ./vaultwarden.nix
+    ./monitoring.nix
   ];
 
   ## systemd-boot
