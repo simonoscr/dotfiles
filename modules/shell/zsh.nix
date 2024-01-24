@@ -17,8 +17,8 @@
       vids = "$HOME/Videos";
     };
     initExtra = ''
-       zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-       zstyle ':completion:*' menu select
+      zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+      zstyle ':completion:*' menu select
       zstyle ':completion:*' verbose true
       zstyle ':completion:*' completer _complete _ignored _approximate
     '';
@@ -41,6 +41,9 @@
       "code" = "codium";
 
       "grep" = "grep --color";
+
+      "nix-voyager-deploy" = "nixos-rebuild switch --target-host oscar@nixos-server --use-remote-sudo --upgrade --flake .#voyager";
+      "nix-cosmos-deploy" = "sudo nixos-rebuild switch --flake .#cosmos";
     };
   };
 }
