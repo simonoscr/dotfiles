@@ -1,3 +1,13 @@
+# [1.6.0](https://github.com/simonoscr/dotfiles/compare/1.5.17...1.6.0) (2024-01-24)
+
+
+### Features
+
+* add monitoring stack ([40d8bf0](https://github.com/simonoscr/dotfiles/commit/40d8bf028c092efd15e142c49b4bb2b343ebd554))
+* add prometheus, grafana, node exporter, vaultwarden and reverse-proxy to voyager ([e373954](https://github.com/simonoscr/dotfiles/commit/e3739544eea2747b300531d5860f5e5a3ba53e66))
+
+
+
 ## [1.5.17](https://github.com/simonoscr/dotfiles/compare/1.5.16...1.5.17) (2024-01-22)
 
 
@@ -79,15 +89,6 @@
 ### Bug Fixes
 
 * update home.nix for oscar ([2b5d683](https://github.com/simonoscr/dotfiles/commit/2b5d683b898816bb8737cef17926385b1051ea77))
-
-
-
-## [1.5.8](https://github.com/simonoscr/dotfiles/compare/1.5.7...1.5.8) (2024-01-21)
-
-
-### Bug Fixes
-
-* update home-manager user ([97ed1f3](https://github.com/simonoscr/dotfiles/commit/97ed1f3a79d0951e2836cc971d93db5f36ad94cf))
 
 
 
