@@ -31,7 +31,6 @@ in {
         AllowTcpForwarding yes
         AllowAgentForwarding no
         AllowStreamLocalForwarding no
-        AuthenticationMethods publickey
       '';
     };
   };

@@ -28,4 +28,9 @@
   };
 
   services.fail2ban.enable = true;
+
+  services.tailscale = {
+    enable = true;
+    #useRoutingFeatures = "server";
+  };
 }
