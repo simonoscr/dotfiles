@@ -1,3 +1,12 @@
+## [1.6.1](https://github.com/simonoscr/dotfiles/compare/1.6.0...1.6.1) (2024-01-24)
+
+
+### Bug Fixes
+
+* update zsh aliases, add podman ([ea4db23](https://github.com/simonoscr/dotfiles/commit/ea4db23f6efdf9cd981a9aac2aaa25c9caec9b81))
+
+
+
 # [1.6.0](https://github.com/simonoscr/dotfiles/compare/1.5.17...1.6.0) (2024-01-24)
 
 
@@ -80,15 +89,6 @@
 ### Bug Fixes
 
 * update secrets files with new age key ([edfef64](https://github.com/simonoscr/dotfiles/commit/edfef64e32154b2105de227883ccdd9934b414af))
-
-
-
-## [1.5.9](https://github.com/simonoscr/dotfiles/compare/1.5.8...1.5.9) (2024-01-21)
-
-
-### Bug Fixes
-
-* update home.nix for oscar ([2b5d683](https://github.com/simonoscr/dotfiles/commit/2b5d683b898816bb8737cef17926385b1051ea77))
 
 
 
