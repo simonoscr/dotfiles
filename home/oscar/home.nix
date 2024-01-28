@@ -11,6 +11,7 @@
 
   home = {
     username = "oscar";
+    homeDirectory = "/home/oscar";
     sessionVariables = {
       SHELL = "${pkgs.zsh}/bin/zsh";
     };
