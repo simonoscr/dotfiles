@@ -25,19 +25,4 @@
       #SMTP_FROM_NAME = "example.com Bitwarden server";
     };
   };
-
-  #security.acme.defaults.email = "acme.scanning268@simplelogin.com";
-  #ecurity.acme.acceptTerms = true;
-
-  #services.nginx = {
-  #  enable = true;
-  #  #recommendedGzipSettings = true;
-  #  virtualHosts.${config.services.vaultwarden.config.DOMAIN} = {
-  #    #enableACME = true;
-  #    #forceSSL = true;
-  #    locations."/" = {
-  #      proxyPass = "https://100.83.232.38:${toString config.services.vaultwarden.config.ROCKET_PORT}";
-  #    };
-  #  };
-  #};
 }
