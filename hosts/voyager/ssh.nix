@@ -14,8 +14,8 @@ in {
       enable = true;
       settings = {
         permitRootLogin = "yes";
-        PasswordAuthentication = true;
-        KbdInteractiveAuthentication = false;
+        #PasswordAuthentication = true;
+        #KbdInteractiveAuthentication = false;
         challengeResponseAuthentication = false;
         X11Forwarding = false;
         KexAlgorithms = [
