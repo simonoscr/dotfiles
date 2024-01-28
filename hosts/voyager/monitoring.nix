@@ -144,7 +144,7 @@
     settings.server = {
       http_port = 2342;
       http_addr = "127.0.0.1";
-      root_url = "http://100.112.2.127:8010";
+      #root_url = "http://XXX.XXX.XXX.XXX:8010";
     };
     provision = {
       enable = true;
@@ -174,80 +174,80 @@
       ];
     };
   };
-  # nginx reverse proxy
-  services.nginx = {
-    enable = true;
-    recommendedProxySettings = true;
-    recommendedOptimisation = true;
-    recommendedGzipSettings = true;
-    # recommendedTlsSettings = true;
-
-    upstreams = {
-      "grafana" = {
-        servers = {
-          "127.0.0.1:${toString config.services.grafana.port}" = {};
-        };
-      };
-      "prometheus" = {
-        servers = {
-          "127.0.0.1:${toString config.services.prometheus.port}" = {};
-        };
-      };
-      "loki" = {
-        servers = {
-          "127.0.0.1:${toString config.services.loki.configuration.server.http_listen_port}" = {};
-        };
-      };
-      "promtail" = {
-        servers = {
-          "127.0.0.1:${toString config.services.promtail.configuration.server.http_listen_port}" = {};
-        };
-      };
-    };
-
-    virtualHosts.grafana = {
-      locations."/" = {
-        proxyPass = "http://grafana";
-        proxyWebsockets = true;
-      };
-      listen = [
-        {
-          addr = "100.112.2.127";
-          port = 8010;
-        }
-      ];
-    };
-
-    virtualHosts.prometheus = {
-      locations."/".proxyPass = "http://prometheus";
-      listen = [
-        {
-          addr = "100.112.2.127";
-          port = 8020;
-        }
-      ];
-    };
-
-    # confirm with http://100.112.2.127:8030/loki/api/v1/status/buildinfo
-    #     (or)     /config /metrics /ready
-    virtualHosts.loki = {
-      locations."/".proxyPass = "http://loki";
-      listen = [
-        {
-          addr = "100.112.2.127";
-          port = 8030;
-        }
-      ];
-    };
-
-    virtualHosts.promtail = {
-      locations."/".proxyPass = "http://promtail";
-      listen = [
-        {
-          addr = "100.112.2.127";
-          port = 8031;
-        }
-      ];
-    };
-  };
+  #  # nginx reverse proxy
+  #  services.nginx = {
+  #    enable = true;
+  #    recommendedProxySettings = true;
+  #    recommendedOptimisation = true;
+  #    recommendedGzipSettings = true;
+  #    # recommendedTlsSettings = true;
+  #
+  #    upstreams = {
+  #      "grafana" = {
+  #        servers = {
+  #          "127.0.0.1:${toString config.services.grafana.port}" = {};
+  #        };
+  #      };
+  #      "prometheus" = {
+  #        servers = {
+  #          "127.0.0.1:${toString config.services.prometheus.port}" = {};
+  #        };
+  #      };
+  #      "loki" = {
+  #        servers = {
+  #          "127.0.0.1:${toString config.services.loki.configuration.server.http_listen_port}" = {};
+  #        };
+  #      };
+  #      "promtail" = {
+  #        servers = {
+  #          "127.0.0.1:${toString config.services.promtail.configuration.server.http_listen_port}" = {};
+  #        };
+  #      };
+  #    };
+  #
+  #    virtualHosts.grafana = {
+  #      locations."/" = {
+  #        proxyPass = "http://grafana";
+  #        proxyWebsockets = true;
+  #      };
+  #      listen = [
+  #        {
+  #          addr = "XXX.XXX.XXX.XXX";
+  #          port = 8010;
+  #        }
+  #      ];
+  #    };
+  #
+  #    virtualHosts.prometheus = {
+  #      locations."/".proxyPass = "http://prometheus";
+  #      listen = [
+  #        {
+  #          addr = "XXX.XXX.XXX.XXX";
+  #          port = 8020;
+  #        }
+  #      ];
+  #    };
+  #
+  #    # confirm with http://XXX.XXX.XXX.XXX:8030/loki/api/v1/status/buildinfo
+  #    #     (or)     /config /metrics /ready
+  #    virtualHosts.loki = {
+  #      locations."/".proxyPass = "http://loki";
+  #      listen = [
+  #        {
+  #          addr = "XXX.XXX.XXX.XXX";
+  #          port = 8030;
+  #        }
+  #      ];
+  #    };
+  #
+  #    virtualHosts.promtail = {
+  #      locations."/".proxyPass = "http://promtail";
+  #      listen = [
+  #        {
+  #          addr = "XXX.XXX.XXX.XXX";
+  #          port = 8031;
+  #        }
+  #      ];
+  #    };
+  #  };
 }
