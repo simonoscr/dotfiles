@@ -1,3 +1,12 @@
+## [1.6.8](https://github.com/simonoscr/dotfiles/compare/1.6.7...1.6.8) (2024-01-28)
+
+
+### Bug Fixes
+
+* configure grafana with datasource and node dashboard ([e2ff290](https://github.com/simonoscr/dotfiles/commit/e2ff2908407e87979d202966679b5a88e9397736))
+
+
+
 ## [1.6.7](https://github.com/simonoscr/dotfiles/compare/1.6.6...1.6.7) (2024-01-28)
 
 
@@ -79,16 +88,6 @@
 ### Bug Fixes
 
 * hashedpassword for user ([a26fa82](https://github.com/simonoscr/dotfiles/commit/a26fa825f787c077ffc020c005fafc96a9f3ce5b))
-
-
-
-## [1.5.16](https://github.com/simonoscr/dotfiles/compare/1.5.15...1.5.16) (2024-01-21)
-
-
-### Bug Fixes
-
-* typo ([4d9b473](https://github.com/simonoscr/dotfiles/commit/4d9b473cce7347fbeda366d8f2f30eaa785eecc1))
-* update security, network and user files ([5fa4eb1](https://github.com/simonoscr/dotfiles/commit/5fa4eb153dbdca0fc42518a109041703471c6b9e))
 
 
 
