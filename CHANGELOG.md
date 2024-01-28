@@ -1,3 +1,12 @@
+## [1.6.4](https://github.com/simonoscr/dotfiles/compare/1.6.3...1.6.4) (2024-01-28)
+
+
+### Bug Fixes
+
+* update home.manager user for server ([30e23fe](https://github.com/simonoscr/dotfiles/commit/30e23fe939ce06ab5e7fe65193ea768ea0f56af7))
+
+
+
 ## [1.6.3](https://github.com/simonoscr/dotfiles/compare/1.6.2...1.6.3) (2024-01-28)
 
 
@@ -80,16 +89,6 @@
 ### Bug Fixes
 
 * hashedPasswordFile for user password ([1cb14ad](https://github.com/simonoscr/dotfiles/commit/1cb14ad7b15f78962f07594a856fc563260b7bbb))
-
-
-
-## [1.5.12](https://github.com/simonoscr/dotfiles/compare/1.5.11...1.5.12) (2024-01-21)
-
-
-### Bug Fixes
-
-* typo ([f81eea4](https://github.com/simonoscr/dotfiles/commit/f81eea45b7ca15ab2d10e256ecf2f02fe4b43315))
-* update passwordfile ([9956a40](https://github.com/simonoscr/dotfiles/commit/9956a407b153dd033fc4fb9d44321a57d21002bf))
 
 
 
