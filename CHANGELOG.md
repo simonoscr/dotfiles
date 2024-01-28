@@ -1,3 +1,12 @@
+## [1.6.6](https://github.com/simonoscr/dotfiles/compare/1.6.5...1.6.6) (2024-01-28)
+
+
+### Bug Fixes
+
+* update vaultwarden ip ([ae8cf3c](https://github.com/simonoscr/dotfiles/commit/ae8cf3c2f993d48bf554d568e96a1d73b1a2504b))
+
+
+
 ## [1.6.5](https://github.com/simonoscr/dotfiles/compare/1.6.4...1.6.5) (2024-01-28)
 
 
@@ -80,15 +89,6 @@
 ### Bug Fixes
 
 * revert openssh settings ([77e4a55](https://github.com/simonoscr/dotfiles/commit/77e4a55e7781ccf136136a105d6d469b62328df1))
-
-
-
-## [1.5.14](https://github.com/simonoscr/dotfiles/compare/1.5.13...1.5.14) (2024-01-21)
-
-
-### Bug Fixes
-
-* update user passwords ([e318444](https://github.com/simonoscr/dotfiles/commit/e318444e043277793f00e635c9e584ddc07e1620))
 
 
 
