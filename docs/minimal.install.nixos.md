@@ -68,7 +68,7 @@ mkfs.fat -F 32 -n boot /dev/youBootPartition
 2. Format root partition
 
 ```shell
-mkfs.ext4 -L nixos /dev/vg/lvlsblk -f
+mkfs.ext4 -L nixos /dev/vg/lv
 ```
 
 #### Mount
