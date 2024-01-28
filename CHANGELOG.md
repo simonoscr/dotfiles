@@ -1,3 +1,12 @@
+## [1.6.7](https://github.com/simonoscr/dotfiles/compare/1.6.6...1.6.7) (2024-01-28)
+
+
+### Bug Fixes
+
+* update hardware-configuration.nix ([cd83841](https://github.com/simonoscr/dotfiles/commit/cd8384117c4fc854c9d9f6c6175685645069411e))
+
+
+
 ## [1.6.6](https://github.com/simonoscr/dotfiles/compare/1.6.5...1.6.6) (2024-01-28)
 
 
@@ -80,15 +89,6 @@
 
 * typo ([4d9b473](https://github.com/simonoscr/dotfiles/commit/4d9b473cce7347fbeda366d8f2f30eaa785eecc1))
 * update security, network and user files ([5fa4eb1](https://github.com/simonoscr/dotfiles/commit/5fa4eb153dbdca0fc42518a109041703471c6b9e))
-
-
-
-## [1.5.15](https://github.com/simonoscr/dotfiles/compare/1.5.14...1.5.15) (2024-01-21)
-
-
-### Bug Fixes
-
-* revert openssh settings ([77e4a55](https://github.com/simonoscr/dotfiles/commit/77e4a55e7781ccf136136a105d6d469b62328df1))
 
 
 
