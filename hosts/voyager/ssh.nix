@@ -16,7 +16,6 @@ in {
         PasswordAuthentication = false;
         KbdInteractiveAuthentication = false;
         challengeResponseAuthentication = false;
-        PermitRootLogin = "no";
         X11Forwarding = false;
         KexAlgorithms = [
           "curve25519-sha256"

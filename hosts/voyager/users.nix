@@ -22,15 +22,6 @@
         ];
         shell = pkgs.zsh;
       };
-      test = {
-        group = "test";
-        #hashedPasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
-        isNormalUser = true;
-        extraGroups = [
-          "wheel"
-        ];
-        shell = pkgs.zsh;
-      };
       libvirtd = {
         group = "libvirtd";
         home = "/var/lib/libvirtd";
@@ -41,7 +32,6 @@
     groups = {
       nixos = {};
       libvirtd = {};
-      test = {};
     };
   };
 }
