@@ -1,3 +1,12 @@
+## [1.6.2](https://github.com/simonoscr/dotfiles/compare/1.6.1...1.6.2) (2024-01-28)
+
+
+### Bug Fixes
+
+* update docs and first installation process ([65a44ee](https://github.com/simonoscr/dotfiles/commit/65a44eeb6682e7ac3d051163dba0cf29867c2c4f))
+
+
+
 ## [1.6.1](https://github.com/simonoscr/dotfiles/compare/1.6.0...1.6.1) (2024-01-24)
 
 
@@ -80,15 +89,6 @@
 
 * neededFor User sops ([c2b664d](https://github.com/simonoscr/dotfiles/commit/c2b664d4086c4e82625bb2cce245501de5ac64bd))
 * test user password with sops ([75d569b](https://github.com/simonoscr/dotfiles/commit/75d569b1c7ff68d5f468567a9026c9ef10db57be))
-
-
-
-## [1.5.10](https://github.com/simonoscr/dotfiles/compare/1.5.9...1.5.10) (2024-01-21)
-
-
-### Bug Fixes
-
-* update secrets files with new age key ([edfef64](https://github.com/simonoscr/dotfiles/commit/edfef64e32154b2105de227883ccdd9934b414af))
 
 
 
