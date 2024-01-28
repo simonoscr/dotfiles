@@ -1,3 +1,12 @@
+## [1.6.10](https://github.com/simonoscr/dotfiles/compare/1.6.9...1.6.10) (2024-01-28)
+
+
+### Bug Fixes
+
+* monitoring stack ([af54d73](https://github.com/simonoscr/dotfiles/commit/af54d73ac98114c92fb5504b2a1192398c77dead))
+
+
+
 ## [1.6.9](https://github.com/simonoscr/dotfiles/compare/1.6.8...1.6.9) (2024-01-28)
 
 
@@ -79,16 +88,6 @@
 ### Bug Fixes
 
 * update zsh aliases, add podman ([ea4db23](https://github.com/simonoscr/dotfiles/commit/ea4db23f6efdf9cd981a9aac2aaa25c9caec9b81))
-
-
-
-# [1.6.0](https://github.com/simonoscr/dotfiles/compare/1.5.17...1.6.0) (2024-01-24)
-
-
-### Features
-
-* add monitoring stack ([40d8bf0](https://github.com/simonoscr/dotfiles/commit/40d8bf028c092efd15e142c49b4bb2b343ebd554))
-* add prometheus, grafana, node exporter, vaultwarden and reverse-proxy to voyager ([e373954](https://github.com/simonoscr/dotfiles/commit/e3739544eea2747b300531d5860f5e5a3ba53e66))
 
 
 
