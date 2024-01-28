@@ -144,6 +144,7 @@
     settings.server = {
       http_port = 2342;
       http_addr = "127.0.0.1";
+      domain = "grafana";
       #root_url = "http://XXX.XXX.XXX.XXX:8010";
     };
     provision = {
