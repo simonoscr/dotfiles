@@ -1,3 +1,13 @@
+## [1.6.9](https://github.com/simonoscr/dotfiles/compare/1.6.8...1.6.9) (2024-01-28)
+
+
+### Bug Fixes
+
+* monitoring stack update with prometheus, loki, node-exporter, promtail, granfana and nginx ([5658f35](https://github.com/simonoscr/dotfiles/commit/5658f35a4951550bd4d4bc64794c66c4480a5f2f))
+* update monitoring and logging stack ([4c2b580](https://github.com/simonoscr/dotfiles/commit/4c2b580c9f8a92203ac746cb6d7e6a732625a208))
+
+
+
 ## [1.6.8](https://github.com/simonoscr/dotfiles/compare/1.6.7...1.6.8) (2024-01-28)
 
 
@@ -79,15 +89,6 @@
 
 * add monitoring stack ([40d8bf0](https://github.com/simonoscr/dotfiles/commit/40d8bf028c092efd15e142c49b4bb2b343ebd554))
 * add prometheus, grafana, node exporter, vaultwarden and reverse-proxy to voyager ([e373954](https://github.com/simonoscr/dotfiles/commit/e3739544eea2747b300531d5860f5e5a3ba53e66))
-
-
-
-## [1.5.17](https://github.com/simonoscr/dotfiles/compare/1.5.16...1.5.17) (2024-01-22)
-
-
-### Bug Fixes
-
-* hashedpassword for user ([a26fa82](https://github.com/simonoscr/dotfiles/commit/a26fa825f787c077ffc020c005fafc96a9f3ce5b))
 
 
 
