@@ -1,3 +1,12 @@
+## [1.6.5](https://github.com/simonoscr/dotfiles/compare/1.6.4...1.6.5) (2024-01-28)
+
+
+### Bug Fixes
+
+* add userhome directory ([1634274](https://github.com/simonoscr/dotfiles/commit/163427421b5362a24f8702cce642f66b40501e92))
+
+
+
 ## [1.6.4](https://github.com/simonoscr/dotfiles/compare/1.6.3...1.6.4) (2024-01-28)
 
 
@@ -80,15 +89,6 @@
 ### Bug Fixes
 
 * update user passwords ([e318444](https://github.com/simonoscr/dotfiles/commit/e318444e043277793f00e635c9e584ddc07e1620))
-
-
-
-## [1.5.13](https://github.com/simonoscr/dotfiles/compare/1.5.12...1.5.13) (2024-01-21)
-
-
-### Bug Fixes
-
-* hashedPasswordFile for user password ([1cb14ad](https://github.com/simonoscr/dotfiles/commit/1cb14ad7b15f78962f07594a856fc563260b7bbb))
 
 
 
