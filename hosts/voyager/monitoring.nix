@@ -18,7 +18,7 @@
         job_name = "node-exporter";
         static_configs = [
           {
-            targets = ["127.0.0.1:${toString config.services.prometheus.exporters.node.port}"];
+            targets = ["localhost:${toString config.services.prometheus.exporters.node.port}"];
           }
         ];
       }
@@ -29,7 +29,27 @@
     settings.server = {
       domain = "grafana.local";
       http_port = 2342;
-      http_addr = "127.0.0.1";
+      http_addr = "0.0.0.0";
+    };
+    provision = {
+      datasources.settings.datasources = [
+        {
+          name = "Prometheus";
+          type = "prometheus";
+          uid = "PDOVLC8AT2RK0PW3";
+          access = "proxy";
+          url = "http://localhost:${toString config.services.prometheus.port}";
+          isDefault = true;
+          version = 1;
+          editable = false;
+        }
+      ];
+      dashboards.settings.providers = [
+        {
+          name = "system";
+          options.path = ./dashboards/node.json;
+        }
+      ];
     };
   };
   ## nginx reverse proxy
