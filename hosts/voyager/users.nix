@@ -14,6 +14,7 @@
       #};
       oscar = {
         group = "nixos";
+        home = "/home/oscar";
         hashedPasswordFile = config.sops.secrets.dXNlcl9wYXNzd29yZA.path;
         isNormalUser = true;
         extraGroups = [

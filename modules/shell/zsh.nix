@@ -1,8 +1,4 @@
 {pkgs, ...}: {
-  home.sessionVariables = {
-    SHELL = "${pkgs.zsh}/bin/zsh";
-  };
-
   programs.zsh = {
     enable = true;
     enableCompletion = true;
