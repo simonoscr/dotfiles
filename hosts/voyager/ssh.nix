@@ -13,7 +13,6 @@ in {
     openssh = {
       enable = true;
       settings = {
-        permitRootLogin = "yes";
         #PasswordAuthentication = true;
         #KbdInteractiveAuthentication = false;
         challengeResponseAuthentication = false;
