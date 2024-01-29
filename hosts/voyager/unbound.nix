@@ -10,8 +10,9 @@
         # Too many broken dnssec setups even at big companies such as amazon.
         # Breaks my email setup. Better rely on tls for security.
         val-permissive-mode = "yes";
+        local-zone = "'oscar.local' static";
+        local-data = "'grafana.oscar.local. IN A 192.168.178.91'";
       };
-      
     };
   };
   # no need for a systemd-resolved stub
