@@ -1,3 +1,12 @@
+## [1.6.12](https://github.com/simonoscr/dotfiles/compare/1.6.11...1.6.12) (2024-01-29)
+
+
+### Bug Fixes
+
+* update network etc add openldap and kanidm ([8fa1895](https://github.com/simonoscr/dotfiles/commit/8fa1895d69fca570a5206aae1154efaf672d7636))
+
+
+
 ## [1.6.11](https://github.com/simonoscr/dotfiles/compare/1.6.10...1.6.11) (2024-01-29)
 
 
@@ -80,15 +89,6 @@
 * update ([1cbe18c](https://github.com/simonoscr/dotfiles/commit/1cbe18c26f18d4d563ec5927901a69412af480bc))
 * update age key ([d842996](https://github.com/simonoscr/dotfiles/commit/d84299666dba5d432c9cbadf3b0011aa09dddb34))
 * update sshd ([1be4ae9](https://github.com/simonoscr/dotfiles/commit/1be4ae9095319bfde0835515cc5d6edc70ca308a))
-
-
-
-## [1.6.2](https://github.com/simonoscr/dotfiles/compare/1.6.1...1.6.2) (2024-01-28)
-
-
-### Bug Fixes
-
-* update docs and first installation process ([65a44ee](https://github.com/simonoscr/dotfiles/commit/65a44eeb6682e7ac3d051163dba0cf29867c2c4f))
 
 
 
