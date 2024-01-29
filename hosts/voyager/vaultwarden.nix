@@ -6,23 +6,41 @@
 }: {
   services.vaultwarden = {
     enable = true;
+    backupDir = "/var/backup/vaultwarden";
     config = {
-      #DOMAIN = "vaultwarden.simonoscar.space";
-      #SIGNUPS_ALLOWED = false;
-      ROCKET_ADDRESS = "0.0.0.0";
+      #DOMAIN = "vaultwarden";
+      SIGNUPS_ALLOWED = false;
+      ROCKET_ADDRESS = "127.0.0.1";
       ROCKET_PORT = 8222;
       ROCKET_LOG = "critical";
-
-      # This example assumes a mailserver running on localhost,
-      # thus without transport encryption.
-      # If you use an external mail server, follow:
-      #   https://github.com/dani-garcia/vaultwarden/wiki/SMTP-configuration
-      #SMTP_HOST = "127.0.0.1";
-      #SMTP_PORT = 25;
-      #SMTP_SSL = false;
-
-      #SMTP_FROM = "admin@bitwarden.example.com";
-      #SMTP_FROM_NAME = "example.com Bitwarden server";
     };
   };
+  # nginx reverse proxy
+  services.nginx = {
+    enable = true;
+    recommendedProxySettings = true;
+    recommendedOptimisation = true;
+    recommendedGzipSettings = true;
+    # recommendedTlsSettings = true;
+    upstreams = {
+      "vaultwarden" = {
+        servers = {
+          "127.0.0.1:${toString config.services.vaultwarden.config.ROCKET_PORT}" = {};
+        };
+      };
+    };
+    virtualHosts.vaultwarden = {
+      locations."/" = {
+        proxyPass = "http://vaultwarden";
+        proxyWebsockets = true;
+      };
+      listen = [
+        {
+          addr = "192.168.178.91";
+          port = 8022;
+        }
+      ];
+    };
+  };
+  networking.firewall.allowedTCPPorts = [8022];
 }

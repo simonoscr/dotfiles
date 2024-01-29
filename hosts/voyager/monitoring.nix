@@ -10,7 +10,6 @@
       node = {
         enable = true;
         enabledCollectors = ["systemd"];
-        disabledCollectors = ["btrfs" "mdadm" "selinux" "xfs"];
         port = 9002;
       };
     };
@@ -19,7 +18,7 @@
         job_name = "node-exporter";
         static_configs = [
           {
-            targets = ["localhost:${toString config.services.prometheus.exporters.node.port}"];
+            targets = ["127.0.0.1:${toString config.services.prometheus.exporters.node.port}"];
           }
         ];
       }
@@ -115,7 +114,7 @@
       };
       clients = [
         {
-          url = "http://localhost:${toString config.services.loki.configuration.server.http_listen_port}/loki/api/v1/push";
+          url = "http://127.0.0.1:${toString config.services.loki.configuration.server.http_listen_port}/loki/api/v1/push";
         }
       ];
       scrape_configs = [
@@ -125,7 +124,7 @@
             max_age = "12h";
             labels = {
               job = "systemd-journal";
-              host = "pihole";
+              host = "voyager";
             };
           };
           relabel_configs = [
@@ -155,7 +154,7 @@
           type = "prometheus";
           uid = "PDOVLC8AT2RK0PW3";
           access = "proxy";
-          url = "http://localhost:${toString config.services.prometheus.port}";
+          url = "http://127.0.0.1:${toString config.services.prometheus.port}";
           editable = false;
         }
         {
@@ -163,7 +162,7 @@
           type = "loki";
           uid = "LD9DH35SKJ65DS3K";
           access = "proxy";
-          url = "http://localhost:${toString config.services.loki.configuration.server.http_listen_port}";
+          url = "http://127.0.0.1:${toString config.services.loki.configuration.server.http_listen_port}";
           editable = false;
         }
       ];
@@ -175,80 +174,76 @@
       ];
     };
   };
-  #  # nginx reverse proxy
-  #  services.nginx = {
-  #    enable = true;
-  #    recommendedProxySettings = true;
-  #    recommendedOptimisation = true;
-  #    recommendedGzipSettings = true;
-  #    # recommendedTlsSettings = true;
-  #
-  #    upstreams = {
-  #      "grafana" = {
-  #        servers = {
-  #          "127.0.0.1:${toString config.services.grafana.port}" = {};
-  #        };
-  #      };
-  #      "prometheus" = {
-  #        servers = {
-  #          "127.0.0.1:${toString config.services.prometheus.port}" = {};
-  #        };
-  #      };
-  #      "loki" = {
-  #        servers = {
-  #          "127.0.0.1:${toString config.services.loki.configuration.server.http_listen_port}" = {};
-  #        };
-  #      };
-  #      "promtail" = {
-  #        servers = {
-  #          "127.0.0.1:${toString config.services.promtail.configuration.server.http_listen_port}" = {};
-  #        };
-  #      };
-  #    };
-  #
-  #    virtualHosts.grafana = {
-  #      locations."/" = {
-  #        proxyPass = "http://grafana";
-  #        proxyWebsockets = true;
-  #      };
-  #      listen = [
-  #        {
-  #          addr = "XXX.XXX.XXX.XXX";
-  #          port = 8010;
-  #        }
-  #      ];
-  #    };
-  #
-  #    virtualHosts.prometheus = {
-  #      locations."/".proxyPass = "http://prometheus";
-  #      listen = [
-  #        {
-  #          addr = "XXX.XXX.XXX.XXX";
-  #          port = 8020;
-  #        }
-  #      ];
-  #    };
-  #
-  #    # confirm with http://XXX.XXX.XXX.XXX:8030/loki/api/v1/status/buildinfo
-  #    #     (or)     /config /metrics /ready
-  #    virtualHosts.loki = {
-  #      locations."/".proxyPass = "http://loki";
-  #      listen = [
-  #        {
-  #          addr = "XXX.XXX.XXX.XXX";
-  #          port = 8030;
-  #        }
-  #      ];
-  #    };
-  #
-  #    virtualHosts.promtail = {
-  #      locations."/".proxyPass = "http://promtail";
-  #      listen = [
-  #        {
-  #          addr = "XXX.XXX.XXX.XXX";
-  #          port = 8031;
-  #        }
-  #      ];
-  #    };
-  #  };
+  # nginx reverse proxy
+  services.nginx = {
+    enable = true;
+    recommendedProxySettings = true;
+    recommendedOptimisation = true;
+    recommendedGzipSettings = true;
+    # recommendedTlsSettings = true;
+    upstreams = {
+      "grafana" = {
+        servers = {
+          "127.0.0.1:${toString config.services.grafana.settings.server.http_port}" = {};
+        };
+      };
+      "prometheus" = {
+        servers = {
+          "127.0.0.1:${toString config.services.prometheus.port}" = {};
+        };
+      };
+      "loki" = {
+        servers = {
+          "127.0.0.1:${toString config.services.loki.configuration.server.http_listen_port}" = {};
+        };
+      };
+      "promtail" = {
+        servers = {
+          "127.0.0.1:${toString config.services.promtail.configuration.server.http_listen_port}" = {};
+        };
+      };
+    };
+    virtualHosts.grafana = {
+      locations."/" = {
+        proxyPass = "http://grafana";
+        proxyWebsockets = true;
+      };
+      listen = [
+        {
+          addr = "192.168.178.91";
+          port = 8010;
+        }
+      ];
+    };
+    virtualHosts.prometheus = {
+      locations."/".proxyPass = "http://prometheus";
+      listen = [
+        {
+          addr = "192.168.178.91";
+          port = 8020;
+        }
+      ];
+    };
+    # confirm with http://192.168.178.91:8030/loki/api/v1/status/buildinfo
+    #     (or)     /config /metrics /ready
+    virtualHosts.loki = {
+      locations."/".proxyPass = "http://loki";
+      listen = [
+        {
+          addr = "192.168.178.91";
+          port = 8030;
+        }
+      ];
+    };
+    virtualHosts.promtail = {
+      locations."/".proxyPass = "http://promtail";
+      listen = [
+        {
+          addr = "192.168.178.91";
+          port = 8031;
+        }
+      ];
+    };
+  };
+  networking.firewall.allowedTCPPorts = [8010 8020 8030 8031];
 }
