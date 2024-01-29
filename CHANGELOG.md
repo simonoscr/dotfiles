@@ -1,3 +1,13 @@
+## [1.6.11](https://github.com/simonoscr/dotfiles/compare/1.6.10...1.6.11) (2024-01-29)
+
+
+### Bug Fixes
+
+* add unbound, networking and update ([283ffd1](https://github.com/simonoscr/dotfiles/commit/283ffd1f637fa247187a1ee8e039cc7f2d9ddbba))
+* update local dns ([a79e267](https://github.com/simonoscr/dotfiles/commit/a79e267fa2d13475d57a423cda665f6f90432b29))
+
+
+
 ## [1.6.10](https://github.com/simonoscr/dotfiles/compare/1.6.9...1.6.10) (2024-01-28)
 
 
@@ -79,15 +89,6 @@
 ### Bug Fixes
 
 * update docs and first installation process ([65a44ee](https://github.com/simonoscr/dotfiles/commit/65a44eeb6682e7ac3d051163dba0cf29867c2c4f))
-
-
-
-## [1.6.1](https://github.com/simonoscr/dotfiles/compare/1.6.0...1.6.1) (2024-01-24)
-
-
-### Bug Fixes
-
-* update zsh aliases, add podman ([ea4db23](https://github.com/simonoscr/dotfiles/commit/ea4db23f6efdf9cd981a9aac2aaa25c9caec9b81))
 
 
 
