@@ -17,6 +17,8 @@
     #teamspeak5_client
     #bottles
     path-of-building
+    #formods
+    r2modman
   ];
 
   programs.mangohud = {
