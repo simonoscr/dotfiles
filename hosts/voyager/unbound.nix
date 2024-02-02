@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   services.unbound = {
     enable = true;
     package = pkgs.unbound-full;
@@ -20,7 +24,9 @@
         do-tcp = true;
         do-udp = true;
         edns-buffer-size = "1472";
-        extended-statistics = true;
+        statistics-interval = 0;
+        extended-statistics = "yes";
+        statistics-cumulative = "yes";
         harden-algo-downgrade = true;
         harden-below-nxdomain = true;
         harden-dnssec-stripped = true;
@@ -28,7 +34,14 @@
         harden-large-queries = true;
         harden-short-bufsize = true;
         qname-minimisation = true;
-        logfile = "/opt/unbound/etc/unbound/unbound.log";
+        username = lib.mkForce "unbound";
+        log-replies = true;
+        log-queries = true;
+        log-tag-queryreply = true;
+        log-local-actions = true;
+        log-servfail = true;
+        verbosity = 0;
+        logfile = "/etc/unbound/unbound.log";
         so-reuseport = true;
         interface = ["::1" "127.0.0.1" "192.168.178.91"];
         prefetch = "yes";
