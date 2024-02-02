@@ -1,3 +1,12 @@
+# [1.7.0](https://github.com/simonoscr/dotfiles/compare/1.6.12...1.7.0) (2024-02-02)
+
+
+### Features
+
+* add unbound as local DNS, use local DNS for monitoring stack, add grafana dashboards ([2587d4c](https://github.com/simonoscr/dotfiles/commit/2587d4c710e2f47ef9723f48cb28c11893f71bbf))
+
+
+
 ## [1.6.12](https://github.com/simonoscr/dotfiles/compare/1.6.11...1.6.12) (2024-01-29)
 
 
@@ -78,17 +87,6 @@
 ### Bug Fixes
 
 * update home.manager user for server ([30e23fe](https://github.com/simonoscr/dotfiles/commit/30e23fe939ce06ab5e7fe65193ea768ea0f56af7))
-
-
-
-## [1.6.3](https://github.com/simonoscr/dotfiles/compare/1.6.2...1.6.3) (2024-01-28)
-
-
-### Bug Fixes
-
-* update ([1cbe18c](https://github.com/simonoscr/dotfiles/commit/1cbe18c26f18d4d563ec5927901a69412af480bc))
-* update age key ([d842996](https://github.com/simonoscr/dotfiles/commit/d84299666dba5d432c9cbadf3b0011aa09dddb34))
-* update sshd ([1be4ae9](https://github.com/simonoscr/dotfiles/commit/1be4ae9095319bfde0835515cc5d6edc70ca308a))
 
 
 
