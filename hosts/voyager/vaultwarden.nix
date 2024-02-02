@@ -18,7 +18,6 @@
   # nginx reverse proxy
   services.nginx = {
     enable = true;
-    additionalModules = [pkgs.nginxModules.pam];
     recommendedProxySettings = true;
     recommendedOptimisation = true;
     recommendedGzipSettings = true;
@@ -35,10 +34,6 @@
         proxyPass = "http://vaultwarden";
         proxyWebsockets = true;
       };
-      extraConfig = ''
-        auth_pam  "Password Required";
-        auth_pam_service_name "nginx";
-      '';
       listen = [
         {
           addr = "192.168.178.91";
