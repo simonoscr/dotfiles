@@ -1,3 +1,12 @@
+## [1.7.9](https://github.com/simonoscr/dotfiles/compare/1.7.8...1.7.9) (2024-02-02)
+
+
+### Bug Fixes
+
+* add extension ([8e52dd6](https://github.com/simonoscr/dotfiles/commit/8e52dd6864598ec45837717372f0a3556b6bc41e))
+
+
+
 ## [1.7.8](https://github.com/simonoscr/dotfiles/compare/1.7.7...1.7.8) (2024-02-02)
 
 
@@ -78,15 +87,6 @@
 ### Features
 
 * add unbound as local DNS, use local DNS for monitoring stack, add grafana dashboards ([2587d4c](https://github.com/simonoscr/dotfiles/commit/2587d4c710e2f47ef9723f48cb28c11893f71bbf))
-
-
-
-## [1.6.12](https://github.com/simonoscr/dotfiles/compare/1.6.11...1.6.12) (2024-01-29)
-
-
-### Bug Fixes
-
-* update network etc add openldap and kanidm ([8fa1895](https://github.com/simonoscr/dotfiles/commit/8fa1895d69fca570a5206aae1154efaf672d7636))
 
 
 
