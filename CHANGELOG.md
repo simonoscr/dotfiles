@@ -1,3 +1,12 @@
+## [1.7.5](https://github.com/simonoscr/dotfiles/compare/1.7.4...1.7.5) (2024-02-02)
+
+
+### Bug Fixes
+
+* add autoUpgrade to voyager ([a304b7c](https://github.com/simonoscr/dotfiles/commit/a304b7c512c74f902f6e76f88bc12d8578296122))
+
+
+
 ## [1.7.4](https://github.com/simonoscr/dotfiles/compare/1.7.3...1.7.4) (2024-02-02)
 
 
@@ -80,15 +89,6 @@
 
 * monitoring stack update with prometheus, loki, node-exporter, promtail, granfana and nginx ([5658f35](https://github.com/simonoscr/dotfiles/commit/5658f35a4951550bd4d4bc64794c66c4480a5f2f))
 * update monitoring and logging stack ([4c2b580](https://github.com/simonoscr/dotfiles/commit/4c2b580c9f8a92203ac746cb6d7e6a732625a208))
-
-
-
-## [1.6.8](https://github.com/simonoscr/dotfiles/compare/1.6.7...1.6.8) (2024-01-28)
-
-
-### Bug Fixes
-
-* configure grafana with datasource and node dashboard ([e2ff290](https://github.com/simonoscr/dotfiles/commit/e2ff2908407e87979d202966679b5a88e9397736))
 
 
 
