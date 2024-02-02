@@ -16,6 +16,7 @@
       redhat.vscode-yaml
       ms-azuretools.vscode-docker
       yzhang.markdown-all-in-one
+      kamadorueda.alejandra
     ];
     userSettings = {
       "files.autoSave" = "afterDelay";
