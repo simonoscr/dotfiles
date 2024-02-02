@@ -1,8 +1,5 @@
 {pkgs, ...}: {
   imports = [
-    ../../modules/git.nix
-    ../../modules/terminals/kitty.nix
-    ../../modules/editors/neovim.nix
     ../../modules/shell/starship.nix
     ../../modules/shell/zsh.nix
   ];
@@ -11,6 +8,7 @@
 
   home = {
     username = "oscar";
+    homeDirectory = "/home/oscar";
   };
 
   home.stateVersion = "23.11";

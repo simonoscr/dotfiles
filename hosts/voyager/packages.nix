@@ -6,6 +6,8 @@
     btop
     bat
     curl
+    dig
+    nslookup
     # hypervisor
     qemu
   ];
