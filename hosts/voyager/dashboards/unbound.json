@@ -26,7 +26,6 @@
   "fiscalYearStartMonth": 0,
   "gnetId": 18077,
   "graphTooltip": 0,
-  "id": 17,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -165,69 +164,89 @@
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
-          "editorMode": "builder",
+          "disableTextWrap": false,
+          "editorMode": "code",
           "exemplar": false,
           "expr": "unbound_queries_total{job=\"unbound\"}",
+          "fullMetaSearch": false,
+          "includeNullMetadata": false,
           "instant": true,
           "legendFormat": "Total Queries",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "useBackend": false
         },
         {
           "datasource": {
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
-          "editorMode": "builder",
+          "disableTextWrap": false,
+          "editorMode": "code",
           "exemplar": false,
-          "expr": "unbound_cache_hit_total{job=\"unbound\"}",
+          "expr": "unbound_cache_hits_total{job=\"unbound\"}",
+          "fullMetaSearch": false,
           "hide": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "Cache Hits",
           "range": false,
-          "refId": "B"
+          "refId": "B",
+          "useBackend": false
         },
         {
           "datasource": {
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
-          "editorMode": "builder",
+          "disableTextWrap": false,
+          "editorMode": "code",
           "exemplar": false,
-          "expr": "unbound_cache_miss_total{job=\"unbound\"}",
+          "expr": "unbound_cache_misses_total{job=\"unbound\"}",
+          "fullMetaSearch": false,
           "hide": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "Cache Miss",
           "range": false,
-          "refId": "C"
+          "refId": "C",
+          "useBackend": false
         },
         {
           "datasource": {
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
-          "editorMode": "builder",
+          "disableTextWrap": false,
+          "editorMode": "code",
           "exemplar": false,
-          "expr": "unbound_prefetch_total{job=\"unbound\"}",
+          "expr": "unbound_prefetches_total{job=\"unbound\"}",
+          "fullMetaSearch": false,
           "hide": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "Prefetch",
           "range": false,
-          "refId": "D"
+          "refId": "D",
+          "useBackend": false
         },
         {
           "datasource": {
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
-          "editorMode": "builder",
+          "disableTextWrap": false,
+          "editorMode": "code",
           "exemplar": false,
           "expr": "unbound_expired_total{job=\"unbound\"}",
+          "fullMetaSearch": false,
           "hide": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "Expired",
           "range": false,
-          "refId": "E"
+          "refId": "E",
+          "useBackend": false
         }
       ],
       "type": "stat"
@@ -260,7 +279,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "Uptime"
+              "options": "Up Time Total"
             },
             "properties": [
               {
@@ -378,7 +397,7 @@
           },
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "unbound_time_up_seconds{job=\"unbound\"}",
+          "expr": "unbound_time_up_seconds_total{job=\"unbound\"}",
           "hide": false,
           "instant": true,
           "legendFormat": "__auto",
@@ -390,56 +409,72 @@
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "count(unbound_request_list_current_user{job=\"unbound\"})",
+          "expr": "sum(unbound_request_list_current_user{job=\"unbound\"})",
+          "fullMetaSearch": false,
           "hide": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "B"
+          "refId": "B",
+          "useBackend": false
         },
         {
           "datasource": {
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "unbound_recursion_time_avg_seconds{job=\"unbound\"}",
+          "expr": "unbound_recursion_time_seconds_avg{job=\"unbound\"}",
+          "fullMetaSearch": false,
           "hide": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "C"
+          "refId": "C",
+          "useBackend": false
         },
         {
           "datasource": {
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "unbound_request_list_max{job=\"unbound\"}",
+          "expr": "sum(unbound_request_list_current_user{job=\"unbound\"})",
+          "fullMetaSearch": false,
           "hide": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "D"
+          "refId": "D",
+          "useBackend": false
         },
         {
           "datasource": {
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "unbound_request_list_avg{job=\"unbound\"}",
+          "expr": "avg(unbound_request_list_current_all{job=\"unbound\"})",
+          "fullMetaSearch": false,
           "hide": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
-          "refId": "E"
+          "refId": "E",
+          "useBackend": false
         }
       ],
       "transformations": [
@@ -463,6 +498,7 @@
               "Value 1": true,
               "unbound_time_up_seconds": true
             },
+            "includeByName": {},
             "indexByName": {
               "Time": 5,
               "Uptime": 0,
@@ -473,11 +509,16 @@
               "Value 5": 4
             },
             "renameByName": {
+              "Time": "",
               "Value": "Threads",
               "Value 1": "",
+              "Value 2": "Req Avg",
+              "Value 3": "Req Max",
               "unbound_recursion_time_avg_seconds": "Lookup Avg",
+              "unbound_recursion_time_seconds_avg": "Lookup Avg",
               "unbound_request_list_avg": "Req Avg",
-              "unbound_request_list_max": "Req Max"
+              "unbound_request_list_max": "Req Max",
+              "unbound_time_up_seconds_total": "Up Time Total"
             }
           }
         }
@@ -856,27 +897,35 @@
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "unbound_cache_hit_total{job=\"unbound\"}",
+          "expr": "unbound_cache_hits_total{job=\"unbound\"}",
+          "fullMetaSearch": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "hit",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "useBackend": false
         },
         {
           "datasource": {
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "unbound_cache_miss_total{job=\"unbound\"}",
+          "expr": "unbound_cache_misses_total{job=\"unbound\"}",
+          "fullMetaSearch": false,
           "hide": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "miss",
           "range": false,
-          "refId": "B"
+          "refId": "B",
+          "useBackend": false
         }
       ],
       "transformations": [
@@ -1034,27 +1083,35 @@
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "unbound_query_udpout_count{job=\"unbound\"}",
+          "expr": "unbound_query_udpout_total{job=\"unbound\"}",
+          "fullMetaSearch": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "UDP Out",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "useBackend": false
         },
         {
           "datasource": {
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "unbound_query_tcpout_count{job=\"unbound\"}",
+          "expr": "unbound_query_tcpout_total{job=\"unbound\"}",
+          "fullMetaSearch": false,
           "hide": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "TCP Out",
           "range": false,
-          "refId": "B"
+          "refId": "B",
+          "useBackend": false
         }
       ],
       "type": "stat"
@@ -1289,27 +1346,35 @@
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "unbound_infra_cache_count{job=\"unbound\"}",
+          "expr": "unbound_rrset_cache_count{job=\"unbound\"}",
+          "fullMetaSearch": false,
+          "includeNullMetadata": true,
           "instant": true,
-          "legendFormat": "Infra Cache",
+          "legendFormat": "rrSet Cache",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "useBackend": false
         },
         {
           "datasource": {
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "unbound_key_cache_count{job=\"unbound\"}",
+          "expr": "unbound_msg_cache_count{job=\"unbound\"}",
+          "fullMetaSearch": false,
           "hide": false,
+          "includeNullMetadata": true,
           "instant": true,
-          "legendFormat": "Key Cache",
+          "legendFormat": "Message Cache",
           "range": false,
-          "refId": "B"
+          "refId": "B",
+          "useBackend": false
         }
       ],
       "type": "stat"
@@ -1518,7 +1583,7 @@
             "uid": "LD9DH35SKJ65DS3K"
           },
           "editorMode": "builder",
-          "expr": "count by(client) (rate({dns=\"reply\"} | pattern `<_> <_> <_> <client> <_> <_> <_> <_> <_> <_> <_>` [$__interval]))",
+          "expr": "count by(client) (rate({dns=\"reply\", job=\"unbound\"} | pattern `<_> <_> <_> <client> <_> <_> <_> <_> <_> <_> <_>` [1m]))",
           "legendFormat": "{{client}}",
           "queryType": "range",
           "refId": "A",
@@ -1659,15 +1724,19 @@
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "unbound_response_time_buckets{job=\"unbound\"} > 0",
+          "expr": "unbound_response_time_seconds_bucket{job=\"unbound\"} > 0",
           "format": "time_series",
+          "fullMetaSearch": false,
+          "includeNullMetadata": true,
           "instant": true,
           "interval": "",
-          "legendFormat": "{{lower}} - {{upper}}",
+          "legendFormat": "{{le}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "useBackend": false
         }
       ],
       "type": "bargauge"
@@ -1787,23 +1856,31 @@
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
-          "expr": "unbound_recursion_time_avg_seconds{job=\"unbound\"}",
+          "expr": "unbound_recursion_time_seconds_avg{job=\"unbound\"}",
+          "fullMetaSearch": false,
+          "includeNullMetadata": true,
           "legendFormat": "Avg",
           "range": true,
-          "refId": "A"
+          "refId": "A",
+          "useBackend": false
         },
         {
           "datasource": {
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
-          "expr": "unbound_recursion_time_median_seconds{job=\"unbound\"}",
+          "expr": "unbound_recursion_time_seconds_median{job=\"unbound\"}",
+          "fullMetaSearch": false,
           "hide": false,
+          "includeNullMetadata": true,
           "legendFormat": "Median",
           "range": true,
-          "refId": "B"
+          "refId": "B",
+          "useBackend": false
         }
       ],
       "type": "timeseries"
@@ -1944,13 +2021,17 @@
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "unbound_query_types_count{job=\"unbound\"} > 0",
+          "expr": "unbound_query_types_total{job=\"unbound\"} > 0",
+          "fullMetaSearch": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "{{type}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "useBackend": false
         }
       ],
       "title": "⧉ Query Types",
@@ -2108,13 +2189,17 @@
             "type": "prometheus",
             "uid": "PDOVLC8AT2RK0PW3"
           },
+          "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "unbound_answer_rcodes_count{job=\"unbound\"} > 0",
+          "expr": "unbound_answer_rcodes_total{job=\"unbound\"} > 0",
+          "fullMetaSearch": false,
+          "includeNullMetadata": true,
           "instant": true,
           "legendFormat": "{{rcode}}",
           "range": false,
-          "refId": "A"
+          "refId": "A",
+          "useBackend": false
         },
         {
           "datasource": {
@@ -2210,7 +2295,6 @@
       },
       "hideTimeOverride": false,
       "id": 177,
-      "interval": "5m",
       "options": {
         "displayLabels": [],
         "legend": {
@@ -2241,9 +2325,9 @@
             "uid": "LD9DH35SKJ65DS3K"
           },
           "editorMode": "builder",
-          "expr": "sum by(dns) (count_over_time({dns=\"reply\"} [$__range]))",
+          "expr": "sum by(dns) (count_over_time({job=\"unbound\"} [$__auto]))",
           "legendFormat": "",
-          "queryType": "instant",
+          "queryType": "range",
           "refId": "A"
         },
         {
@@ -2252,10 +2336,10 @@
             "uid": "LD9DH35SKJ65DS3K"
           },
           "editorMode": "builder",
-          "expr": "sum by(dns) (count_over_time({dns=\"block\"} [$__range]))",
+          "expr": "sum by(dns) (count_over_time({dns=\"block\"} [$__auto]))",
           "hide": false,
           "legendFormat": "",
-          "queryType": "instant",
+          "queryType": "range",
           "refId": "B"
         }
       ],
@@ -2421,8 +2505,8 @@
             "uid": "LD9DH35SKJ65DS3K"
           },
           "editorMode": "builder",
-          "expr": "count_over_time({dns=\"reply\"} [$__interval])",
-          "legendFormat": "{{dns}}",
+          "expr": "count_over_time({dns=\"reply\", job=\"unbound\"} [$__interval])",
+          "legendFormat": "",
           "queryType": "range",
           "refId": "A",
           "resolution": 1
@@ -2433,9 +2517,9 @@
             "uid": "LD9DH35SKJ65DS3K"
           },
           "editorMode": "builder",
-          "expr": "count_over_time({dns=\"block\"} [$__interval])",
+          "expr": "count_over_time({dns=\"block\", job=\"unbound\"} [$__interval])",
           "hide": false,
-          "legendFormat": "{{dns}}",
+          "legendFormat": "",
           "queryType": "range",
           "refId": "B",
           "resolution": 1
@@ -2447,7 +2531,7 @@
         {
           "id": "joinByField",
           "options": {
-            "byField": "Time",
+            "byField": "{dns=\"reply\", host=\"voyager\", job=\"unbound\"}",
             "mode": "outer"
           }
         },
@@ -2457,7 +2541,7 @@
             "conversions": [
               {
                 "destinationType": "number",
-                "targetField": "reply"
+                "targetField": "{dns=\"reply\", host=\"voyager\", job=\"unbound\"}"
               },
               {
                 "destinationType": "number",
@@ -2488,6 +2572,7 @@
             "excludeByName": {
               "reply": true
             },
+            "includeByName": {},
             "indexByName": {
               "Time": 0,
               "block": 2,
@@ -2500,7 +2585,8 @@
               "10.1.1.4": "",
               "10.1.1.5": "",
               "block": "Blocked",
-              "reply - block": "Allowed"
+              "reply - block": "Allowed",
+              "{dns=\"reply\", host=\"voyager\", job=\"unbound\"}": "DNS Reply"
             }
           }
         }
@@ -2594,7 +2680,7 @@
             "uid": "LD9DH35SKJ65DS3K"
           },
           "editorMode": "builder",
-          "expr": "count_over_time({dns=\"reply\"} | pattern `<_> <_> <_> <client> <_> <_> <_> <_> <_> <_> <_>` [$__interval])",
+          "expr": "count_over_time({dns=\"reply\", job=\"unbound\"} | pattern `<_> <_> <_> <client> <_> <_> <_> <_> <_> <_> <_>` [$__interval])",
           "legendFormat": "{{client}}",
           "queryType": "range",
           "refId": "A",
@@ -2923,7 +3009,7 @@
             "uid": "LD9DH35SKJ65DS3K"
           },
           "editorMode": "builder",
-          "expr": "sum by(domain) (count_over_time({dns=\"block\"} | pattern `<_> <_> <_> <domain> <_> <_> <_> <_> <_>` [$__range]))",
+          "expr": "sum by(domain) (count_over_time({dns=\"block\", job=\"unbound\"} | pattern `<_> <_> <_> <domain> <_> <_> <_> <_> <_>` [$__range]))",
           "hide": false,
           "queryType": "instant",
           "refId": "A"
@@ -2979,10 +3065,12 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               }
             ]
-          }
+          },
+          "unitScale": true
         },
         "overrides": [
           {
@@ -3129,7 +3217,7 @@
           }
         ]
       },
-      "pluginVersion": "10.2.3",
+      "pluginVersion": "10.3.1",
       "targets": [
         {
           "datasource": {
@@ -3222,10 +3310,12 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               }
             ]
-          }
+          },
+          "unitScale": true
         },
         "overrides": [
           {
@@ -3308,7 +3398,7 @@
           }
         ]
       },
-      "pluginVersion": "10.2.3",
+      "pluginVersion": "10.3.1",
       "targets": [
         {
           "datasource": {
@@ -3392,6 +3482,6 @@
   "timezone": "",
   "title": "Unbound",
   "uid": "ee245028-3ff4-444f-a43f-b2c021346cd4",
-  "version": 2,
+  "version": 1,
   "weekStart": "monday"
 }

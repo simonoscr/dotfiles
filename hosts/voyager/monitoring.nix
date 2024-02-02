@@ -15,6 +15,7 @@
       unbound = {
         enable = true;
         controlInterface = "/run/unbound/unbound.ctl";
+        unbound.host = "unix:///run/unbound/unbound.ctl";
         user = "unbound";
         port = 9003;
       };
@@ -45,7 +46,16 @@
       server.http_listen_port = 3030;
       auth_enabled = false;
 
+      common = {
+        replication_factor = 1;
+        ring = {
+          kvstore.store = "inmemory";
+          instance_addr = "127.0.0.1";
+        };
+      };
+
       ingester = {
+        chunk_encoding = "snappy";
         lifecycler = {
           address = "127.0.0.1";
           ring = {
@@ -62,10 +72,37 @@
         max_transfer_retries = 0;
       };
 
+      limits_config = {
+        retention_period = "120h";
+        ingestion_burst_size_mb = 16;
+        reject_old_samples = true;
+        reject_old_samples_max_age = "12h";
+      };
+
+      table_manager = {
+        retention_deletes_enabled = false;
+        retention_period = "120h";
+      };
+
+      compactor = {
+        retention_enabled = true;
+        compaction_interval = "10m";
+        working_directory = "/var/lib/loki";
+        shared_store = "filesystem";
+        delete_request_cancel_period = "10m";
+        retention_delete_delay = "2h";
+        retention_delete_worker_count = 150;
+        compactor_ring = {
+          kvstore = {
+            store = "inmemory";
+          };
+        };
+      };
+
       schema_config = {
         configs = [
           {
-            from = "2022-06-06";
+            from = "2024-01-01";
             store = "boltdb-shipper";
             object_store = "filesystem";
             schema = "v12";
@@ -89,29 +126,8 @@
           directory = "/var/lib/loki/chunks";
         };
       };
-
-      limits_config = {
-        reject_old_samples = true;
-        reject_old_samples_max_age = "168h";
-      };
-
-      chunk_store_config = {
-        max_look_back_period = "0s";
-      };
-
-      table_manager = {
-        retention_deletes_enabled = false;
-        retention_period = "0s";
-      };
-
-      compactor = {
-        working_directory = "/var/lib/loki";
-        shared_store = "filesystem";
-        compactor_ring = {
-          kvstore = {
-            store = "inmemory";
-          };
-        };
+      query_scheduler = {
+        max_outstanding_requests_per_tenant = 8192;
       };
     };
   };
@@ -145,6 +161,60 @@
             {
               source_labels = ["__journal__systemd_unit"];
               target_label = "unit";
+            }
+          ];
+        }
+        {
+          job_name = "unbound";
+          static_configs = [
+            {
+              targets = ["localhost"];
+              labels = {
+                host = "voyager";
+                job = "unbound";
+                __path__ = "/var/lib/unbound/unbound.log";
+              };
+            }
+          ];
+          pipeline_stages = [
+            {
+              labeldrop = ["filename"];
+            }
+            {
+              match = {
+                selector = ''
+                  {job="unbound"} |~ " start | stopped |.*in-addr.arpa."
+                '';
+                action = "drop";
+              };
+            }
+            {
+              match = {
+                selector = ''
+                  {job="unbound"} |= "reply:"
+                '';
+                stages = [
+                  {
+                    static_labels = {
+                      dns = "reply";
+                    };
+                  }
+                ];
+              };
+            }
+            {
+              match = {
+                selector = ''
+                  {job="unbound"} |~ "redirect |always_null|always_nxdomain"
+                '';
+                stages = [
+                  {
+                    static_labels = {
+                      dns = "block";
+                    };
+                  }
+                ];
+              };
             }
           ];
         }
