@@ -5,6 +5,9 @@
 }: {
   programs.vscode = {
     enable = true;
+    enableUpdateCheck = false;
+    enableExtensionUpdateCheck = false;
+    mutableExtensionsDir = false;
     package = pkgs.vscodium;
     extensions = with pkgs.vscode-extensions; [
       pkief.material-icon-theme
