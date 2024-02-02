@@ -46,6 +46,18 @@
 
   documentation.info.enable = false;
 
+  system.autoUpgrade = {
+    enable = true;
+    flake = inputs.self.outPath;
+    flags = [
+      "--update-input"
+      "nixpkgs"
+      "-L"
+    ];
+    dates = "2:00";
+    randomizedDelaySec = "30min";
+  };
+
   systemd = {
     enableEmergencyMode = false;
     watchdog = {
