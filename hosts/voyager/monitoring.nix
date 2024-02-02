@@ -195,6 +195,7 @@
   # nginx reverse proxy
   services.nginx = {
     enable = true;
+    additionalModules = [pkgs.nginxModules.pam];
     recommendedProxySettings = true;
     recommendedOptimisation = true;
     recommendedGzipSettings = true;
@@ -226,6 +227,10 @@
         proxyPass = "http://grafana";
         proxyWebsockets = true;
       };
+      extraConfig = ''
+        auth_pam  "Password Required";
+        auth_pam_service_name "nginx";
+      '';
       listen = [
         {
           addr = "192.168.178.91";
@@ -234,7 +239,14 @@
       ];
     };
     virtualHosts."prometheus.space" = {
-      locations."/".proxyPass = "http://prometheus";
+      locations."/" = {
+        proxyPass = "http://prometheus";
+        proxyWebsockets = true;
+      };
+      extraConfig = ''
+        auth_pam  "Password Required";
+        auth_pam_service_name "nginx";
+      '';
       listen = [
         {
           addr = "192.168.178.91";
@@ -245,7 +257,14 @@
     # confirm with http://192.168.178.91:8030/loki/api/v1/status/buildinfo
     #     (or)     /config /metrics /ready
     virtualHosts."loki.space" = {
-      locations."/".proxyPass = "http://loki";
+      locations."/" = {
+        proxyPass = "http://loki";
+        proxyWebsockets = true;
+      };
+      extraConfig = ''
+        auth_pam  "Password Required";
+        auth_pam_service_name "nginx";
+      '';
       listen = [
         {
           addr = "192.168.178.91";
@@ -254,7 +273,14 @@
       ];
     };
     virtualHosts."promtail.space" = {
-      locations."/".proxyPass = "http://promtail";
+      locations."/" = {
+        proxyPass = "http://promtail";
+        proxyWebsockets = true;
+      };
+      extraConfig = ''
+        auth_pam  "Password Required";
+        auth_pam_service_name "nginx";
+      '';
       listen = [
         {
           addr = "192.168.178.91";
@@ -263,6 +289,4 @@
       ];
     };
   };
-
-  networking.firewall.allowedTCPPorts = [80];
 }

@@ -8,7 +8,7 @@
     enable = true;
     backupDir = "/var/backup/vaultwarden";
     config = {
-      #DOMAIN = "vaultwarden";
+      DOMAIN = "http://vaultwarden.space";
       SIGNUPS_ALLOWED = false;
       ROCKET_ADDRESS = "127.0.0.1";
       ROCKET_PORT = 8222;
@@ -18,6 +18,7 @@
   # nginx reverse proxy
   services.nginx = {
     enable = true;
+    additionalModules = [pkgs.nginxModules.pam];
     recommendedProxySettings = true;
     recommendedOptimisation = true;
     recommendedGzipSettings = true;
@@ -29,18 +30,21 @@
         };
       };
     };
-    virtualHosts.vaultwarden = {
+    virtualHosts."vaultwarden.space" = {
       locations."/" = {
         proxyPass = "http://vaultwarden";
         proxyWebsockets = true;
       };
+      extraConfig = ''
+        auth_pam  "Password Required";
+        auth_pam_service_name "nginx";
+      '';
       listen = [
         {
           addr = "192.168.178.91";
-          port = 8022;
+          port = 80;
         }
       ];
     };
   };
-  networking.firewall.allowedTCPPorts = [8022];
 }

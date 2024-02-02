@@ -12,7 +12,7 @@
       enable = true;
       allowPing = true;
       logRefusedConnections = false;
-      allowedTCPPorts = [22 53];
+      allowedTCPPorts = [22 53 80 443];
       allowedUDPPorts = [53];
     };
     useDHCP = false;

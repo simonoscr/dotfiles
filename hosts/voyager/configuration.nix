@@ -24,7 +24,7 @@
     ./vaultwarden.nix
     ./monitoring.nix
     ./unbound.nix
-    ./kanidm.nix
+    #./kanidm.nix
     #./openldap.nix
   ];
 

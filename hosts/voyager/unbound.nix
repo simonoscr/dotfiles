@@ -62,9 +62,11 @@
         local-data = [
           "'grafana.space IN A 192.168.178.91'"
           "'prometheus.space IN A 192.168.178.91'"
+          "'prom.space IN A 192.168.178.91'"
           "'loki.space IN A 192.168.178.91'"
           "'promtail.space IN A 192.168.178.91'"
           "'vaultwarden.space IN A 192.168.178.91'"
+          "'kanidm.space IN A 192.168.178.91'"
         ];
       };
     };
