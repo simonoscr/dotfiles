@@ -1,3 +1,13 @@
+## [1.7.2](https://github.com/simonoscr/dotfiles/compare/1.7.1...1.7.2) (2024-02-02)
+
+
+### Bug Fixes
+
+* add kanidm ([3c2d282](https://github.com/simonoscr/dotfiles/commit/3c2d282a12518ab925e78fd6c562dd348e303f43))
+* add pam auth to applications ([0da792b](https://github.com/simonoscr/dotfiles/commit/0da792bf32b634ebf2f821ad17f94c8cbd93af4a))
+
+
+
 ## [1.7.1](https://github.com/simonoscr/dotfiles/compare/1.7.0...1.7.1) (2024-02-02)
 
 
@@ -79,15 +89,6 @@
 ### Bug Fixes
 
 * update vaultwarden ip ([ae8cf3c](https://github.com/simonoscr/dotfiles/commit/ae8cf3c2f993d48bf554d568e96a1d73b1a2504b))
-
-
-
-## [1.6.5](https://github.com/simonoscr/dotfiles/compare/1.6.4...1.6.5) (2024-01-28)
-
-
-### Bug Fixes
-
-* add userhome directory ([1634274](https://github.com/simonoscr/dotfiles/commit/163427421b5362a24f8702cce642f66b40501e92))
 
 
 
