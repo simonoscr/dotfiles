@@ -1,3 +1,13 @@
+## [1.7.1](https://github.com/simonoscr/dotfiles/compare/1.7.0...1.7.1) (2024-02-02)
+
+
+### Bug Fixes
+
+* add logs to unbound ([59044eb](https://github.com/simonoscr/dotfiles/commit/59044eb8008227e0bf15f5a872489eb9807c2fac))
+* fix unbound exporter ([e786e95](https://github.com/simonoscr/dotfiles/commit/e786e95caa44ccd10d76ac703c063f92fd751839))
+
+
+
 # [1.7.0](https://github.com/simonoscr/dotfiles/compare/1.6.12...1.7.0) (2024-02-02)
 
 
@@ -78,15 +88,6 @@
 ### Bug Fixes
 
 * add userhome directory ([1634274](https://github.com/simonoscr/dotfiles/commit/163427421b5362a24f8702cce642f66b40501e92))
-
-
-
-## [1.6.4](https://github.com/simonoscr/dotfiles/compare/1.6.3...1.6.4) (2024-01-28)
-
-
-### Bug Fixes
-
-* update home.manager user for server ([30e23fe](https://github.com/simonoscr/dotfiles/commit/30e23fe939ce06ab5e7fe65193ea768ea0f56af7))
 
 
 
