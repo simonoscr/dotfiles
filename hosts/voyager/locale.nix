@@ -14,10 +14,9 @@
     LC_TIME = "de_DE.UTF-8";
   };
 
-  services.xserver = {
+  services.xserver.xkb = {
+    variant = "";
     layout = "de";
-    xkbVariant = "";
-    xkb.layout = "de";
     #xkb.options = "eurosign:e,caps:escape";
   };
 }
