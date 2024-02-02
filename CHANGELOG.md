@@ -1,3 +1,12 @@
+## [1.7.4](https://github.com/simonoscr/dotfiles/compare/1.7.3...1.7.4) (2024-02-02)
+
+
+### Bug Fixes
+
+* update firefox bookmarks and locale ([94373d7](https://github.com/simonoscr/dotfiles/commit/94373d73c64f87d99f1ec58a1df68c7b2280658e))
+
+
+
 ## [1.7.3](https://github.com/simonoscr/dotfiles/compare/1.7.2...1.7.3) (2024-02-02)
 
 
@@ -80,15 +89,6 @@
 ### Bug Fixes
 
 * configure grafana with datasource and node dashboard ([e2ff290](https://github.com/simonoscr/dotfiles/commit/e2ff2908407e87979d202966679b5a88e9397736))
-
-
-
-## [1.6.7](https://github.com/simonoscr/dotfiles/compare/1.6.6...1.6.7) (2024-01-28)
-
-
-### Bug Fixes
-
-* update hardware-configuration.nix ([cd83841](https://github.com/simonoscr/dotfiles/commit/cd8384117c4fc854c9d9f6c6175685645069411e))
 
 
 
