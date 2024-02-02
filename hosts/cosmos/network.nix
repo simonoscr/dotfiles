@@ -11,6 +11,7 @@
       # allowedTCPPorts = [ ... ];
       # allowedUDPPorts = [ ... ];
     };
+    nameservers = ["192.168.178.91" "9.9.9.9"];
     #extraHosts = ''
     #'';
   };

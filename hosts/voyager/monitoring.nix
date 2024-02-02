@@ -12,6 +12,11 @@
         enabledCollectors = ["systemd"];
         port = 9002;
       };
+      unbound = {
+        enable = true;
+        controlInterface = "/run/unbound/unbound.ctl";
+        user = "unbound";
+      };
     };
     scrapeConfigs = [
       {
@@ -19,6 +24,14 @@
         static_configs = [
           {
             targets = ["127.0.0.1:${toString config.services.prometheus.exporters.node.port}"];
+          }
+        ];
+      }
+      {
+        job_name = "unbound";
+        static_configs = [
+          {
+            targets = ["127.0.0.1:${toString config.services.prometheus.exporters.unbound.port}"];
           }
         ];
       }
@@ -143,8 +156,8 @@
     settings.server = {
       http_port = 2342;
       http_addr = "127.0.0.1";
-      domain = "grafana";
-      #root_url = "http://XXX.XXX.XXX.XXX:8010";
+      domain = "grafana.oscar";
+      #root_url = "http://grafana.oscar";
     };
     provision = {
       enable = true;
@@ -169,7 +182,9 @@
       dashboards.settings.providers = [
         {
           name = "system";
-          options.path = ./dashboards/node.json;
+          folder = "";
+          type = "file";
+          options.path = ./dashboards;
         }
       ];
     };
@@ -203,7 +218,7 @@
         };
       };
     };
-    virtualHosts.grafana = {
+    virtualHosts."grafana.oscar" = {
       locations."/" = {
         proxyPass = "http://grafana";
         proxyWebsockets = true;
@@ -211,39 +226,39 @@
       listen = [
         {
           addr = "192.168.178.91";
-          port = 8010;
+          port = 80;
         }
       ];
     };
-    virtualHosts.prometheus = {
+    virtualHosts."prometheus.oscar" = {
       locations."/".proxyPass = "http://prometheus";
       listen = [
         {
           addr = "192.168.178.91";
-          port = 8020;
+          port = 80;
         }
       ];
     };
     # confirm with http://192.168.178.91:8030/loki/api/v1/status/buildinfo
     #     (or)     /config /metrics /ready
-    virtualHosts.loki = {
+    virtualHosts."loki.oscar" = {
       locations."/".proxyPass = "http://loki";
       listen = [
         {
           addr = "192.168.178.91";
-          port = 8030;
+          port = 80;
         }
       ];
     };
-    virtualHosts.promtail = {
+    virtualHosts."promtail.oscar" = {
       locations."/".proxyPass = "http://promtail";
       listen = [
         {
           addr = "192.168.178.91";
-          port = 8031;
+          port = 80;
         }
       ];
     };
   };
-  networking.firewall.allowedTCPPorts = [8010 8020 8030 8031];
+  networking.firewall.allowedTCPPorts = [80];
 }

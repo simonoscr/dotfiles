@@ -23,7 +23,7 @@
     ./users.nix
     ./vaultwarden.nix
     ./monitoring.nix
-    #./unbound.nix
+    ./unbound.nix
     #./openldap.nix
   ];
 
