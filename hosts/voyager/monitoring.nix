@@ -154,11 +154,13 @@
 
   services.grafana = {
     enable = true;
-    settings.server = {
-      http_port = 2342;
-      http_addr = "127.0.0.1";
-      domain = "grafana.oscar";
-      #root_url = "http://grafana.oscar";
+    settings = {
+      server = {
+        http_port = 2342;
+        http_addr = "127.0.0.1";
+        domain = "grafana.space";
+        root_url = "http://grafana.space";
+      };
     };
     provision = {
       enable = true;
@@ -219,7 +221,7 @@
         };
       };
     };
-    virtualHosts."grafana.oscar" = {
+    virtualHosts."grafana.space" = {
       locations."/" = {
         proxyPass = "http://grafana";
         proxyWebsockets = true;
@@ -231,7 +233,7 @@
         }
       ];
     };
-    virtualHosts."prometheus.oscar" = {
+    virtualHosts."prometheus.space" = {
       locations."/".proxyPass = "http://prometheus";
       listen = [
         {
@@ -242,7 +244,7 @@
     };
     # confirm with http://192.168.178.91:8030/loki/api/v1/status/buildinfo
     #     (or)     /config /metrics /ready
-    virtualHosts."loki.oscar" = {
+    virtualHosts."loki.space" = {
       locations."/".proxyPass = "http://loki";
       listen = [
         {
@@ -251,7 +253,7 @@
         }
       ];
     };
-    virtualHosts."promtail.oscar" = {
+    virtualHosts."promtail.space" = {
       locations."/".proxyPass = "http://promtail";
       listen = [
         {
@@ -261,5 +263,6 @@
       ];
     };
   };
+
   networking.firewall.allowedTCPPorts = [80];
 }

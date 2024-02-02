@@ -57,14 +57,14 @@
         #private-domain = ["oscar"];
         #domain-insecure = ["oscar"];
         local-zone = [
-          "'oscar.' static"
+          "'space.' static"
         ];
         local-data = [
-          "'grafana.oscar IN A 192.168.178.91'"
-          "'prometheus.oscar IN A 192.168.178.91'"
-          "'loki.oscar IN A 192.168.178.91'"
-          "'promtail.oscar IN A 192.168.178.91'"
-          "'vaultwarden.oscar IN A 192.168.178.91'"
+          "'grafana.space IN A 192.168.178.91'"
+          "'prometheus.space IN A 192.168.178.91'"
+          "'loki.space IN A 192.168.178.91'"
+          "'promtail.space IN A 192.168.178.91'"
+          "'vaultwarden.space IN A 192.168.178.91'"
         ];
       };
     };
