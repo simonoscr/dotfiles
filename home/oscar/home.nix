@@ -11,10 +11,6 @@
 
   home = {
     username = "oscar";
-    homeDirectory = "/home/oscar";
-    sessionVariables = {
-      SHELL = "${pkgs.zsh}/bin/zsh";
-    };
   };
 
   home.stateVersion = "23.11";
