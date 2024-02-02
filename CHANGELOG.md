@@ -1,3 +1,12 @@
+## [1.7.3](https://github.com/simonoscr/dotfiles/compare/1.7.2...1.7.3) (2024-02-02)
+
+
+### Bug Fixes
+
+* unbound logs and metrics and grafana dashboard ([90cc147](https://github.com/simonoscr/dotfiles/commit/90cc147aa62199a3e87861f0e08102de4d7efcb2))
+
+
+
 ## [1.7.2](https://github.com/simonoscr/dotfiles/compare/1.7.1...1.7.2) (2024-02-02)
 
 
@@ -80,15 +89,6 @@
 ### Bug Fixes
 
 * update hardware-configuration.nix ([cd83841](https://github.com/simonoscr/dotfiles/commit/cd8384117c4fc854c9d9f6c6175685645069411e))
-
-
-
-## [1.6.6](https://github.com/simonoscr/dotfiles/compare/1.6.5...1.6.6) (2024-01-28)
-
-
-### Bug Fixes
-
-* update vaultwarden ip ([ae8cf3c](https://github.com/simonoscr/dotfiles/commit/ae8cf3c2f993d48bf554d568e96a1d73b1a2504b))
 
 
 
