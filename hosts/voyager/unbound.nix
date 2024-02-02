@@ -28,6 +28,7 @@
         harden-large-queries = true;
         harden-short-bufsize = true;
         qname-minimisation = true;
+        logfile = "/opt/unbound/etc/unbound/unbound.log";
         so-reuseport = true;
         interface = ["::1" "127.0.0.1" "192.168.178.91"];
         prefetch = "yes";

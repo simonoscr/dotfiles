@@ -16,6 +16,7 @@
         enable = true;
         controlInterface = "/run/unbound/unbound.ctl";
         user = "unbound";
+        port = 9003;
       };
     };
     scrapeConfigs = [
