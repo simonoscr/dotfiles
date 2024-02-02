@@ -1,3 +1,12 @@
+## [1.7.8](https://github.com/simonoscr/dotfiles/compare/1.7.7...1.7.8) (2024-02-02)
+
+
+### Bug Fixes
+
+* remove nslookup and add dig ([693de8a](https://github.com/simonoscr/dotfiles/commit/693de8ab326e74e39d31083183eb6d3c36e9c3a4))
+
+
+
 ## [1.7.7](https://github.com/simonoscr/dotfiles/compare/1.7.6...1.7.7) (2024-02-02)
 
 
@@ -78,16 +87,6 @@
 ### Bug Fixes
 
 * update network etc add openldap and kanidm ([8fa1895](https://github.com/simonoscr/dotfiles/commit/8fa1895d69fca570a5206aae1154efaf672d7636))
-
-
-
-## [1.6.11](https://github.com/simonoscr/dotfiles/compare/1.6.10...1.6.11) (2024-01-29)
-
-
-### Bug Fixes
-
-* add unbound, networking and update ([283ffd1](https://github.com/simonoscr/dotfiles/commit/283ffd1f637fa247187a1ee8e039cc7f2d9ddbba))
-* update local dns ([a79e267](https://github.com/simonoscr/dotfiles/commit/a79e267fa2d13475d57a423cda665f6f90432b29))
 
 
 
