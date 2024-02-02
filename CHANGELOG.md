@@ -1,3 +1,12 @@
+## [1.7.6](https://github.com/simonoscr/dotfiles/compare/1.7.5...1.7.6) (2024-02-02)
+
+
+### Bug Fixes
+
+* vscodium extensions, firefox bookmarks ([4bc97dd](https://github.com/simonoscr/dotfiles/commit/4bc97dd13bc94adc6c613873acfea3843eb510f8))
+
+
+
 ## [1.7.5](https://github.com/simonoscr/dotfiles/compare/1.7.4...1.7.5) (2024-02-02)
 
 
@@ -79,16 +88,6 @@
 ### Bug Fixes
 
 * monitoring stack ([af54d73](https://github.com/simonoscr/dotfiles/commit/af54d73ac98114c92fb5504b2a1192398c77dead))
-
-
-
-## [1.6.9](https://github.com/simonoscr/dotfiles/compare/1.6.8...1.6.9) (2024-01-28)
-
-
-### Bug Fixes
-
-* monitoring stack update with prometheus, loki, node-exporter, promtail, granfana and nginx ([5658f35](https://github.com/simonoscr/dotfiles/commit/5658f35a4951550bd4d4bc64794c66c4480a5f2f))
-* update monitoring and logging stack ([4c2b580](https://github.com/simonoscr/dotfiles/commit/4c2b580c9f8a92203ac746cb6d7e6a732625a208))
 
 
 
