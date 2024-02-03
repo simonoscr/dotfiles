@@ -1,3 +1,13 @@
+## [1.8.3](https://github.com/simonoscr/dotfiles/compare/1.8.2...1.8.3) (2024-02-03)
+
+
+### Bug Fixes
+
+* add i3 shortcuts ([cb0a23c](https://github.com/simonoscr/dotfiles/commit/cb0a23c60ab3692a394a93d14e88b4b35d778a23))
+* fix shortcuts and modifier ([5c6c369](https://github.com/simonoscr/dotfiles/commit/5c6c36942ff3c07ad538b4cde7bf650fa7387b72))
+
+
+
 ## [1.8.2](https://github.com/simonoscr/dotfiles/compare/1.8.1...1.8.2) (2024-02-03)
 
 
@@ -76,15 +86,6 @@
 ### Bug Fixes
 
 * add autoUpgrade to voyager ([a304b7c](https://github.com/simonoscr/dotfiles/commit/a304b7c512c74f902f6e76f88bc12d8578296122))
-
-
-
-## [1.7.4](https://github.com/simonoscr/dotfiles/compare/1.7.3...1.7.4) (2024-02-02)
-
-
-### Bug Fixes
-
-* update firefox bookmarks and locale ([94373d7](https://github.com/simonoscr/dotfiles/commit/94373d73c64f87d99f1ec58a1df68c7b2280658e))
 
 
 
