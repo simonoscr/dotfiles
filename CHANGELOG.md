@@ -1,3 +1,12 @@
+## [1.8.1](https://github.com/simonoscr/dotfiles/compare/1.8.0...1.8.1) (2024-02-03)
+
+
+### Bug Fixes
+
+* hyprland floating window rule ([d667238](https://github.com/simonoscr/dotfiles/commit/d66723804c1a3b36f596fe4025ca86153feb3ea4))
+
+
+
 # [1.8.0](https://github.com/simonoscr/dotfiles/compare/1.7.10...1.8.0) (2024-02-03)
 
 
@@ -76,16 +85,6 @@
 ### Bug Fixes
 
 * unbound logs and metrics and grafana dashboard ([90cc147](https://github.com/simonoscr/dotfiles/commit/90cc147aa62199a3e87861f0e08102de4d7efcb2))
-
-
-
-## [1.7.2](https://github.com/simonoscr/dotfiles/compare/1.7.1...1.7.2) (2024-02-02)
-
-
-### Bug Fixes
-
-* add kanidm ([3c2d282](https://github.com/simonoscr/dotfiles/commit/3c2d282a12518ab925e78fd6c562dd348e303f43))
-* add pam auth to applications ([0da792b](https://github.com/simonoscr/dotfiles/commit/0da792bf32b634ebf2f821ad17f94c8cbd93af4a))
 
 
 
