@@ -70,6 +70,7 @@
           "'promtail.space IN A 192.168.178.91'"
           "'vaultwarden.space IN A 192.168.178.91'"
           "'kanidm.space IN A 192.168.178.91'"
+          "'dashy.space IN A 192.168.178.91'"
         ];
       };
     };

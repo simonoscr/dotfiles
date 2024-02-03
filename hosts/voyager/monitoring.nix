@@ -67,7 +67,7 @@
         };
         chunk_idle_period = "1h";
         max_chunk_age = "1h";
-        chunk_target_size = 999999;
+        chunk_target_size = 1048576;
         chunk_retain_period = "30s";
         max_transfer_retries = 0;
       };
@@ -75,8 +75,9 @@
       limits_config = {
         retention_period = "120h";
         ingestion_burst_size_mb = 16;
+        ingestion_rate_mb = 10;
         reject_old_samples = true;
-        reject_old_samples_max_age = "12h";
+        reject_old_samples_max_age = "24h";
       };
 
       table_manager = {

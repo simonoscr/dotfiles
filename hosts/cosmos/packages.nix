@@ -14,6 +14,7 @@
     curl
     alejandra
     corectrl
+    dig
     # Hyprland
     waybar
     wlogout

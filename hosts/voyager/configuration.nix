@@ -26,6 +26,7 @@
     ./unbound.nix
     #./kanidm.nix
     #./openldap.nix
+    ./dashy.nix
   ];
 
   ## systemd-boot
