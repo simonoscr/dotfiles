@@ -1,3 +1,12 @@
+## [1.8.2](https://github.com/simonoscr/dotfiles/compare/1.8.1...1.8.2) (2024-02-03)
+
+
+### Bug Fixes
+
+* add i3, polybar, hyprland fixes, waybar, fixes ([3d68d38](https://github.com/simonoscr/dotfiles/commit/3d68d38744135c42c4dba37bd5ac46ac19d36030))
+
+
+
 ## [1.8.1](https://github.com/simonoscr/dotfiles/compare/1.8.0...1.8.1) (2024-02-03)
 
 
@@ -76,15 +85,6 @@
 ### Bug Fixes
 
 * update firefox bookmarks and locale ([94373d7](https://github.com/simonoscr/dotfiles/commit/94373d73c64f87d99f1ec58a1df68c7b2280658e))
-
-
-
-## [1.7.3](https://github.com/simonoscr/dotfiles/compare/1.7.2...1.7.3) (2024-02-02)
-
-
-### Bug Fixes
-
-* unbound logs and metrics and grafana dashboard ([90cc147](https://github.com/simonoscr/dotfiles/commit/90cc147aa62199a3e87861f0e08102de4d7efcb2))
 
 
 
