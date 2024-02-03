@@ -1,3 +1,12 @@
+## [1.7.10](https://github.com/simonoscr/dotfiles/compare/1.7.9...1.7.10) (2024-02-03)
+
+
+### Bug Fixes
+
+* loki, dashy, packages, etc ([7a2f5df](https://github.com/simonoscr/dotfiles/commit/7a2f5df5d83932caaed93cc1472332c248bc329b))
+
+
+
 ## [1.7.9](https://github.com/simonoscr/dotfiles/compare/1.7.8...1.7.9) (2024-02-02)
 
 
@@ -78,15 +87,6 @@
 
 * add logs to unbound ([59044eb](https://github.com/simonoscr/dotfiles/commit/59044eb8008227e0bf15f5a872489eb9807c2fac))
 * fix unbound exporter ([e786e95](https://github.com/simonoscr/dotfiles/commit/e786e95caa44ccd10d76ac703c063f92fd751839))
-
-
-
-# [1.7.0](https://github.com/simonoscr/dotfiles/compare/1.6.12...1.7.0) (2024-02-02)
-
-
-### Features
-
-* add unbound as local DNS, use local DNS for monitoring stack, add grafana dashboards ([2587d4c](https://github.com/simonoscr/dotfiles/commit/2587d4c710e2f47ef9723f48cb28c11893f71bbf))
 
 
 
