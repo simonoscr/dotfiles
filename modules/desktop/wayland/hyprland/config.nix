@@ -24,7 +24,6 @@
         #"ags -b hypr"
         "easyeffects --gapplication-service"
         "steam -silent"
-        "webcord -silent"
         "waybar"
         "hyprctl setcursor capitaine-cursors 26"
       ];
@@ -48,9 +47,9 @@
       };
 
       general = {
-        gaps_in = 5;
-        gaps_out = 8;
-        border_size = 2;
+        gaps_in = 4;
+        gaps_out = 6;
+        border_size = 1;
         layout = "dwindle";
         allow_tearing = true;
         resize_on_border = true;

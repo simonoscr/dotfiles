@@ -61,7 +61,7 @@ export default {
         yellow: Option("#f5c211", { scss: "yellow" }),
         blue: Option("#3584e4", { scss: "blue" }),
         magenta: Option("#813d9c", { scss: "magenta" }),
-        teal: Option("#99c1f1", { scss: "teal" }),
+        teal: Option("1", { scss: "teal" }),
         orange: Option("#e66100", { scss: "orange" }),
     },
 
