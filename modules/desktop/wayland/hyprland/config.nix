@@ -24,6 +24,8 @@
         #"ags -b hypr"
         "easyeffects --gapplication-service"
         "steam -silent"
+        "webcord -silent"
+        "waybar"
         "hyprctl setcursor capitaine-cursors 26"
       ];
 
@@ -96,14 +98,14 @@
       };
 
       windowrule = let
-        f = regex: "float, ^(${regex})$";
+        f = regex: "float, .*(${regex}).*";
       in [
         (f "steam")
-        (f "webcord")
+        (f "WebCord")
         (f "pavucontrol")
         (f "com.github.Aylur.ags")
         (f "bitwarden")
-        (f "teamspeak")
+        (f "TeamSpeak")
         "immediate, class:(.gamescope-wrapped)"
         "immediate, title:(Counter-Strike 2)"
         "nomaximizerequest, class:.*"
