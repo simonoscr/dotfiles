@@ -2,7 +2,7 @@
  * A Theme is a set of options that will be applied
  * ontop of the default values. see options.js for possible options
  */
-import { Theme, WP, HOME } from './settings/theme.js';
+import { Theme, WP, HOME } from "./settings/theme.js";
 
 export default [
 
@@ -75,22 +75,21 @@ export default [
   }),
 
   Theme({
-    name: 'Adwaita Dark',
-    icon: '󰊬 ',
+    name: "Adwaita Dark",
+    icon: "󰊬 ",
 
-    "workspaces": 10,
+    workspaces: 10,
 
-    "misc.pywal.theme": "base16-default",
-    "misc.gtk.theme": "adw-gtk3-dark",
-    "misc.gtkIcons.theme": "Adwaita",
+    //"misc.gtk.theme": "adw-gtk3-dark",
+    //"misc.gtkIcons.theme": "Adwaita",
 
-    "desktop.wallpaper.img": WP + "topography_hyprland_bright.png",
+    "desktop.wallpaper.img": WP + "hypr-marble.png",
     "desktop.avatar": HOME + "face.png",
 
-    "spacing": 2,
-    "padding": 8,
-    "radii": 5,
-    "popover_padding_multiplier": 1.4,
+    spacing: 2,
+    padding: 8,
+    radii: 5,
+    popover_padding_multiplier: 1.4,
 
     "color.red": "#c01c28",
     "color.green": "#2ec27e",
@@ -108,14 +107,15 @@ export default [
     "theme.accent.gradient": "to right, $accent, lighten($accent, 14%)",
     "theme.widget.bg": "$fg-color",
     "theme.widget.opacity": 94,
+    "theme.widget.borderwidth": 1,
 
     "border.color": "$fg-color",
-    "border.opacity": 100,
+    "border.opacity": 0,
     "border.width": 0,
     "border.barcolor": "$accent",
 
     "hypr.inactive_border": "rgba(333333ff)",
-    "hypr.wm_gaps": 3,
+    "hypr.wm_gaps": 5,
 
     "font.font": "Ubuntu Nerd Font",
     "font.mono": "Mononoki Nerd Font",
@@ -124,6 +124,7 @@ export default [
     "applauncher.width": 500,
     "applauncher.height": 400,
     "applauncher.icon_size": 42,
+    "applauncher.anchor": "center",
 
     "bar.position": "top",
     "bar.style": "floating",
@@ -141,8 +142,8 @@ export default [
     "desktop.shadow": "rgba(0, 0, 0, .6)",
     "desktop.dock.icon_size": 42,
     "desktop.dock.pinned_apps": [
-      "brave",
-      "Visual Studio Code",
+      "firefox",
+      "neovide",
       "kitty",
       "org.gnome.Nautilus",
       "obsidian",
@@ -150,40 +151,32 @@ export default [
       "spotify",
       "superslicer",
       "org.gnome.Software",
-
     ],
 
-    "notifications.black_list": [
-      "Spotify"
-    ],
-    "notifications.position": [
-      "top"
-    ],
+    "notifications.black_list": ["Spotify"],
+    "notifications.position": ["top"],
     "notifications.width": 450,
     "dashboard.sys_info_size": 70,
-    "mpris.black_list": [
-      "firefox"
-    ],
+    "mpris.black_list": ["firefox"],
     "mpris.preferred": "spotify",
   }),
 
   Theme({
-    name: 'Gruvbox Dark',
-    icon: ' ',
+    name: "Gruvbox Dark",
+    icon: " ",
 
-    "workspaces": 10,
+    workspaces: 10,
 
-    "misc.pywal.theme": "base16-gruvbox-hard",
-    "misc.gtk.theme": "Gruvbox-Dark-B",
-    "misc.gtkIcons.theme": "gruvbox_icons",
+    //"misc.gtk.theme": "Gruvbox-Dark-B",
+    //"misc.gtkIcons.theme": "gruvbox_icons",
 
     "desktop.wallpaper.img": WP + "stairs.png",
     "desktop.avatar": HOME + "face.png",
 
-    "spacing": 2,
-    "padding": 8,
-    "radii": 5,
-    "popover_padding_multiplier": 1.4,
+    spacing: 2,
+    padding: 8,
+    radii: 5,
+    popover_padding_multiplier: 1.4,
 
     "color.red": "#CC241D",
     "color.green": "#476C43",
@@ -217,6 +210,7 @@ export default [
     "applauncher.width": 500,
     "applauncher.height": 400,
     "applauncher.icon_size": 32,
+    "applauncher.anchor": "center",
 
     "bar.position": "top",
     "bar.style": "floating",
@@ -232,53 +226,58 @@ export default [
     "desktop.wallpaper.fg": "#fff",
     "desktop.drop_shadow": false,
     "desktop.shadow": "rgba(0, 0, 0, .6)",
+    "desktop.dock.icon_size": 42,
+    "desktop.dock.pinned_apps": [
+      "firefox",
+      "neovide",
+      "kitty",
+      "org.gnome.Nautilus",
+      "obsidian",
+      "discord",
+      "spotify",
+      "superslicer",
+      "org.gnome.Software",
+    ],
 
-    "notifications.black_list": [
-      "Spotify"
-    ],
-    "notifications.position": [
-      "top"
-    ],
+    "notifications.black_list": ["Spotify"],
+    "notifications.position": ["top"],
     "notifications.width": 450,
     "dashboard.sys_info_size": 70,
-    "mpris.black_list": [
-      "Caprine"
-    ],
+    "mpris.black_list": ["Caprine"],
     "mpris.preferred": "spotify",
   }),
 
- Theme({
-    name: 'Catppuccin Mocha',
-    icon: '󰄛 ',
+  Theme({
+    name: "Catppuccin Frappé",
+    icon: "󰄛 ",
 
-    "workspaces": 10,
+    workspaces: 10,
 
-    "misc.pywal.theme": "base16-seti",
-    "misc.gtk.theme": "Catppuccin_Mocha",
-    "misc.gtkIcons.theme": "catppuccin_mocha",
+    //"misc.gtk.theme": "Catppuccin-Frappe",
+    //"misc.gtkIcons.theme": "Adwaita",
 
-    "desktop.wallpaper.img": WP + "oled-mountains.jpg",
+    "desktop.wallpaper.img": WP + "mocha-mountains.png",
     "desktop.avatar": HOME + "face.png",
 
-    "spacing": 2,
-    "padding": 8,
-    "radii": 5,
-    "popover_padding_multiplier": 1.4,
+    spacing: 2,
+    padding: 8,
+    radii: 5,
+    popover_padding_multiplier: 1.4,
 
-    "color.red": "#F38BA8",
-    "color.green": "#A6E3A1",
-    "color.yellow": "#F9E2AF",
-    "color.blue": "#89B4FA",
-    "color.magenta": "#CBA6F7",
-    "color.teal": "#94E2D5",
-    "color.orange": "#FAB387",
+    "color.red": "#e78284",
+    "color.green": "#a6d189",
+    "color.yellow": "#e5c890",
+    "color.blue": "#8caaee",
+    "color.magenta": "#ca9ee6",
+    "color.teal": "#81c8be",
+    "color.orange": "#ef9f76",
 
     "theme.scheme": "dark",
-    "theme.bg": "#181825",
-    "theme.fg": "#CDD6F4",
-    "theme.accent.accent": "$teal",
+    "theme.bg": "#181926",
+    "theme.fg": "#c6d0f5",
+    "theme.accent.accent": "$blue",
     "theme.accent.fg": "$bg-color",
-    "theme.accent.gradient": "to right, $accent, lighten($accent, 14%)",
+    "theme.accent.gradient": "to right, $accent, lighten($accent, 8%)",
     "theme.widget.bg": "$fg-color",
     "theme.widget.opacity": 94,
 
@@ -288,7 +287,7 @@ export default [
     "border.barcolor": "$accent",
 
     "hypr.inactive_border": "rgba(333333ff)",
-    "hypr.wm_gaps": 3,
+    "hypr.wm_gaps": 5,
 
     "font.font": "Ubuntu Nerd Font",
     "font.mono": "Mononoki Nerd Font",
@@ -297,6 +296,7 @@ export default [
     "applauncher.width": 500,
     "applauncher.height": 400,
     "applauncher.icon_size": 32,
+    "applauncher.anchor": "center",
 
     "bar.position": "top",
     "bar.style": "floating",
@@ -312,38 +312,43 @@ export default [
     "desktop.wallpaper.fg": "#fff",
     "desktop.drop_shadow": false,
     "desktop.shadow": "rgba(0, 0, 0, .6)",
+    "desktop.dock.icon_size": 42,
+    "desktop.dock.pinned_apps": [
+      "firefox",
+      "neovide",
+      "kitty",
+      "org.gnome.Nautilus",
+      "obsidian",
+      "discord",
+      "spotify",
+      "superslicer",
+      "org.gnome.Software",
+    ],
 
-    "notifications.black_list": [
-      "Spotify"
-    ],
-    "notifications.position": [
-      "top"
-    ],
+    "notifications.black_list": ["Spotify"],
+    "notifications.position": ["top"],
     "notifications.width": 450,
     "dashboard.sys_info_size": 70,
-    "mpris.black_list": [
-      "Caprine"
-    ],
+    "mpris.black_list": ["Caprine"],
     "mpris.preferred": "spotify",
   }),
 
-Theme({
-    name: 'Rosé Pine',
-    icon: '󰐅 ',
+  Theme({
+    name: "Rosé Pine",
+    icon: "󰐅 ",
 
-    "workspaces": 10,
+    workspaces: 10,
 
-    "misc.pywal.theme": "base16-default",
-    "misc.gtk.theme": "rose-pine-gtk",
-    "misc.gtkIcons.theme": "rose-pine-icons",
+    //"misc.gtk.theme": "rose-pine-gtk",
+    //"misc.gtkIcons.theme": "rose-pine-icons",
 
     "desktop.wallpaper.img": WP + "leafy-moon.png",
     "desktop.avatar": HOME + "face.png",
 
-    "spacing": 2,
-    "padding": 8,
-    "radii": 5,
-    "popover_padding_multiplier": 1.4,
+    spacing: 2,
+    padding: 8,
+    radii: 5,
+    popover_padding_multiplier: 1.4,
 
     "color.red": "#eb6f92",
     "color.green": "#9ccfd8",
@@ -377,6 +382,7 @@ Theme({
     "applauncher.width": 500,
     "applauncher.height": 400,
     "applauncher.icon_size": 32,
+    "applauncher.anchor": "center",
 
     "bar.position": "top",
     "bar.style": "floating",
@@ -392,21 +398,24 @@ Theme({
     "desktop.wallpaper.fg": "#fff",
     "desktop.drop_shadow": false,
     "desktop.shadow": "rgba(0, 0, 0, .6)",
+    "desktop.dock.icon_size": 42,
+    "desktop.dock.pinned_apps": [
+      "firefox",
+      "neovide",
+      "kitty",
+      "org.gnome.Nautilus",
+      "obsidian",
+      "discord",
+      "spotify",
+      "superslicer",
+      "org.gnome.Software",
+    ],
 
-    "notifications.black_list": [
-      "Spotify"
-    ],
-    "notifications.position": [
-      "top"
-    ],
+    "notifications.black_list": ["Spotify"],
+    "notifications.position": ["top"],
     "notifications.width": 450,
     "dashboard.sys_info_size": 70,
-    "mpris.black_list": [
-      "Caprine"
-    ],
+    "mpris.black_list": ["Caprine"],
     "mpris.preferred": "spotify",
   }),
-
-
-
 ];

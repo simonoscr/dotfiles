@@ -15,6 +15,7 @@
     alejandra
     corectrl
     dig
+    lm_sensors
     # Hyprland
     waybar
     wlogout

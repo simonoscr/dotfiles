@@ -7,8 +7,8 @@
 }: {
   imports = [
     ./config.nix
-    ./swayidle.nix
-    ./swaylock.nix
+    ../swayidle.nix
+    ../swaylock.nix
     #./plugins.nix
   ];
 

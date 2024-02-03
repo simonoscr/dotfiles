@@ -1,6 +1,4 @@
 import SystemTray from 'resource:///com/github/Aylur/ags/service/systemtray.js';
-import Widget from 'resource:///com/github/Aylur/ags/widget.js';
-import Variable from 'resource:///com/github/Aylur/ags/variable.js';
 import Battery from 'resource:///com/github/Aylur/ags/service/battery.js';
 import OverviewButton from './buttons/OverviewButton.js';
 import Workspaces from './buttons/Workspaces.js';
@@ -20,27 +18,30 @@ SystemTray.connect('changed', () => {
 });
 
 /**
- * @template T
+ * @template {import('types/service').default} T
  * @param {T=} service
  * @param {(self: T) => boolean=} condition
  */
-const SeparatorDot = (service, condition) => {
-    const visibility = self => {
-        if (!options.bar.separators.value)
-            return self.visible = false;
 
-        self.visible = condition && service
-            ? condition(service)
-            : options.bar.separators.value;
-    };
+const SeparatorDot = (service, condition) => Widget.Separator({
+    vpack: 'center',
+    setup: self => {
+        const visibility = () => {
+            if (!options.bar.separators.value)
+                return self.visible = false;
 
-    const conn = service ? [[service, visibility]] : [];
-    return Widget.Separator({
-        connections: [['draw', visibility], ...conn],
-        binds: [['visible', options.bar.separators]],
-        vpack: 'center',
-    });
-};
+            self.visible = condition && service
+                ? condition(service)
+                : options.bar.separators.value;
+        };
+
+        if (service && condition)
+            self.hook(service, visibility);
+
+        self.on('draw', visibility);
+        self.bind('visible', options.bar.separators);
+    },
+});
 
 const Start = () => Widget.Box({
     class_name: 'start',
@@ -82,6 +83,7 @@ const End = () => Widget.Box({
             items: submenuItems,
             children: [
                 SysTray(),
+                ColorPicker(),
             ],
         }),
 
@@ -97,6 +99,8 @@ const End = () => Widget.Box({
         SeparatorDot(),
         ScreenRecord(),
         SeparatorDot(Recorder, r => r.recording),
+        BatteryBar(Battery, b => b.available),
+        SeparatorDot(Battery, b => b.available),
         SystemIndicators(),
         SeparatorDot(),
         PowerMenu(),
@@ -109,9 +113,10 @@ export default monitor => Widget.Window({
     class_name: 'transparent',
     exclusivity: 'exclusive',
     monitor,
-    binds: [['anchor', options.bar.position, 'value', pos => ([
+    anchor: options.bar.position.bind('value').transform(pos => ([
         pos, 'left', 'right',
-    ])]],
+    ])),
+
     child: Widget.CenterBox({
         class_name: 'panel',
         start_widget: Start(),
