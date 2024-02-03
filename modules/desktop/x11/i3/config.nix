@@ -1,6 +1,7 @@
 {
   pkgs,
   home-manager,
+  config,
   ...
 }: {
   xsession.windowManager.i3 = {
@@ -8,7 +9,7 @@
     config = {
       modifier = "Mod4";
       keybindings = let
-        mod = config.modifier;
+        mod = "Mod4";
       in {
         "${mod}+t" = "exec kitty";
         "${mod}+w" = "exec firefox";
@@ -48,18 +49,6 @@
         "${mod}+Ctrl+greater" = "move workspace to output right";
         "${mod}+Ctrl+less" = "move workspace to output left";
         "${mod}+Shift+r" = "restart";
-
-        "XF86AudioRaiseVolume" = "exec ${pulseaudio}/bin/pactl set-sink-volume 0 +5%";
-        "XF86AudioLowerVolume" = "exec ${pulseaudio}/bin/pactl set-sink-volume 0 -5%";
-        "XF86AudioMute" = "exec ${pulseaudio}/bin/pactl set-sink-mute 0 toggle";
-
-        "XF86MonBrightnessUp" = "exec ${pkgs.xorg.xbacklight}/bin/xbacklight -inc 5";
-        "XF86MonBrightnessDown" = "exec ${pkgs.xorg.xbacklight}/bin/xbacklight -dec 5";
-
-        "XF86AudioPlay" = "exec ${pkgs.playerctl}/bin/playerctl play";
-        "XF86AudioPause" = "exec ${pkgs.playerctl}/bin/playerctl pause";
-        "XF86AudioNext" = "exec ${pkgs.playerctl}/bin/playerctl next";
-        "XF86AudioPrev" = "exec ${pkgs.playerctl}/bin/playerctl previous";
       };
       bars = [
         {
