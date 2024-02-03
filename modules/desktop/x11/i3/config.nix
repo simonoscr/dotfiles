@@ -13,6 +13,7 @@
         "${mod}+t" = "exec kitty";
         "${mod}+w" = "exec firefox";
         "${mod}+e" = "exec thunar";
+        "${mod}+c" = "exec code";
         #"${mod}+q" = "exec dmenu_run";
         "${mod}+Shift+e" = "kill";
 
