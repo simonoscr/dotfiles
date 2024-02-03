@@ -1,3 +1,12 @@
+# [1.8.0](https://github.com/simonoscr/dotfiles/compare/1.7.10...1.8.0) (2024-02-03)
+
+
+### Features
+
+* use waybar instead of ags (broken), and add: wofi, rofi, wlogout ([8cfde20](https://github.com/simonoscr/dotfiles/commit/8cfde2068df924e55266f87af4c40187729c140a))
+
+
+
 ## [1.7.10](https://github.com/simonoscr/dotfiles/compare/1.7.9...1.7.10) (2024-02-03)
 
 
@@ -77,16 +86,6 @@
 
 * add kanidm ([3c2d282](https://github.com/simonoscr/dotfiles/commit/3c2d282a12518ab925e78fd6c562dd348e303f43))
 * add pam auth to applications ([0da792b](https://github.com/simonoscr/dotfiles/commit/0da792bf32b634ebf2f821ad17f94c8cbd93af4a))
-
-
-
-## [1.7.1](https://github.com/simonoscr/dotfiles/compare/1.7.0...1.7.1) (2024-02-02)
-
-
-### Bug Fixes
-
-* add logs to unbound ([59044eb](https://github.com/simonoscr/dotfiles/commit/59044eb8008227e0bf15f5a872489eb9807c2fac))
-* fix unbound exporter ([e786e95](https://github.com/simonoscr/dotfiles/commit/e786e95caa44ccd10d76ac703c063f92fd751839))
 
 
 
