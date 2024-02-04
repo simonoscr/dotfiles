@@ -19,16 +19,20 @@
     };
     fontDir.enable = true;
     packages = with pkgs; [
+      noto-fonts
+      noto-fonts-cjk
+      noto-fonts-emoji
+      roboto
       liberation_ttf
+      fira-code
+      fira-code-symbols
       (nerdfonts.override {
         fonts = [
           "FiraCode"
           "JetBrainsMono"
-          "LiberationMono"
+          "FiraMono"
         ];
       })
-      noto-fonts
-      roboto
     ];
   };
 }

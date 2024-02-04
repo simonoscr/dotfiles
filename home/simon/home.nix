@@ -3,7 +3,7 @@
     ../../modules/desktop/x11/i3
     #../../modules/desktop/wayland/ags
     ../../modules/desktop/wayland/hyprland
-    ../../modules/desktop/wayland/waybar.nix
+    ../../modules/desktop/wayland/waybar
     ../../modules/desktop/wayland/wofi.nix
     ../../modules/desktop/wayland/wlogout
     ../../modules/browser/firefox.nix
