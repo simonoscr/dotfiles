@@ -7,20 +7,24 @@
     hostName = "nixos";
     networkmanager = {
       enable = true;
-      dns = "systemd-resolved";
-      appendNameservers = ["192.168.178.91" "9.9.9.9"];
-      insertNameservers = ["192.168.178.91" "9.9.9.9"];
+      #dns = "systemd-resolved";
+      #appendNameservers = ["192.168.178.91" "9.9.9.9"];
+      #insertNameservers = ["192.168.178.91" "9.9.9.9"];
     };
     firewall = {
       enable = true;
       # allowedTCPPorts = [ ... ];
       # allowedUDPPorts = [ ... ];
     };
-    nameservers = ["192.168.178.91" "9.9.9.9"];
+    nameservers = ["192.168.178.91"];
     #extraHosts = ''
     #'';
   };
-  services.resolved.enable = true;
+  services.resolved = {
+    enable = true;
+    domains = ["space"];
+    dnssec = "false";
+  };
 
   systemd.services.NetworkManager-wait-online.enable = false;
 

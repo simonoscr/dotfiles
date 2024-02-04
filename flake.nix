@@ -87,6 +87,7 @@
         inherit system;
         specialArgs = {inherit inputs;};
         modules = [
+          {nixpkgs.overlays = [nur.overlay];}
           ./hosts/voyager/configuration.nix
         ];
       };

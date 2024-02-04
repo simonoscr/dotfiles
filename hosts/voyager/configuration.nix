@@ -27,6 +27,7 @@
     #./kanidm.nix
     #./openldap.nix
     ./dashy.nix
+    ./cockpit.nix
   ];
 
   ## systemd-boot
