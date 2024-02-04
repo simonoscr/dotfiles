@@ -28,6 +28,7 @@
     #./openldap.nix
     ./dashy.nix
     ./cockpit.nix
+    ./pihole.nix
   ];
 
   ## systemd-boot

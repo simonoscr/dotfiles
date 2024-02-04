@@ -71,6 +71,7 @@
           "'kanidm.space IN A 192.168.178.91'"
           "'dashy.space IN A 192.168.178.91'"
           "'cockpit.space IN A 192.168.178.91'"
+          "'pihole.space IN A 192.168.178.91'"
         ];
       };
     };
