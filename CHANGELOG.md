@@ -1,3 +1,12 @@
+## [1.8.4](https://github.com/simonoscr/dotfiles/compare/1.8.3...1.8.4) (2024-02-04)
+
+
+### Bug Fixes
+
+* customize waybar, scripts and modules and nerd fonts ([894e26a](https://github.com/simonoscr/dotfiles/commit/894e26a765b2c0a79f4f860daa2edbdfc5958aa7))
+
+
+
 ## [1.8.3](https://github.com/simonoscr/dotfiles/compare/1.8.2...1.8.3) (2024-02-03)
 
 
@@ -77,15 +86,6 @@
 ### Bug Fixes
 
 * vscodium extensions, firefox bookmarks ([4bc97dd](https://github.com/simonoscr/dotfiles/commit/4bc97dd13bc94adc6c613873acfea3843eb510f8))
-
-
-
-## [1.7.5](https://github.com/simonoscr/dotfiles/compare/1.7.4...1.7.5) (2024-02-02)
-
-
-### Bug Fixes
-
-* add autoUpgrade to voyager ([a304b7c](https://github.com/simonoscr/dotfiles/commit/a304b7c512c74f902f6e76f88bc12d8578296122))
 
 
 
