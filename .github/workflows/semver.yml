@@ -30,7 +30,7 @@ jobs:
           skip-commit: "false"
           git-message: "chore: {version}"
           tag-prefix: ""
-          release-count: "10"
+          release-count: "0"
           output-file: "CHANGELOG.md"
           create-summary: "true"
           version-file: ""
