@@ -75,6 +75,14 @@
             url: http://vaultwarden.space
             description: Bitwarden makes it easy for businesses and individuals to securely generate, store, and share passwords from any location, browser, or device.
             tags: [security]
+        - name: Networking
+          icon: https://www.svgrepo.com/show/427446/general-hierachy-map.svg
+          items:
+          - title: Pi-Hole
+            icon: https://pi-hole.github.io/graphics/Vortex/Vortex_Vertical_wordmark_darkmode.png
+            url: http://pihole.space
+            description: The Pi-hole® is a DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
+            tags: [networking]
       '';
       mode = "0444";
     };

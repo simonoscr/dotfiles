@@ -7,7 +7,8 @@
     sessionVariables = {
       GDK_BACKEND = "wayland,x11";
       QT_QPA_PLATFORM = "wayland;xcb";
-      #SLD_VIDEODRIVER = "wayland";
+      SLD_VIDEODRIVER = "wayland";
+      SLD_VIDEO_DRIVER = "wayland";
       CLUTTER_BACKEND = "wayland";
       XDG_CURRENT_DESKTOP = "Hyprland";
       XDG_SESSION_TYPE = "wayland";
