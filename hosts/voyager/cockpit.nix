@@ -3,7 +3,9 @@
   pkgs,
   input,
   ...
-}: {
+}: let
+  cpkgs = pkgs.nur.repos.dukzcry;
+in {
   services.cockpit = {
     enable = true;
     port = 9092;
@@ -27,6 +29,7 @@
     virtualHosts."cockpit.space" = {
       locations."/" = {
         proxyPass = "http://cockpit";
+        proxyWebsockets = true;
       };
       listen = [
         {
@@ -36,10 +39,10 @@
       ];
     };
   };
+  security.pam.services.cockpit = {};
 
-  environment.systemPackages = with pkgs; [
-    cockpit
-  ];
+  environment.systemPackages = with pkgs; with cpkgs; [cockpit-machines libvirt-dbus];
 
   systemd.sockets.cockpit.listenStreams = ["" "${toString config.services.cockpit.port}"];
+  programs.virt-manager.enable = true;
 }

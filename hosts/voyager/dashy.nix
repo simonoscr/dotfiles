@@ -59,6 +59,11 @@
             description: Promtail is an agent which ships the contents of local logs to a private Grafana Loki instance.
             tags: [monitoring]
             statusCheckAcceptCodes: '401'
+          - title: Cockpit
+            icon: https://linuxundich.de/wp-content/uploads/2014/12/cockpit-fedora-logo.png
+            url: http://cockpit.space
+            description: Cockpit is a web-based graphical interface for servers.
+            tags: [monitoring]
         - name: Security
           icon: https://www.svgrepo.com/show/427460/general-office-open-padlock.svg
           items:
