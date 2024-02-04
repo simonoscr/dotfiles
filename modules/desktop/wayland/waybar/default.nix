@@ -19,6 +19,8 @@
     "temperature#gpu"
     "memory"
     "disk"
+    "custom/spacer"
+    "hyprland/window"
   ];
 
   modules-center = [
@@ -29,11 +31,10 @@
     "tray"
     "custom/spacer"
     "pulseaudio"
-    #"custom/audio_device"
     "pulseaudio#microphone"
     "network#wlo"
     "network#enp"
-    "idle_inhibitor"
+    "bluetooth"
     "custom/power"
   ];
 in {
@@ -71,38 +72,85 @@ in {
       window#waybar.hidden {
         opacity: 0.2;
       }
-      #workspace,
-      #clock,
-      #window,
-      #cpu,
-      #custom-cpu,
-      #custom-gpu,
-      #disk,
-      #tray,
-      #memory,
-      #temperature {
-        color: #CCCCCC;
+      #workspace {
+      }
+      #clock {
         background-clip: padding-box;
+        background-color: rgba(50, 50, 50, 0.6);
+        border-radius: 5px;
+        margin: 3px;
       }
-      #memory.warning {
+      #window {
+      }
+      #tray {
+        color: #CCCCCC;
+      }
+      #bluetooth {
+        color: #3584e4;
+        background-color: rgba(50, 50, 50, 0.6);
+        border-radius: 5px;
+        margin: 3px;
+      }
+      #memory.good,
+      #cpu.good,
+      #disk.good,
+      #custom-gpu.good,
+      #temperature#cpu.good,
+      #temperature#gpu.good {
+        color: #0BDA51;
+        background-color: rgba(50, 50, 50, 0.6);
+        border-radius: 5px;
+        margin: 3px;
+      }
+      #memory.normal
+      #cpu.normal,
+      #disk.normal,
+      #custom-gpu.normal,
+      #temperature#cpu.normal,
+      #temperature#gpu.normal {
+        color: #3584e4;
+        background-color: rgba(50, 50, 50, 0.6);
+        border-radius: 5px;
+        margin: 3px;
+      }
+      #memory.warning
+      #cpu.warning,
+      #disk.warning,
+      #custom-gpu.warning,
+      #temperature#cpu.warning,
+      #temperature#gpu.warning {
         color: #e66100;
+        background-color: rgba(50, 50, 50, 0.6);
+        border-radius: 5px;
+        margin: 3px;
       }
-      #memory.critical {
+      #memory.critical
+      #cpu.critical,
+      #disk.critical,
+      #custom-gpu.critical,
+      #temperature#cpu.critical,
+      #temperature#gpu.critical {
         color: #c01c28;
+        background-color: rgba(50, 50, 50, 0.6);
+        border-radius: 5px;
+        margin: 3px;
       }
       #custom-spacer {
         color: rgba(204, 204, 204, 0.5);
       }
       #network {
-        color: #e66100;
+        color: #813d9c;
         padding: 0px 5px 0px 5px;
+        background-color: rgba(50, 50, 50, 0.6);
+        border-radius: 5px;
+        margin: 3px;
       }
       #pulseaudio {
         color: #f5c211;
         padding: 0px 5px 0px 5px;
-      }
-      #custom-audio_device {
-        color: #CCCCCC;
+        background-color: rgba(50, 50, 50, 0.6);
+        border-radius: 5px;
+        margin: 3px;
       }
       #custom-menu {
         color: #99c1f1;
@@ -111,11 +159,14 @@ in {
       #custom-power {
         color: #c01c28;
         padding: 0px 5px 0px 5px;
+        background-color: rgba(50, 50, 50, 0.6);
+        border-radius: 5px;
+        margin: 3px;
       }
       #workspaces button {
         padding: 0px 5px;
         min-width: 5px;
-        color: rgba(255,255,255,0.8)
+        color: rgba(255,255,255,0.8);
       }
       #workspaces button:hover {
         color: #2ec27e;
@@ -176,12 +227,16 @@ in {
             "active" = "";
             "default" = "";
           };
-          tooltip-format = ''
-            Workspace'';
         };
-        "hyprland/submap" = {
-          format = " {}";
-          tooltip = false;
+        "hyprland/window" = {
+          format = " {} ";
+          max-length = 50;
+          rewrite = {
+            "(.*) - Mozilla Firefox/" = "󰈹 $1";
+            "(.*) - vim" = " $1";
+            "(.*) - zsh" = " [$1]";
+            "(.*) - VSCodium" = " $1";
+          };
         };
         clock = {
           format = " {:%b %d %H:%M} ";
@@ -209,60 +264,95 @@ in {
           format = "  {usage} ";
           interval = 5;
           states = {
-            warning = 80;
+            good = 0;
+            normal = 60;
+            warning = 85;
             critical = 95;
           };
+          format-icons = ["▁" "▂" "▃" "▄" "▅" "▆" "▇" "█"];
+          on-click-right = "kitty --title btop sh -c 'btop'";
         };
         "temperature#cpu" = {
           format = " {icon} {temperatureC}°C ";
-          hwmon-path = "/sys/class/hwmon/hwmon3/temp1_input";
+          hwmon-path = "/sys/class/hwmon/hwmon4/temp1_input";
           format-icons = ["" "" "" "" ""];
           critical-threshold = 90;
+          interval = 5;
+          states = {
+            good = 0;
+            normal = 60;
+            warning = 80;
+            critical = 90;
+          };
           tooltip = true;
         };
         "custom/gpu" = {
           format = " 󰘚 {} ";
           exec = "cat /sys/class/drm/card0/device/gpu_busy_percent";
           interval = 5;
+          states = {
+            good = 0;
+            normal = 60;
+            warning = 85;
+            critical = 95;
+          };
         };
         "temperature#gpu" = {
           format = " {icon} {temperatureC}°C ";
           hwmon-path = "/sys/class/hwmon/hwmon0/temp1_input";
           format-icons = ["" "" "" "" ""];
           critical-threshold = 90;
+          interval = 5;
+          states = {
+            good = 0;
+            normal = 60;
+            warning = 80;
+            critical = 90;
+          };
           tooltip = true;
         };
         disk = {
           format = " 󰋊 {percentage_used} ";
           path = "/nix";
-          interval = 30;
+          interval = 300;
+          states = {
+            good = 0;
+            normal = 50;
+            warning = 90;
+            critical = 95;
+          };
+          on-click-right = "kitty --title btop sh -c 'btop'";
         };
         memory = {
           format = "  {} ";
           format-alt = "  {used:0.1f}G ";
           interval = 5;
           states = {
+            good = 0;
+            normal = 75;
             warning = 85;
             critical = 95;
           };
+          on-click-right = "kitty --title btop sh -c 'btop'";
         };
         "network#enp" = {
           interface = "enp*";
-          interval = 3;
+          interval = 1;
           format = " {ifname} ";
-          format-ethernet = "󰈀 {ipaddr}/{cidr}";
+          format-ethernet = "󰈀 [{bandwidthUpBits:>} {bandwidthDownBits:>}]";
           format-disconnected = "";
           tooltip-format = ''
             {ipaddr}/{cidr}
-            Up: {bandwidthUpBits}
-            Down: {bandwidthDownBits}'';
+            Up: {bandwidthUpBits}
+            Down: {bandwidthDownBits}'';
           tooltip-format-disconnected = "Disconnected";
+          max-length = 50;
         };
         "network#wlo" = {
           interface = "wlo*";
-          interval = 3;
+          interval = 1;
           format = " {ifname} ";
-          format-wifi = " {essid}";
+          format-wifi = " {essid} {signalStrength:>} [{bandwidthUpBits:>} {bandwidthDownBits:>}]";
           format-disconnected = "";
           tooltip-format = ''
             {essid} ({signalStrength})
@@ -277,8 +367,18 @@ in {
           format-source-muted = " Muted";
           on-click = "${pkgs.pamixer}/bin/pamixer --default-source -t";
         };
+        bluetooth = {
+          format = " 󰂯 {status} ";
+          format-connected = " 󰂱 {device_alias} ";
+          format-connected-battery = "󰂯 {device_alias} {device_battery_percentage}%";
+          format-disabled = " 󰂲 ";
+          format-off = " 󰂲 ";
+          format-on = " 󰂯 ";
+          on-click-right = "rfkill block 0";
+          on-click = "rfkill unblock 0";
+        };
         pulseaudio = {
-          format = " {icon}{volume} ";
+          format = " {icon}{volume}󱉸 ";
           format-muted = "x 0٪";
           ignored-sinks = ["Easy Effects Sink"];
           format-icons = {
@@ -304,13 +404,6 @@ in {
           tooltip = false;
           interval = 86400;
         };
-        idle_inhibitor = {
-          format = " {icon} ";
-          format-icons = {
-            activated = "󰈈";
-            deactivated = "󰈉";
-          };
-        };
         "custom/spacer" = {
           format = " │ ";
         };
@@ -320,8 +413,5 @@ in {
         };
       };
     };
-  };
-  home.file = {
-    ".config/waybar/scripts".source = ./scripts;
   };
 }

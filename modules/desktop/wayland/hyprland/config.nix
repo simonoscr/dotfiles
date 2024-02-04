@@ -105,6 +105,7 @@
         (f "com.github.Aylur.ags")
         (f "bitwarden")
         (f "TeamSpeak")
+        (f "btop")
         "immediate, class:(.gamescope-wrapped)"
         "immediate, title:(Counter-Strike 2)"
         "nomaximizerequest, class:.*"
