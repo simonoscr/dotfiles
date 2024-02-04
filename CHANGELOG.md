@@ -1,3 +1,12 @@
+## [1.8.7](https://github.com/simonoscr/dotfiles/compare/1.8.6...1.8.7) (2024-02-04)
+
+
+### Bug Fixes
+
+* add pihole ([8dea741](https://github.com/simonoscr/dotfiles/commit/8dea741710086e1aa2adbddb1c871562bfd52b5c))
+
+
+
 ## [1.8.6](https://github.com/simonoscr/dotfiles/compare/1.8.5...1.8.6) (2024-02-04)
 
 
