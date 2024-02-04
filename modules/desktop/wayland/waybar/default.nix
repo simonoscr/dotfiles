@@ -140,7 +140,7 @@ in {
       Main = {
         layer = "top";
         position = "top";
-        height = 28;
+        height = 32;
 
         tray = {spacing = 12;};
         modules-left = modules-left;
