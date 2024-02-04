@@ -1,3 +1,13 @@
+## [1.8.8](https://github.com/simonoscr/dotfiles/compare/1.8.7...1.8.8) (2024-02-04)
+
+
+### Bug Fixes
+
+* update dashy and hyprland config (enable SDL_VIDE_DRIVER ([181af60](https://github.com/simonoscr/dotfiles/commit/181af600b37de4d0438325d6b416d2c6ce109f27))
+* volume mount for puhole ([ad375f1](https://github.com/simonoscr/dotfiles/commit/ad375f17a8a97ea9ed453c8d3c65a0135f285e96))
+
+
+
 ## [1.8.7](https://github.com/simonoscr/dotfiles/compare/1.8.6...1.8.7) (2024-02-04)
 
 
