@@ -1,7 +1,7 @@
 {...}: {
   systemd.tmpfiles.rules = [
-    "d /configs/pihole/etc 0755 justinlime justinlime -" #The - disables automatic cleanup, so the file wont be removed after a period
-    "d /configs/pihole/etc-dnsmasq.d 0755 justinlime justinlime -" #The - disables automatic cleanup, so the file wont be removed after a period
+    "d /etc/containers/pihole/pihole 0755 -" #The - disables automatic cleanup, so the file wont be removed after a period
+    "d /etc/containers/pihole/dnsmasq.d 0755 -" #The - disables automatic cleanup, so the file wont be removed after a period
   ];
   virtualisation.oci-containers.containers = {
     pihole = {
@@ -16,16 +16,15 @@
         VIRTUAL_HOST = "pihole.space";
         WEBPASSWORD = "hunter2";
       };
-      ports = ["53:53" "53:53/udp" "89:80"];
+      ports = ["5353:53" "5353:53/udp" "89:80"];
       volumes = [
-        "/etc/containers/pihole:/etc/pihole"
-        "/etc/containers/dnsmasq.d:/etc/dnsmasq.d"
+        "/etc/containers/pihole/pihole:/etc/pihole"
+        "/etc/containers/pihole/dnsmasq.d:/etc/dnsmasq.d"
       ];
       extraOptions = [
         "--cap-add=NET_ADMIN"
         "--dns=127.0.0.1"
         "--dns=9.9.9.9"
-        "--label=io.containers.autoupdate=registry"
       ];
     };
   };

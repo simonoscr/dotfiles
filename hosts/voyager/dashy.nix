@@ -4,8 +4,11 @@
   lib,
   ...
 }: {
+  systemd.tmpfiles.rules = [
+    "d /etc/containers/dashy 0755 -"
+  ];
   environment.etc = {
-    "containers/conf.yml" = {
+    "containers/dashy/conf.yml" = {
       text = ''
         ---
         # Page meta info, like heading, footer text and nav links
@@ -86,7 +89,7 @@
       #  "GID" = "131"; # docker
       #};
       ports = ["4000:80"];
-      volumes = ["/etc/containers/conf.yml:/app/public/conf.yml"];
+      volumes = ["/etc/containers/dashy/conf.yml:/app/public/conf.yml"];
     };
   };
   # Nginx reverses proxy
