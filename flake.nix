@@ -5,15 +5,15 @@
     # nixos unstable
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    # pre-commit-hook
-    pre-commit-hooks = {
-      url = "github:cachix/pre-commit-hooks.nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # home-manager
     home-manager = {
       url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # utils for nix flake
+    flake-utils = {
+      url = "github:numtide/flake-utils";
     };
 
     # nur nix user repository
@@ -21,19 +21,23 @@
       url = github:nix-community/NUR;
     };
 
+    nixos-hardware = {
+      url = "github:NixOS/nixos-hardware/master";
+    };
+
     # nix neovim
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.pre-commit-hooks.follows = "pre-commit-hooks";
     };
 
     # secrets operations nix
     sops-nix = {
       url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # wayland window manager
+    # hyprland wm
     hyprland = {
       url = "github:hyprwm/Hyprland";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -43,26 +47,17 @@
       inputs.hyprland.follows = "hyprland";
     };
 
-    # aylur-gtk-shell
-    ags = {
-      url = "github:Aylur/ags";
-    };
-
-    # utils for nix flake
-    flake-utils = {
-      url = "github:numtide/flake-utils";
-    };
-
-    alejandra.url = "github:kamadorueda/alejandra/3.0.0";
-    alejandra.inputs.nixpkgs.follows = "nixpkgs";
-
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-
     #nixpkgs-wayland = {
     #  url = "github:nix-community/nixpkgs-wayland";
+    #  inputs.nixpkgs.follows = "nixpkgs";
     #};
 
-    gBar.url = "github:scorpion-26/gBar";
+    ## aylur-gtk-shell
+    #ags = {
+    #  url = "github:Aylur/ags";
+    #};
+
+    #gBar.url = "github:scorpion-26/gBar";
   };
 
   outputs = {
@@ -70,17 +65,13 @@
     nixpkgs,
     home-manager,
     sops-nix,
-    ags,
     hyprland,
     hyprland-plugins,
     nur,
-    alejandra,
     nixos-hardware,
-    gBar,
     ...
   } @ inputs: let
     system = "x86_64-linux";
-    commonModules = import ./common;
   in {
     # nixos configuration entrypoint
     # available through 'nixos-rebuild --flake .#your-hostname'
