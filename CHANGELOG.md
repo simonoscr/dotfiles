@@ -1,3 +1,13 @@
+## [1.8.6](https://github.com/simonoscr/dotfiles/compare/1.8.5...1.8.6) (2024-02-04)
+
+
+### Bug Fixes
+
+* cockpit and dashy ([d28bec1](https://github.com/simonoscr/dotfiles/commit/d28bec117364a76477c9099107b097f4a6dd7a88))
+* update dashy, add cockpit and small fixes and updates ([e373d00](https://github.com/simonoscr/dotfiles/commit/e373d00bfeb6b6122742d9f6ec0a3934f6c770ad))
+
+
+
 ## [1.8.5](https://github.com/simonoscr/dotfiles/compare/1.8.4...1.8.5) (2024-02-04)
 
 
