@@ -1,3 +1,12 @@
+## [1.8.9](https://github.com/simonoscr/dotfiles/compare/1.8.8...1.8.9) (2024-02-04)
+
+
+### Bug Fixes
+
+* disable SDL_VIDEO_DRIVER=wayland ([81d3440](https://github.com/simonoscr/dotfiles/commit/81d3440f15a31c3a253f0ed85696ef67ffa4ef2b))
+
+
+
 ## [1.8.8](https://github.com/simonoscr/dotfiles/compare/1.8.7...1.8.8) (2024-02-04)
 
 
