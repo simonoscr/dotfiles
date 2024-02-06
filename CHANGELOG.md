@@ -1,3 +1,12 @@
+## [1.8.11](https://github.com/simonoscr/dotfiles/compare/1.8.10...1.8.11) (2024-02-06)
+
+
+### Bug Fixes
+
+* disable mesa-git ([a03a9a3](https://github.com/simonoscr/dotfiles/commit/a03a9a31236d962ea90cdcccc48fea77b74d3359))
+
+
+
 ## [1.8.10](https://github.com/simonoscr/dotfiles/compare/1.8.9...1.8.10) (2024-02-06)
 
 
