@@ -47,6 +47,16 @@
       inputs.hyprland.follows = "hyprland";
     };
 
+    # lancache
+    lancache = {
+      url = "github:boffbowsh/nix-lancache";
+    };
+
+    # nyx
+    chaotic = {
+      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    };
+
     #nixpkgs-wayland = {
     #  url = "github:nix-community/nixpkgs-wayland";
     #  inputs.nixpkgs.follows = "nixpkgs";
@@ -69,6 +79,8 @@
     hyprland-plugins,
     nur,
     nixos-hardware,
+    chaotic,
+    lancache,
     ...
   } @ inputs: let
     system = "x86_64-linux";

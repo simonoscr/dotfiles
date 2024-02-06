@@ -23,6 +23,7 @@
     ./services.nix
     ./xserver.nix
     ./thunar.nix
+    ./graphics.nix
   ];
 
   ## systemd-boot

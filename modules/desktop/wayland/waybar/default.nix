@@ -32,6 +32,8 @@
     "custom/spacer"
     "pulseaudio"
     "pulseaudio#microphone"
+    "battery#mouse"
+    "battery#kb"
     "network#wlo"
     "network#enp"
     "bluetooth"
@@ -80,8 +82,6 @@ in {
         border-radius: 5px;
         margin: 3px;
       }
-      #window {
-      }
       #tray {
         color: #CCCCCC;
       }
@@ -91,46 +91,30 @@ in {
         border-radius: 5px;
         margin: 3px;
       }
-      #memory.good,
-      #cpu.good,
-      #disk.good,
-      #custom-gpu.good,
-      #temperature#cpu.good,
-      #temperature#gpu.good {
-        color: #0BDA51;
+      #battery.good {
+        color: #2ec27e;
         background-color: rgba(50, 50, 50, 0.6);
         border-radius: 5px;
         margin: 3px;
       }
-      #memory.normal
-      #cpu.normal,
-      #disk.normal,
-      #custom-gpu.normal,
-      #temperature#cpu.normal,
-      #temperature#gpu.normal {
-        color: #3584e4;
-        background-color: rgba(50, 50, 50, 0.6);
-        border-radius: 5px;
-        margin: 3px;
-      }
-      #memory.warning
-      #cpu.warning,
-      #disk.warning,
-      #custom-gpu.warning,
-      #temperature#cpu.warning,
-      #temperature#gpu.warning {
+      #battery.warning {
         color: #e66100;
         background-color: rgba(50, 50, 50, 0.6);
         border-radius: 5px;
         margin: 3px;
       }
-      #memory.critical
-      #cpu.critical,
-      #disk.critical,
-      #custom-gpu.critical,
-      #temperature#cpu.critical,
-      #temperature#gpu.critical {
+      #battery.critical {
         color: #c01c28;
+        background-color: rgba(50, 50, 50, 0.6);
+        border-radius: 5px;
+        margin: 3px;
+      }
+      #memory,
+      #cpu,
+      #disk,
+      #custom-gpu,
+      #temperature,
+      #custom-kernel {
         background-color: rgba(50, 50, 50, 0.6);
         border-radius: 5px;
         margin: 3px;
@@ -155,6 +139,9 @@ in {
       #custom-menu {
         color: #99c1f1;
         padding: 0px 5px 0px 5px;
+        background-color: rgba(50, 50, 50, 0.6);
+        border-radius: 5px;
+        margin: 3px;
       }
       #custom-power {
         color: #c01c28;
@@ -182,6 +169,9 @@ in {
       }
       #workspaces button.visible {
         color: #2ec27e;
+        background-color: rgba(50, 50, 50, 0.6);
+        border-radius: 5px;
+        margin: 3px;
       }
       #workspaces button.hidden {
         color: #999999;
@@ -229,13 +219,18 @@ in {
           };
         };
         "hyprland/window" = {
-          format = " {} ";
-          max-length = 50;
+          separate-outputs = true;
           rewrite = {
-            "(.*) - Mozilla Firefox/" = "󰈹 $1";
-            "(.*) - vim" = " $1";
-            "(.*) - zsh" = " [$1]";
-            "(.*) - VSCodium" = " $1";
+            "(.*) — Mozilla Firefox" = "󰈹 Firefox";
+            "(.*) - vim" = " NeoVIM";
+            "(.*) - zsh" = " ZSH";
+            "(.*) - kitty" = " Kitty";
+            "(.*) - VSCodium" = " VSCodium";
+            "btop" = "󰨇 btop";
+            "Steam" = "󰓓 Steam";
+            "Friends List" = "󰓓 Steam - Friends List";
+            "WebCord - (.*)" = "󰙯 WebCord";
+            "TeamSpeak 3" = " TeamSpeak";
           };
         };
         clock = {
@@ -261,14 +256,8 @@ in {
           };
         };
         cpu = {
-          format = "  {usage} ";
+          format = "  {usage:>1}󱉸 ";
           interval = 5;
-          states = {
-            good = 0;
-            normal = 60;
-            warning = 85;
-            critical = 95;
-          };
           format-icons = ["▁" "▂" "▃" "▄" "▅" "▆" "▇" "█"];
           on-click-right = "kitty --title btop sh -c 'btop'";
         };
@@ -278,61 +267,32 @@ in {
           format-icons = ["" "" "" "" ""];
           critical-threshold = 90;
           interval = 5;
-          states = {
-            good = 0;
-            normal = 60;
-            warning = 80;
-            critical = 90;
-          };
           tooltip = true;
         };
         "custom/gpu" = {
-          format = " 󰘚 {} ";
+          format = " 󰘚 {:>1}󱉸 ";
           exec = "cat /sys/class/drm/card0/device/gpu_busy_percent";
           interval = 5;
-          states = {
-            good = 0;
-            normal = 60;
-            warning = 85;
-            critical = 95;
-          };
         };
         "temperature#gpu" = {
           format = " {icon} {temperatureC}°C ";
           hwmon-path = "/sys/class/hwmon/hwmon0/temp1_input";
           format-icons = ["" "" "" "" ""];
           critical-threshold = 90;
+          format-critical = "󰈸";
           interval = 5;
-          states = {
-            good = 0;
-            normal = 60;
-            warning = 80;
-            critical = 90;
-          };
           tooltip = true;
         };
         disk = {
-          format = " 󰋊 {percentage_used} ";
+          format = " 󰋊 {percentage_used:>1}󱉸 ";
           path = "/nix";
           interval = 300;
-          states = {
-            good = 0;
-            normal = 50;
-            warning = 90;
-            critical = 95;
-          };
           on-click-right = "kitty --title btop sh -c 'btop'";
         };
         memory = {
-          format = "  {} ";
-          format-alt = "  {used:0.1f}G ";
+          format = "  {:>1}󱉸 ";
+          format-alt = "  {used:>0.1f}G ";
           interval = 5;
-          states = {
-            good = 0;
-            normal = 75;
-            warning = 85;
-            critical = 95;
-          };
           on-click-right = "kitty --title btop sh -c 'btop'";
         };
         "network#enp" = {
@@ -352,25 +312,25 @@ in {
           interface = "wlo*";
           interval = 1;
           format = " {ifname} ";
-          format-wifi = " {essid} {signalStrength:>} [{bandwidthUpBits:>} {bandwidthDownBits:>}]";
+          format-wifi = " {essid} {signalStrength:>}󱉸 [{bandwidthUpBits:>} {bandwidthDownBits:>}]";
           format-disconnected = "";
           tooltip-format = ''
-            {essid} ({signalStrength})
+            {essid} ({signalStrength}󱉸)
             {ipaddr}/{cidr}󰈀
             Up: {bandwidthUpBits}
             Down: {bandwidthDownBits}'';
           tooltip-format-disconnected = "Disconnected";
         };
         "pulseaudio#microphone" = {
-          format = " {format_source} ";
+          format = " {format_source:>} ";
           format-source = "";
           format-source-muted = " Muted";
           on-click = "${pkgs.pamixer}/bin/pamixer --default-source -t";
         };
         bluetooth = {
-          format = " 󰂯 {status} ";
+          format = " 󰂯 {status:>} ";
           format-connected = " 󰂱 {device_alias} ";
-          format-connected-battery = "󰂯 {device_alias} {device_battery_percentage}%";
+          format-connected-battery = "󰂯 {device_alias} {device_battery_percentage}󱉸";
           format-disabled = " 󰂲 ";
           format-off = " 󰂲 ";
           format-on = " 󰂯 ";
@@ -378,13 +338,13 @@ in {
           on-click = "rfkill unblock 0";
         };
         pulseaudio = {
-          format = " {icon}{volume}󱉸 ";
+          format = " {icon}{volume:>}󱉸 ";
           format-muted = "x 0٪";
           ignored-sinks = ["Easy Effects Sink"];
           format-icons = {
             default = [" " " " " "];
-            headphone = "󰋋 ";
-            headset = "󰋎 ";
+            headphone = " 󰋋";
+            headset = " 󰋎";
           };
           tooltip-format = "{desc}, {volume}٪";
           on-scroll-up = "${pkgs.pamixer}/bin/pamixer -i 5";
@@ -403,6 +363,38 @@ in {
           on-click = "wlogout -p layer-shell";
           tooltip = false;
           interval = 86400;
+        };
+        "battery#mouse" = {
+          bat = "hidpp_battery_0";
+          bat-compatibility = true;
+          interval = 10;
+          states = {
+            good = 100;
+            warning = 30;
+            critical = 15;
+          };
+          format = " 󰍽 {capacity}٪ {icon} ";
+          format-charging = " {capacity}٪ 󰂄 ";
+          format-plugged = " {capacity}٪ 󰚥 ";
+          format-alt = "{time} {icon}";
+          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"];
+          tooltip = false;
+        };
+        "battery#kb" = {
+          bat = "hidpp_battery_1";
+          bat-compatibility = true;
+          interval = 10;
+          states = {
+            good = 100;
+            warning = 30;
+            critical = 15;
+          };
+          format = " 󰌌 {capacity}٪ {icon} ";
+          format-charging = " {capacity}٪ 󰂄 ";
+          format-plugged = " {capacity}٪ 󰚥 ";
+          format-alt = "{time} {icon}";
+          format-icons = ["󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"];
+          tooltip = false;
         };
         "custom/spacer" = {
           format = " │ ";
