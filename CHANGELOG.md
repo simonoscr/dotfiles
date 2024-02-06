@@ -1,3 +1,12 @@
+## [1.8.10](https://github.com/simonoscr/dotfiles/compare/1.8.9...1.8.10) (2024-02-06)
+
+
+### Bug Fixes
+
+* update flock; add chaotic nyx and activate mesa-git ([27e5b3c](https://github.com/simonoscr/dotfiles/commit/27e5b3c50f3dd4664600683db80b732e7264e3d8))
+
+
+
 ## [1.8.9](https://github.com/simonoscr/dotfiles/compare/1.8.8...1.8.9) (2024-02-04)
 
 
