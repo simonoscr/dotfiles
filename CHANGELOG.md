@@ -1,3 +1,12 @@
+## [1.8.12](https://github.com/simonoscr/dotfiles/compare/1.8.11...1.8.12) (2024-02-07)
+
+
+### Bug Fixes
+
+* theming and update flock ([d19eb3a](https://github.com/simonoscr/dotfiles/commit/d19eb3a3276d040bcd7aa61569d932aaaade39c2))
+
+
+
 ## [1.8.11](https://github.com/simonoscr/dotfiles/compare/1.8.10...1.8.11) (2024-02-06)
 
 
