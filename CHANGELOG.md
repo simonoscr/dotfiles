@@ -1,3 +1,12 @@
+## [1.8.13](https://github.com/simonoscr/dotfiles/compare/1.8.12...1.8.13) (2024-02-07)
+
+
+### Bug Fixes
+
+* prepape and preupdate .sops.yaml ([ecc10b2](https://github.com/simonoscr/dotfiles/commit/ecc10b27cf0eaac168901fb86b1d6b68cf7dd881))
+
+
+
 ## [1.8.12](https://github.com/simonoscr/dotfiles/compare/1.8.11...1.8.12) (2024-02-07)
 
 
