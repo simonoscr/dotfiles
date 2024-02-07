@@ -57,6 +57,11 @@
       url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     };
 
+    # stylix
+    stylix = {
+      url = "github:danth/stylix";
+    };
+
     #nixpkgs-wayland = {
     #  url = "github:nix-community/nixpkgs-wayland";
     #  inputs.nixpkgs.follows = "nixpkgs";
@@ -81,6 +86,7 @@
     nixos-hardware,
     chaotic,
     lancache,
+    stylix,
     ...
   } @ inputs: let
     system = "x86_64-linux";

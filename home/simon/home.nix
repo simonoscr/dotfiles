@@ -21,6 +21,7 @@
     ../../modules/zathura.nix
     ../../modules/shell/zsh.nix
     ../../modules/sops.nix
+    #../../modules/stylix.nix
   ];
 
   nixpkgs = {
