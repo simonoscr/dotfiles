@@ -7,6 +7,7 @@ default:
     - git config --global push.followTags true
     - git checkout $CI_COMMIT_REF_NAME
     - git remote set-url origin "https://gitlab-ci-token:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
+    - git pull origin $CI_COMMIT_REF_NAME
   after_script:
     - git push -o ci.skip origin "$CI_COMMIT_REF_NAME"
 
@@ -46,7 +47,7 @@ test:
   script:
     - nix flake show
     - nix flake check --version --debug
-    - nix flake check --no-build
+    - nix flake check --all-systems --no-update-lock-file --offline
   needs:
     - lint
 
