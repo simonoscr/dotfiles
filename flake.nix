@@ -138,14 +138,6 @@
     # standalone home-manager configuration entrypoint
     # available through 'home-manager --flake .#your-username@your-hostname'
     homeConfigurations = {
-      # server user
-      "oscar@voyager" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = {inherit inputs;};
-        modules = [
-          ./home/oscar/home.nix
-        ];
-      };
       # work user
       "simon@work" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};

@@ -42,8 +42,7 @@ lint:
 
 test:
   stage: test
-  variables:
-    NH_NOM: "1"   # Use nix-output-monitor for the build process
+  image: nixpkgs/cachix-flakes
   script:
     - nix flake show
     - nix flake check --version --debug
