@@ -1,5 +1,5 @@
 default:
-  image: nixos/nix
+  image: nixpkgs/cachix-flakes
   before_script:
     - echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
     - git config --global user.email ""
@@ -42,7 +42,6 @@ lint:
 
 test:
   stage: test
-  image: nixpkgs/cachix-flakes
   script:
     - nix flake show
     - nix flake check --version --debug
