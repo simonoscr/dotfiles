@@ -127,9 +127,9 @@
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
-            #home-manager.useUserPackages = true;
+            home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs = {inherit inputs;};
-            home-manager.users.simon = import ./home/profiles/oscar/home.nix;
+            home-manager.users.oscar = import ./home/profiles/oscar/home.nix;
           }
         ];
       };

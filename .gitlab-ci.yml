@@ -1,13 +1,61 @@
+default:
+  image: nixos/nix
+  before_script:
+    - echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
+    - git config --global user.email ""
+    - git config --global user.name "Gitlab CI"
+  after_script:
+    - git push "https://${GITLAB_USERNAME}:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
+
 stages:
+  - cleanup
+  - lint
+  - test
   - release
 
+cleanup:
+  stage: cleanup
+  script:
+    - echo "remove dead code"
+    - nix-shell -p --run "deadnix -e"
+    - |
+      if ! git diff --quiet --exit-code; then
+        git add -A;
+        git commit -m "chore: cleanup dead code";
+      fi
+
+lint:
+  stage: lint
+  script:
+    - nix-shell -p --run "alejandra ."
+    - |
+      if ! git diff --quiet --exit-code; then
+        git add -A;
+        git commit -m "chore: cleanup dead code";
+      fi
+  needs:
+    - cleanup
+
+test:
+  stage: test
+  variables:
+    NH_NOM: "1"   # Use nix-output-monitor for the build process
+  script:
+    - nix flake check
+  needs:
+    - lint
+
 release:
-  image: node:20-buster-slim
+  image: node:slim
   stage: release
   before_script:
     - apt-get update && apt-get install -y --no-install-recommends git-core ca-certificates
     - npm install --location=global semantic-release @semantic-release/gitlab @semantic-release/changelog conventional-changelog-conventionalcommits @semantic-release/commit-analyzer @semantic-release/git
   script:
     - semantic-release
+  needs:
+    - cleanup
+    - lint
+    - test
   only:
     - main
