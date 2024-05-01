@@ -4,9 +4,11 @@ default:
     - echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
     - git config --global user.email ""
     - git config --global user.name "Gitlab CI"
+    - git config --global push.followTags true
     - git checkout $CI_COMMIT_REF_NAME
+    - git remote set-url origin "https://gitlab-ci-token:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
   after_script:
-    - git push "https://${GITLAB_USERNAME}:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" -o skip-ci
+    - git push -o ci.skip "$CI_COMMIT_REF_NAME"
 
 stages:
   - cleanup
@@ -18,7 +20,8 @@ cleanup:
   stage: cleanup
   script:
     - echo "remove dead code"
-    - nix-shell -p --run "deadnix -e"
+    - nix-shell -p deadnix
+    - deadnix -e
     - |
       if ! git diff --quiet --exit-code; then
         git add -A;
