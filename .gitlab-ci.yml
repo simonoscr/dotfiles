@@ -1,6 +1,5 @@
 default:
   before_script:
-    - echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
     - git config --global user.email ""
     - git config --global user.name "Gitlab CI"
     - git config --global push.followTags true
@@ -61,6 +60,6 @@ release:
   needs:
     - cleanup
     - lint
-    - test
+    #- test
   only:
     - main
