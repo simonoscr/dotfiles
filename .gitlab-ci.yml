@@ -4,6 +4,7 @@ default:
     - echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
     - git config --global user.email ""
     - git config --global user.name "Gitlab CI"
+    - git checkout $CI_COMMIT_REF_NAME
   after_script:
     - git push "https://${GITLAB_USERNAME}:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
 
@@ -31,7 +32,7 @@ lint:
     - |
       if ! git diff --quiet --exit-code; then
         git add -A;
-        git commit -m "chore: cleanup dead code";
+        git commit -m "chore: format code";
       fi
   needs:
     - cleanup
