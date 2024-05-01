@@ -18,7 +18,6 @@ stages:
 
 cleanup:
   stage: cleanup
-  image: nixpkgs/nix-flakes
   script:
     - echo "remove dead code"
     - nix-shell -p deadnix
