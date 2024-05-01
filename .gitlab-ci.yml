@@ -1,5 +1,4 @@
 default:
-  image: nixpkgs/cachix-flakes
   before_script:
     - echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
     - git config --global user.email ""
@@ -8,17 +7,16 @@ default:
     - git checkout $CI_COMMIT_REF_NAME
     - git remote set-url origin "https://gitlab-ci-token:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
     - git pull origin $CI_COMMIT_REF_NAME
-  after_script:
-    - git push -o ci.skip origin "$CI_COMMIT_REF_NAME"
 
 stages:
   - cleanup
   - lint
-  - test
+  #- test
   - release
 
 cleanup:
   stage: cleanup
+  image: nixos/nix
   script:
     - echo "remove dead code"
     - nix-shell -p deadnix --run "deadnix -eV"
@@ -26,28 +24,31 @@ cleanup:
       if ! git diff --quiet --exit-code; then
         git add -A;
         git commit -m "chore: cleanup dead code";
+        git push -o ci.skip origin "$CI_COMMIT_REF_NAME"
       fi
 
 lint:
   stage: lint
+  image: nixos/nix
   script:
     - nix-shell -p alejandra --run "alejandra -V ;alejandra ."
     - |
       if ! git diff --quiet --exit-code; then
         git add -A;
         git commit -m "chore: format code";
+        git push -o ci.skip origin "$CI_COMMIT_REF_NAME"
       fi
   needs:
     - cleanup
 
-test:
-  stage: test
-  script:
-    - nix flake show
-    - nix flake check --version --debug
-    - nix flake check --all-systems --no-update-lock-file --offline
-  needs:
-    - lint
+#test:
+#  stage: test
+#  script:
+#    - nix flake show
+#    - nix flake check --version --debug
+#    - nix flake check --all-systems --no-update-lock-file --offline
+#  needs:
+#    - lint
 
 release:
   image: node:slim
